@@ -3,9 +3,9 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#define BOOST_TEST_MODULE Aezora Test Suite
+#define BOOST_TEST_MODULE Cryptcore Test Suite
 
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #include "main.h"
 #include "random.h"
@@ -48,7 +48,7 @@ TestingSetup::TestingSetup()
         bitdb.MakeMock();
 #endif
         ClearDatadirCache();
-        pathTemp = GetTempPath() / strprintf("test_aezora_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
+        pathTemp = GetTempPath() / strprintf("test_cryptcore_%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(100000)));
         boost::filesystem::create_directories(pathTemp);
         mapArgs["-datadir"] = pathTemp.string();
         pblocktree = new CBlockTreeDB(1 << 20, true);

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -115,7 +115,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x6df2c144da90964516839ed9d56ab2742cfaa8956824c16cfd0c4ad482f0e1dd"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // AEZORA starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // CRYPTCORE starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 43200;       // approx. 1 every 30 days
@@ -158,8 +158,8 @@ public:
         consensus.height_ZC_RecalcAccumulators = 0;
 
         // validation by-pass
-        consensus.nAezoraBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
-        consensus.nAezoraBadBlockBits = 0x1c056dac;    // Skip nBit validation of Block 259201 per PR #915
+        consensus.nCryptcoreBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
+        consensus.nCryptcoreBadBlockBits = 0x1c056dac;    // Skip nBit validation of Block 259201 per PR #915
 
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -188,14 +188,14 @@ public:
         nDefaultPort = 14725;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("seed1.aezora.com", "seed1.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed2.aezora.com", "seed2.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed3.aezora.com", "seed3.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed4.aezora.com", "seed4.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed5.aezora.com", "seed5.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed6.aezora.com", "seed6.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed7.aezora.com", "seed7.aezora.com"));
-        vSeeds.push_back(CDNSSeedData("seed8.aezora.com", "seed8.aezora.com"));
+        vSeeds.push_back(CDNSSeedData("seed1.cryptcore.com", "seed1.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed2.cryptcore.com", "seed2.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed3.cryptcore.com", "seed3.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed4.cryptcore.com", "seed4.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed5.cryptcore.com", "seed5.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed6.cryptcore.com", "seed6.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed7.cryptcore.com", "seed7.cryptcore.com"));
+        vSeeds.push_back(CDNSSeedData("seed8.cryptcore.com", "seed8.cryptcore.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 24);
@@ -234,7 +234,7 @@ public:
         //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // AEZORA starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // CRYPTCORE starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day
@@ -277,8 +277,8 @@ public:
         consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // validation by-pass
-        consensus.nAezoraBadBlockTime = 1489001494; // Skip nBit validation of Block 201 per PR #915
-        consensus.nAezoraBadBlockBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        consensus.nCryptcoreBadBlockTime = 1489001494; // Skip nBit validation of Block 201 per PR #915
+        consensus.nCryptcoreBadBlockBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
 
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -309,18 +309,18 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "aezora-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "aezora-testnet.seed2.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "cryptcore-testnet.seed.fuzzbawls.pw"));
+        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "cryptcore-testnet.seed2.fuzzbawls.pw"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet aezora addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet aezora script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet cryptcore addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet cryptcore script addresses start with '8' or '9'
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 73);     // starting with 'W'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet aezora BIP32 pubkeys start with 'DRKV'
+        // Testnet cryptcore BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet aezora BIP32 prvkeys start with 'DRKP'
+        // Testnet cryptcore BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet aezora BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet cryptcore BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -350,7 +350,7 @@ public:
         //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // AEZORA starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // CRYPTCORE starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 144;         // approx 10 cycles per day

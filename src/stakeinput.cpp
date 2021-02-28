@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,13 +8,13 @@
 #include "chain.h"
 #include "main.h"
 #include "txdb.h"
-#include "zazr/deterministicmint.h"
+#include "zcorr/deterministicmint.h"
 #include "wallet/wallet.h"
 
-bool CAzrStake::InitFromTxIn(const CTxIn& txin)
+bool CCorrStake::InitFromTxIn(const CTxIn& txin)
 {
     if (txin.IsZerocoinSpend())
-        return error("%s: unable to initialize CAzrStake from zerocoin spend");
+        return error("%s: unable to initialize CCorrStake from zerocoin spend");
 
     // Find the previous transaction in database
     uint256 hashBlock;
@@ -36,14 +36,14 @@ bool CAzrStake::InitFromTxIn(const CTxIn& txin)
     return true;
 }
 
-bool CAzrStake::SetPrevout(CTransaction txPrev, unsigned int n)
+bool CCorrStake::SetPrevout(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CAzrStake::GetTxFrom(CTransaction& tx) const
+bool CCorrStake::GetTxFrom(CTransaction& tx) const
 {
     if (txFrom.IsNull())
         return false;
@@ -51,7 +51,7 @@ bool CAzrStake::GetTxFrom(CTransaction& tx) const
     return true;
 }
 
-bool CAzrStake::GetTxOutFrom(CTxOut& out) const
+bool CCorrStake::GetTxOutFrom(CTxOut& out) const
 {
     if (txFrom.IsNull() || nPosition >= txFrom.vout.size())
         return false;
@@ -59,18 +59,18 @@ bool CAzrStake::GetTxOutFrom(CTxOut& out) const
     return true;
 }
 
-bool CAzrStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CCorrStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CAzrStake::GetValue() const
+CAmount CCorrStake::GetValue() const
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CAzrStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
+bool CCorrStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
     std::vector<valtype> vSolutions;
     txnouttype whichType;
@@ -120,16 +120,16 @@ bool CAzrStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmoun
     return true;
 }
 
-CDataStream CAzrStake::GetUniqueness() const
+CDataStream CCorrStake::GetUniqueness() const
 {
-    //The unique identifier for a AZR stake is the outpoint
+    //The unique identifier for a CORR stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CAzrStake::GetIndexFrom()
+CBlockIndex* CCorrStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -150,7 +150,7 @@ CBlockIndex* CAzrStake::GetIndexFrom()
 }
 
 // Verify stake contextual checks
-bool CAzrStake::ContextCheck(int nHeight, uint32_t nTime)
+bool CCorrStake::ContextCheck(int nHeight, uint32_t nTime)
 {
     const Consensus::Params& consensus = Params().GetConsensus();
     // Get Stake input block time/height

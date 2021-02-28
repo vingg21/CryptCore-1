@@ -78,7 +78,7 @@ public:
         Other,
         Generated,
         StakeMint,
-        StakeZAZR,
+        StakeZCORR,
         SendToAddress,
         SendToOther,
         RecvWithAddress,
@@ -88,7 +88,7 @@ public:
         ZerocoinMint,
         ZerocoinSpend,
         RecvFromZerocoinSpend,
-        ZerocoinSpend_Change_zAzr,
+        ZerocoinSpend_Change_zCorr,
         ZerocoinSpend_FromMe,
         StakeDelegated, // Received cold stake (owner)
         StakeHot, // Staked via a delegated P2CS.

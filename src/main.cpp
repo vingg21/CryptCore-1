@@ -5,7 +5,7 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,12 +40,12 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "zazrchain.h"
+#include "zcorrchain.h"
 
 #include "invalid.h"
 #include "libzerocoin/Denominations.h"
 #include "masternode-sync.h"
-#include "zazr/zerocoin.h"
+#include "zcorr/zerocoin.h"
 #include <sstream>
 
 #include <boost/algorithm/string/replace.hpp>
@@ -56,7 +56,7 @@
 
 
 #if defined(NDEBUG)
-#error "AEZORA cannot be compiled without assertions."
+#error "CRYPTCORE cannot be compiled without assertions."
 #endif
 
 /**
@@ -99,7 +99,7 @@ size_t nCoinCacheUsage = 5000 * 300;
 /* If the tip is older than this (in seconds), the node is considered to be in initial block download. */
 int64_t nMaxTipAge = DEFAULT_MAX_TIP_AGE;
 
-/** Fees smaller than this (in uazr) are considered zero fee (for relaying, mining and transaction creation)
+/** Fees smaller than this (in ucorr) are considered zero fee (for relaying, mining and transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -1036,7 +1036,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("%s : zAZR spend tx %s already in block %d",
+                return state.Invalid(error("%s : zCORR spend tx %s already in block %d",
                         __func__, tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1044,21 +1044,21 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 // Only allow for public zc spends inputs
                 if (!txIn.IsZerocoinPublicSpend())
                     return state.Invalid(error("%s: failed for tx %s, every input must be a zcpublicspend",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zazr");
+                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcorr");
 
                 libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                 PublicCoinSpend publicSpend(params);
-                if (!ZAZRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                if (!ZCORRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                     return false;
                 }
                 if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainHeight, UINT256_ZERO))
                     return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zazr");
+                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcorr");
 
                 // Check that the version matches the one enforced with SPORK_18
                 if (!CheckPublicCoinSpendVersion(publicSpend.getVersion())) {
                     return state.Invalid(error("%s : Public Zerocoin spend version %d not accepted. must be version %d.",
-                            __func__, publicSpend.getVersion(), CurrentPublicCoinSpendVersion()), REJECT_INVALID, "bad-txns-invalid-zazr");
+                            __func__, publicSpend.getVersion(), CurrentPublicCoinSpendVersion()), REJECT_INVALID, "bad-txns-invalid-zcorr");
                 }
 
             }
@@ -1088,9 +1088,9 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Reject legacy zAZR mints
+            // Reject legacy zCORR mints
             if (!Params().IsRegTestNet() && tx.HasZerocoinMintOutputs())
-                return state.Invalid(error("%s : tried to include zAZR mint output in tx %s",
+                return state.Invalid(error("%s : tried to include zCORR mint output in tx %s",
                         __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-outputs");
 
             // are the actual inputs available?
@@ -1899,7 +1899,7 @@ void AddInvalidSpendsToMap(const CBlock& block)
                 if (isPublicSpend) {
                     PublicCoinSpend publicSpend(params);
                     CValidationState state;
-                    if (!ZAZRModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                    if (!ZCORRModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                         throw std::runtime_error("Failed to parse public spend");
                     }
                     spend = &publicSpend;
@@ -2118,16 +2118,16 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
     if (blockUndo.vtxundo.size() + 1 != block.vtx.size())
         return error("DisconnectBlock() : block and undo data inconsistent");
 
-    //Track zAZR money supply
-    if (!UpdateZAZRSupplyDisconnect(block, pindex))
-        return error("%s: Failed to calculate new zAZR supply", __func__);
+    //Track zCORR money supply
+    if (!UpdateZCORRSupplyDisconnect(block, pindex))
+        return error("%s: Failed to calculate new zCORR supply", __func__);
 
     // undo transactions in reverse order
     for (int i = block.vtx.size() - 1; i >= 0; i--) {
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from AEZORA
+         * note we only undo zerocoin databasing in the following statement, value to and from CRYPTCORE
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2141,7 +2141,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
                         if (isPublicSpend) {
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZAZRModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
+                            if (!ZCORRModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
                                 return error("Failed to parse public spend");
                             }
                             serial = publicSpend.getCoinSerialNumber();
@@ -2292,7 +2292,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    util::ThreadRename("aezora-scriptch");
+    util::ThreadRename("cryptcore-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2435,7 +2435,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZAZRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZCORRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     nValueIn += publicSpend.getDenomination() * COIN;
@@ -2545,7 +2545,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zAZR serials
+    //Record zCORR serials
     if (pwalletMain) {
         std::set<uint256> setAddedTx;
         for (const std::pair<libzerocoin::CoinSpend, uint256>& pSpend : vSpends) {
@@ -2588,16 +2588,16 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // add this block to the view's block chain
     view.SetBestBlock(pindex->GetBlockHash());
 
-    // Update zAZR money supply map
-    if (!UpdateZAZRSupplyConnect(block, pindex, fJustCheck)) {
-        return state.DoS(100, error("%s: Failed to calculate new zAZR supply for block=%s height=%d", __func__,
+    // Update zCORR money supply map
+    if (!UpdateZCORRSupplyConnect(block, pindex, fJustCheck)) {
+        return state.DoS(100, error("%s: Failed to calculate new zCORR supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
     }
 
-    // A one-time event where the zAZR supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where the zCORR supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1
             && GetZerocoinSupply() != consensus.ZC_WrappedSerialsSupply + GetWrapppedSerialInflationAmount()) {
-        RecalculateAZRSupply(consensus.height_start_ZC, false);
+        RecalculateCORRSupply(consensus.height_start_ZC, false);
     }
 
     // Add fraudulent funds to the supply and remove any recovered funds.
@@ -2609,7 +2609,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         nMoneySupply -= nLocked;
     }
 
-    // Update AZR money supply
+    // Update CORR money supply
     nMoneySupply += (nValueOut - nValueIn);
 
     int64_t nTime3 = GetTimeMicros();
@@ -3689,7 +3689,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // AEZORA
+        // CRYPTCORE
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -3732,7 +3732,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         ))
             return error("%s : CheckTransaction failed", __func__);
 
-        // double check that there are no double spent zAZR spends in this block
+        // double check that there are no double spent zCORR spends in this block
         if (tx.HasZerocoinSpendInputs()) {
             for (const CTxIn& txIn : tx.vin) {
                 bool isPublicSpend = txIn.IsZerocoinPublicSpend();
@@ -3741,7 +3741,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     if (isPublicSpend) {
                         libzerocoin::ZerocoinParams* params = Params().GetConsensus().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZAZRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                        if (!ZCORRModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                             return false;
                         }
                         spend = publicSpend;
@@ -3754,7 +3754,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zAZR serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zCORR serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -3795,11 +3795,11 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     }
 
     if (block.nBits != nBitsRequired) {
-        // Aezora Specific reference to the block with the wrong threshold was used.
+        // Cryptcore Specific reference to the block with the wrong threshold was used.
         const Consensus::Params& consensus = Params().GetConsensus();
-        if ((block.nTime == (uint32_t) consensus.nAezoraBadBlockTime) &&
-                (block.nBits == (uint32_t) consensus.nAezoraBadBlockBits)) {
-            // accept AEZORA block minted with incorrect proof of work threshold
+        if ((block.nTime == (uint32_t) consensus.nCryptcoreBadBlockTime) &&
+                (block.nBits == (uint32_t) consensus.nCryptcoreBadBlockBits)) {
+            // accept CRYPTCORE block minted with incorrect proof of work threshold
             return true;
         }
 
@@ -4061,18 +4061,18 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         CTransaction &stakeTxIn = block.vtx[1];
 
         // Inputs
-        std::vector<CTxIn> azrInputs;
-        std::vector<CTxIn> zAZRInputs;
+        std::vector<CTxIn> corrInputs;
+        std::vector<CTxIn> zCORRInputs;
 
         for (const CTxIn& stakeIn : stakeTxIn.vin) {
             if(stakeIn.IsZerocoinSpend()){
-                zAZRInputs.push_back(stakeIn);
+                zCORRInputs.push_back(stakeIn);
             }else{
-                azrInputs.push_back(stakeIn);
+                corrInputs.push_back(stakeIn);
             }
         }
-        const bool hasAZRInputs = !azrInputs.empty();
-        const bool hasZAZRInputs = !zAZRInputs.empty();
+        const bool hasCORRInputs = !corrInputs.empty();
+        const bool hasZCORRInputs = !zCORRInputs.empty();
 
         // ZC started after PoS.
         // Check for serial double spent on the same block, TODO: Move this to the proper method..
@@ -4094,7 +4094,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                         if (isPublicSpend) {
                             libzerocoin::ZerocoinParams* params = Params().GetConsensus().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
-                            if (!ZAZRModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                            if (!ZCORRModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                 return false;
                             }
                             spend = publicSpend;
@@ -4110,10 +4110,10 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     }
                 }
                 if(tx.IsCoinStake()) continue;
-                if(hasAZRInputs) {
+                if(hasCORRInputs) {
                     // Check if coinstake input is double spent inside the same block
-                    for (const CTxIn& azrIn : azrInputs)
-                        if(azrIn.prevout == in.prevout)
+                    for (const CTxIn& corrIn : corrInputs)
+                        if(corrIn.prevout == in.prevout)
                             // double spent coinstake input inside block
                             return error("%s: double spent coinstake input inside block", __func__);
                 }
@@ -4152,12 +4152,12 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     for (const CTxIn& in: t.vin) {
                         // If this input is a zerocoin spend, and the coinstake has zerocoin inputs
                         // then store the serials for later check
-                        if(hasZAZRInputs && in.IsZerocoinSpend())
+                        if(hasZCORRInputs && in.IsZerocoinSpend())
                             vBlockSerials.push_back(TxInToZerocoinSpend(in).getCoinSerialNumber());
 
                         // Loop through every input of the staking tx
-                        if (hasAZRInputs) {
-                            for (const CTxIn& stakeIn : azrInputs)
+                        if (hasCORRInputs) {
+                            for (const CTxIn& stakeIn : corrInputs)
                                 // check if the tx input is double spending any coinstake input
                                 if (stakeIn.prevout == in.prevout)
                                     return state.DoS(100, error("%s: input already spent on a previous block", __func__));
@@ -4176,10 +4176,10 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Split height
             splitHeight = prev->nHeight;
 
-            // Now that this loop if completed. Check if we have zAZR inputs.
-            if(hasZAZRInputs) {
-                for (const CTxIn& zAzrInput : zAZRInputs) {
-                    libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zAzrInput);
+            // Now that this loop if completed. Check if we have zCORR inputs.
+            if(hasZCORRInputs) {
+                for (const CTxIn& zCorrInput : zCORRInputs) {
+                    libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCorrInput);
 
                     // First check if the serials were not already spent on the forked blocks.
                     CBigNum coinSerial = spend.getCoinSerialNumber();
@@ -4199,7 +4199,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
                     if (!ContextualCheckZerocoinSpendNoSerialCheck(stakeTxIn, &spend, pindex->nHeight, UINT256_ZERO))
                         return state.DoS(100,error("%s: forked chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
-                                                   stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zazr");
+                                                   stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcorr");
 
                 }
             }
@@ -4226,11 +4226,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zAzrInput : zAZRInputs) {
-                        libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zAzrInput);
+                for (const CTxIn& zCorrInput : zCORRInputs) {
+                        libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCorrInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex->nHeight, UINT256_ZERO))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
-                                    stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zazr");
+                                    stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcorr");
                 }
 
         }
@@ -5391,7 +5391,7 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
             return true;
         }
 
-        // AEZORA: We use certain sporks during IBD, so check to see if they are
+        // CRYPTCORE: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         // TODO: Move this to an instant broadcast of the sporks.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) ||

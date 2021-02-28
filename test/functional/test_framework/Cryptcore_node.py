@@ -7,8 +7,8 @@ from .messages import msg_getheaders, msg_headers, CBlockHeader
 from .mininode import P2PInterface, mininode_lock
 from .util import wait_until
 
-## AEZORA Test Node
-class AezoraTestNode(P2PInterface):
+## CRYPTCORE Test Node
+class CryptcoreTestNode(P2PInterface):
     def __init__(self):
         super().__init__()
         self.last_sendcmpct = []

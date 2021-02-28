@@ -17,7 +17,7 @@ nBlockStakeModifierlV2 = 255
 ''' -------------------------------------------------------------------------
 TestNode CLASS --------------------------------------------------------------
 
-A peer we use to send messsages to aezorad and store responses
+A peer we use to send messsages to cryptcored and store responses
 Extends P2PInterface.
 '''
 

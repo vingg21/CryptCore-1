@@ -5,7 +5,7 @@
 
 #include "libzerocoin/bignum.h"
 #include "script/script.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <boost/test/unit_test.hpp>
 #include <limits.h>

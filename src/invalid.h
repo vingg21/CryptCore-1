@@ -1,12 +1,12 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_INVALID_H
-#define AEZORA_INVALID_H
+#ifndef CRYPTCORE_INVALID_H
+#define CRYPTCORE_INVALID_H
 
-#endif //AEZORA_INVALID_H
+#endif //CRYPTCORE_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

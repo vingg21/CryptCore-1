@@ -1,10 +1,10 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_UINT512_H
-#define AEZORA_UINT512_H
+#ifndef CRYPTCORE_UINT512_H
+#define CRYPTCORE_UINT512_H
 
 #include "arith_uint256.h"
 #include "blob_uint256.h"
@@ -40,4 +40,4 @@ inline blob_uint512 blob_uint512S(const char* str)
     return rv;
 }
 
-#endif // AEZORA_UINT512_H
+#endif // CRYPTCORE_UINT512_H

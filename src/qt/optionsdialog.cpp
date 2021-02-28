@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
 #include "optionsdialog.h"
@@ -67,12 +67,12 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
 #endif
 
-    /* remove Wallet tab and zAzr options in case of -disablewallet */
+    /* remove Wallet tab and zCorr options in case of -disablewallet */
     if (!enableWallet) {
         ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWallet));
 
-        ui->verticalZazrOptionsWidget->hide();
-        ui->verticalZazrDisplayWidget->hide();
+        ui->verticalZcorrOptionsWidget->hide();
+        ui->verticalZcorrDisplayWidget->hide();
     }
 
     /* Display elements init */

@@ -1,10 +1,10 @@
 // Copyright (c) 2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_PAIRRESULT_H
-#define AEZORA_PAIRRESULT_H
+#ifndef CRYPTCORE_PAIRRESULT_H
+#define CRYPTCORE_PAIRRESULT_H
 
 
 class PairResult {
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif //AEZORA_PAIRRESULT_H
+#endif //CRYPTCORE_PAIRRESULT_H

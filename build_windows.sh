@@ -11,11 +11,11 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 curl g++-mingw-w64-x86-64 -y
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
-# Clone Aezora code from the official Github repository
-	git clone https://github.com/Aezora/Aezora.git
+# Clone Cryptcore code from the official Github repository
+	git clone https://github.com/Cryptcore/Cryptcore.git
 
-# Entering Aezora directory
-	cd Aezora
+# Entering Cryptcore directory
+	cd Cryptcore
 
 # Compile dependencies
 	cd depends
@@ -24,7 +24,7 @@ fi
 	make -j$(echo $CPU_CORES) HOST=x86_64-w64-mingw32 
 	cd ..
 
-# Compile Aezora
+# Compile Cryptcore
 	chmod +x share/genbuild.sh
 	chmod +x autogen.sh
 	./autogen.sh
@@ -33,6 +33,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp Aezora/src/aezorad.exe Aezora/src/aezora-cli.exe Aezora/src/aezora-tx.exe Aezora/src/qt/aezora-qt.exe .
-	zip Aezora-Windows.zip aezorad.exe aezora-cli.exe aezora-tx.exe aezora-qt.exe
-	rm -f aezorad.exe aezora-cli.exe aezora-tx.exe aezora-qt.exe
+	cp Cryptcore/src/cryptcored.exe Cryptcore/src/cryptcore-cli.exe Cryptcore/src/cryptcore-tx.exe Cryptcore/src/qt/cryptcore-qt.exe .
+	zip Cryptcore-Windows.zip cryptcored.exe cryptcore-cli.exe cryptcore-tx.exe cryptcore-qt.exe
+	rm -f cryptcored.exe cryptcore-cli.exe cryptcore-tx.exe cryptcore-qt.exe

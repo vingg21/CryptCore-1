@@ -5,9 +5,9 @@
 #include "libzerocoin/Denominations.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
-#include "zazr/zerocoin.h"
-#include "zazr/deterministicmint.h"
-#include "zazr/zazrwallet.h"
+#include "zcorr/zerocoin.h"
+#include "zcorr/deterministicmint.h"
+#include "zcorr/zcorrwallet.h"
 #include "libzerocoin/Coin.h"
 #include "amount.h"
 #include "chainparams.h"
@@ -16,7 +16,7 @@
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
 #include "txdb.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
@@ -40,7 +40,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     std::string strWalletFile = "unittestwallet.dat";
     CWalletDB walletdb(strWalletFile, "cr+");
     CWallet wallet(strWalletFile);
-    CzAZRWallet *czAZRWallet = new CzAZRWallet(wallet.strWalletFile);
+    CzCORRWallet *czCORRWallet = new CzCORRWallet(wallet.strWalletFile);
 
     // Get the 5 created mints.
     libzerocoin::CoinDenomination denom = libzerocoin::CoinDenomination::ZQ_FIFTY;
@@ -48,8 +48,8 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     for (unsigned int i = 0; i < TESTS_COINS_TO_ACCUMULATE; i++) {
         libzerocoin::PrivateCoin coin(ZCParams, denom, false);
         CDeterministicMint dMint;
-        czAZRWallet->GenerateDeterministicZAZR(denom, coin, dMint, true);
-        czAZRWallet->UpdateCount();
+        czCORRWallet->GenerateDeterministicZCORR(denom, coin, dMint, true);
+        czCORRWallet->UpdateCount();
         vCoins.emplace_back(coin);
     }
 

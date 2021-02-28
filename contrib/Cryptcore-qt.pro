@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/aezora-config.h \
+           src/cryptcore-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/aezora-config.h \
+           src/config/cryptcore-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -332,7 +332,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/aezora.moc \
+           src/qt/cryptcore.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/aezora-cli.cpp \
-           src/aezora-tx.cpp \
-           src/aezora.cpp \
+           src/cryptcore-cli.cpp \
+           src/cryptcore-tx.cpp \
+           src/cryptcore.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,8 +470,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/aezora.cpp \
-           src/qt/aezorastrings.cpp \
+           src/qt/cryptcore.cpp \
+           src/qt/cryptcorestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_aezora.cpp \
+           src/test/test_cryptcore.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,24 +640,24 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/aezora.qrc src/qt/aezora_locale.qrc
+RESOURCES += src/qt/cryptcore.qrc src/qt/cryptcore_locale.qrc
 
-TRANSLATIONS += src/qt/locale/aezora_bg.ts \
-                src/qt/locale/aezora_de.ts \
-                src/qt/locale/aezora_en.ts \
-                src/qt/locale/aezora_es.ts \
-                src/qt/locale/aezora_fi.ts \
-                src/qt/locale/aezora_fr.ts \
-                src/qt/locale/aezora_it.ts \
-                src/qt/locale/aezora_ja.ts \
-                src/qt/locale/aezora_pl.ts \
-                src/qt/locale/aezora_pt.ts \
-                src/qt/locale/aezora_ru.ts \
-                src/qt/locale/aezora_sk.ts \
-                src/qt/locale/aezora_sv.ts \
-                src/qt/locale/aezora_vi.ts \
-                src/qt/locale/aezora_zh_CN.ts \
-                src/qt/locale/aezora_zh_TW.ts
+TRANSLATIONS += src/qt/locale/cryptcore_bg.ts \
+                src/qt/locale/cryptcore_de.ts \
+                src/qt/locale/cryptcore_en.ts \
+                src/qt/locale/cryptcore_es.ts \
+                src/qt/locale/cryptcore_fi.ts \
+                src/qt/locale/cryptcore_fr.ts \
+                src/qt/locale/cryptcore_it.ts \
+                src/qt/locale/cryptcore_ja.ts \
+                src/qt/locale/cryptcore_pl.ts \
+                src/qt/locale/cryptcore_pt.ts \
+                src/qt/locale/cryptcore_ru.ts \
+                src/qt/locale/cryptcore_sk.ts \
+                src/qt/locale/cryptcore_sv.ts \
+                src/qt/locale/cryptcore_vi.ts \
+                src/qt/locale/cryptcore_zh_CN.ts \
+                src/qt/locale/cryptcore_zh_TW.ts
 
 DISTFILES += \
     README.md

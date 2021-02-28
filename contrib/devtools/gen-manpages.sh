@@ -7,10 +7,10 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$BINDIR/aezorad}
-BITCOINCLI=${BITCOINCLI:-$BINDIR/aezora-cli}
-BITCOINTX=${BITCOINTX:-$BINDIR/aezora-tx}
-BITCOINQT=${BITCOINQT:-$BINDIR/qt/aezora-qt}
+BITCOIND=${BITCOIND:-$BINDIR/cryptcored}
+BITCOINCLI=${BITCOINCLI:-$BINDIR/cryptcore-cli}
+BITCOINTX=${BITCOINTX:-$BINDIR/cryptcore-tx}
+BITCOINQT=${BITCOINQT:-$BINDIR/qt/cryptcore-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 

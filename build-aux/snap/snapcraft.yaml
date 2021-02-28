@@ -1,75 +1,75 @@
 # Copyright (c) 2018-2019 The Ion developers
 # Copyright (c) 2019 The PIVX developers
-# Copyright (c) 2020 The AEZORA developers
-name: aezora-core
+# Copyright (c) 2020 The CRYPTCORE developers
+name: cryptcore-core
 base: core18
 version: 4.0.99
-summary:   AEZORA (Private – Instant – Verified – Transaction)
+summary:   CRYPTCORE (Private – Instant – Verified – Transaction)
 description: |
-  AEZORA is an MIT licensed,
+  CRYPTCORE is an MIT licensed,
   open source, blockchain-based cryptocurrency with
   ultra fast transactions, low fees, high network decentralization, and
   Zero Knowledge cryptography proofs for industry-leading
   transaction anonymity.
 
-  - [Download](https://aezora.com/wp-content/uploads/2018/10/AEZORA-White.pdf) AEZORA White Paper PDF
+  - [Download](https://cryptcore.com/wp-content/uploads/2018/10/CRYPTCORE-White.pdf) CRYPTCORE White Paper PDF
 grade: devel
 confinement: strict
 apps:
   daemon:
-    command: aezorad
+    command: cryptcored
     plugs: [network, network-bind, home, removable-media]
-    desktop: aezorad.desktop
+    desktop: cryptcored.desktop
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   daemon-testnet:
-    command: aezorad --testnet
+    command: cryptcored --testnet
     plugs: [network, network-bind, home, removable-media]
-    desktop: aezorad_testnet.desktop
+    desktop: cryptcored_testnet.desktop
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   qt:
-    command: aezora-qt
+    command: cryptcore-qt
     plugs: [network, network-bind, network-status, unity7, desktop, desktop-legacy, wayland, x11, mir, opengl, home, gsettings, removable-media, screen-inhibit-control, pulseaudio, media-hub]
-    desktop: aezora-qt.desktop
+    desktop: cryptcore-qt.desktop
     environment:
       QT_XKB_CONFIG_ROOT: $SNAP_USER_DATA:$SNAP/usr/share:$QT_XKB_CONFIG_ROOT
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   qt-testnet:
-    command: aezora-qt --testnet
+    command: cryptcore-qt --testnet
     plugs: [network, network-bind, network-status, unity7, desktop, desktop-legacy, wayland, x11, mir, opengl, home, gsettings, removable-media, screen-inhibit-control, pulseaudio, media-hub]
-    desktop: aezora-qt_testnet.desktop
+    desktop: cryptcore-qt_testnet.desktop
     environment:
       QT_XKB_CONFIG_ROOT: $SNAP_USER_DATA:$SNAP/usr/share:$QT_XKB_CONFIG_ROOT
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   cli:
-    command: aezora-cli
+    command: cryptcore-cli
     plugs: [network, network-bind, home, removable-media]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   cli-testnet:
-    command: aezora-cli --testnet
+    command: cryptcore-cli --testnet
     plugs: [network, network-bind, home, removable-media]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   tx:
-    command: aezora-tx
+    command: cryptcore-tx
     plugs: [home]
   test:
-    command: test_aezora
+    command: test_cryptcore
     plugs: [home]
   testqt:
-    command: test_aezora-qt
+    command: test_cryptcore-qt
     plugs: [home]
 parts:
-  aezora-core:
-    source: https://github.com/Aezora/AEZORA
+  cryptcore-core:
+    source: https://github.com/Cryptcore/CRYPTCORE
     source-type: git
     source-tag: master
     plugin: nil
@@ -81,7 +81,7 @@ parts:
       #    project is called ioncore because ion exists already as package. For anybody
       #    offering non official release and using own SNAP, this variable should be used
       #    default value is "false", to enable it, use your projects binary prefix
-      OVERRIDEBINPREFIX="aezora"
+      OVERRIDEBINPREFIX="cryptcore"
       OVERRIDEDATADIR="false"
       OVERRIDECONF="${OVERRIDEDATADIR}"
       COPYCONF=0    # copy example config into users data folder, 1 = enabled
@@ -183,8 +183,8 @@ parts:
       echo "INSTALLATION OF ${BINPREF}-${SNAPCRAFT_PROJECT_VERSION}" # run make install with a prefix where to install
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       make install prefix=${SNAPCRAFT_PART_INSTALL}
-      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/aezora.png
-      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin_testnet.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/aezora_testnet.png
+      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/cryptcore.png
+      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin_testnet.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/cryptcore_testnet.png
       echo "-----------------------------------------------"
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       echo "POST INSTALL SCRIPTS OF ${BINPREF}-${SNAPCRAFT_PROJECT_VERSION}" # run make install with a prefix where to install
@@ -218,7 +218,7 @@ parts:
       fi
       echo "-----------------------------------------------"
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
-      echo "CONFIG FILE" # create .aezora folder and copy example config - !!!warning!!!: do not copy as aezora.conf
+      echo "CONFIG FILE" # create .cryptcore folder and copy example config - !!!warning!!!: do not copy as cryptcore.conf
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       mkdir -p ${SNAP_USER_COMMON}/.${DATADIR}
       if [ $COPYCONF = 1 ]; then

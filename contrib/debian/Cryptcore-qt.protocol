@@ -1,6 +1,6 @@
 [Protocol]
-exec=aezora-qt '%u'
-protocol=aezora
+exec=cryptcore-qt '%u'
+protocol=cryptcore
 input=none
 output=none
 helper=true

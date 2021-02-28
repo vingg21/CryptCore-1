@@ -10,7 +10,7 @@
 #include "script/interpreter.h"
 #include "util.h"
 #include "version.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #include <iostream>
 

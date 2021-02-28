@@ -11,7 +11,7 @@
 #include "script/interpreter.h"
 #include "script/sign.h"
 #include "uint256.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #ifdef ENABLE_WALLET
 #include "wallet/wallet_ismine.h"

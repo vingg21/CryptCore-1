@@ -76,12 +76,12 @@
         <translation>Adresa primatelja</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše AEZORA adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your CRYPTCORE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše CRYPTCORE adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše AEZORA adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
+        <source>These are your CRYPTCORE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše CRYPTCORE adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -196,16 +196,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>AEZORA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AZRs from being stolen by malware infecting your computer.</source>
-        <translation>AEZORA se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše AZR od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>CRYPTCORE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORRs from being stolen by malware infecting your computer.</source>
+        <translation>CRYPTCORE se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše CORR od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AZR&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše AZRove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORR&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše CORRove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -286,8 +286,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aezora.conf).</source>
-        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (aezora.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptcore.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (cryptcore.conf).</translation>
     </message>
 </context>
 <context>
@@ -507,8 +507,8 @@
         <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uazr per input.</source>
-        <translation>Može varirati +/- %1 uazr po unosu.</translation>
+        <source>Can vary +/- %1 ucorr per input.</source>
+        <translation>Može varirati +/- %1 ucorr po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -524,7 +524,7 @@
     </message>
 </context>
 <context>
-    <name>CoinControlAzrWidget</name>
+    <name>CoinControlCorrWidget</name>
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zAZR</source>
-        <translation>zAZR</translation>
+        <source>zCORR</source>
+        <translation>zCORR</translation>
     </message>
     <message>
         <source>All</source>
@@ -688,8 +688,8 @@
         <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AEZORA address.</source>
-        <translation>Unesena adresa "%1" nije važeća AEZORA adresa.</translation>
+        <source>The entered address "%1" is not a valid CRYPTCORE address.</source>
+        <translation>Unesena adresa "%1" nije važeća CRYPTCORE adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -752,16 +752,16 @@
         <translation>verzija</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AEZORA Core</source>
-        <translation>O AEZORA Core</translation>
+        <source>About CRYPTCORE Core</source>
+        <translation>O CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -807,24 +807,24 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to AEZORA Core.</source>
-        <translation>Dobrodošli u AEZORA Core.</translation>
+        <source>Welcome to CRYPTCORE Core.</source>
+        <translation>Dobrodošli u CRYPTCORE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AEZORA Core will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će AEZORA Core pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTCORE Core will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će CRYPTCORE Core pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>AEZORA Core will download and store a copy of the AEZORA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AEZORA Core preuzima i pohranjuje kopiju AEZORA blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>CRYPTCORE Core will download and store a copy of the CRYPTCORE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTCORE Core preuzima i pohranjuje kopiju CRYPTCORE blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Upotrijebite zadani direktorij podataka</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1028,8 +1028,8 @@
         <translation>Ako onemogućite potrošnju nepotvrđenih promjena, promjena s transakcijskog kanala bit će upotrijebljena sve dok ta transakcija nema barem jednu potvrdu. To također utječe na izračun salda.</translation>
     </message>
     <message>
-        <source>Automatically open the AEZORA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite AEZORA klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
+        <source>Automatically open the CRYPTCORE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite CRYPTCORE klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1048,12 +1048,12 @@
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start AEZORA after logging in to the system.</source>
-        <translation>Automatski pokrenite AEZORA nakon prijave u sustav.</translation>
+        <source>Automatically start CRYPTCORE after logging in to the system.</source>
+        <translation>Automatski pokrenite CRYPTCORE nakon prijave u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start AEZORA on system login</source>
-        <translation>Pokrenite AEZORA na prijavi u sustav</translation>
+        <source>&amp;Start CRYPTCORE on system login</source>
+        <translation>Pokrenite CRYPTCORE na prijavi u sustav</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1080,14 +1080,14 @@
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AEZORA.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja AEZORA-a.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTCORE.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja CRYPTCORE-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Aezora/Aezora-translations</source>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/Aezora/Aezora-translations</translation>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1095,36 +1095,36 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of AZR units to zAZR</source>
-        <translation>Omogućite automint AZR jedinica na zAZR</translation>
+        <source>Enable automatic minting of CORR units to zCORR</source>
+        <translation>Omogućite automint CORR jedinica na zCORR</translation>
     </message>
     <message>
-        <source>Enable zAZR Automint</source>
-        <translation>Omogući zAZR Automint</translation>
+        <source>Enable zCORR Automint</source>
+        <translation>Omogući zCORR Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming AZR which get automatically converted to zAZR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih AZR koji se automatski pretvara u zAZR putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming CORR which get automatically converted to zCORR via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih CORR koji se automatski pretvara u zCORR putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zAZR</source>
-        <translation>Postotak automatiziranog zAZR</translation>
+        <source>Percentage of autominted zCORR</source>
+        <translation>Postotak automatiziranog zCORR</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough AZR for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno AZR za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CORR for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno CORR za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zAZR Denomination</source>
-        <translation>Preferirana Automint zAZR denominacijad</translation>
+        <source>Preferred Automint zCORR Denomination</source>
+        <translation>Preferirana Automint zCORR denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
-        <source>Connect to the AEZORA network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s AEZORA mrežom putem SOCKS5 proxy poslužitelja.</translation>
+        <source>Connect to the CRYPTCORE network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s CRYPTCORE mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1256,10 +1256,10 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
     </message>
 </context>
 <context>
-    <name>AEZORAGUI</name>
+    <name>CRYPTCOREGUI</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1286,8 +1286,8 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>AEZORA Core client</source>
-        <translation>AZRIX Core Klijent</translation>
+        <source>CRYPTCORE Core client</source>
+        <translation>CORRIX Core Klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1352,12 +1352,12 @@ Adresa: %4
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start aezora: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti aezora: clik-to-pay handler</translation>
+        <source>Cannot start cryptcore: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti cryptcore: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AEZORA address or malformed URI parameters.</source>
-        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom AEZORA adresom ili nepravilnim URI parametrima.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CRYPTCORE address or malformed URI parameters.</source>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom CRYPTCORE adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1456,8 +1456,8 @@ Adresa: %4
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address (e.g. %1)</source>
-        <translation>Unesite AEZORA adresu (npr., %1)</translation>
+        <source>Enter a CRYPTCORE address (e.g. %1)</source>
+        <translation>Unesite CRYPTCORE adresu (npr., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1500,8 +1500,8 @@ Adresa: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     </context>
 <context>
@@ -1576,8 +1576,8 @@ Adresa: %4
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the AEZORA debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorite AEZORA debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
+        <source>Open the CRYPTCORE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorite CRYPTCORE debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1712,8 +1712,8 @@ Adresa: %4
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zAZR Backup Path:</source>
-        <translation>Prilagođeni put zAZR sigurnosne kopije:</translation>
+        <source>Custom zCORR Backup Path:</source>
+        <translation>Prilagođeni put zCORR sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1792,8 +1792,8 @@ Adresa: %4
         <translation>Iz:</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>Dobrodošli na AEZORA RPC konzolu.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>Dobrodošli na CRYPTCORE RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -1996,12 +1996,12 @@ Adresa: %4
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zAZR.</translation>
+        <source>zCORR is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zCORR.</translation>
     </message>
     <message>
-        <source>Version 1 zAZR require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zAZR zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zCORR require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zCORR zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2116,8 +2116,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>Dobrodošli na AEZORA RPC konzolu.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>Dobrodošli na CRYPTCORE RPC konzolu.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -2433,8 +2433,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AEZORA Core is shutting down...</source>
-        <translation>AEZORA Core se zatvara ...</translation>
+        <source>CRYPTCORE Core is shutting down...</source>
+        <translation>CRYPTCORE Core se zatvara ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2455,15 +2455,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2478,8 +2478,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core programeri</translation>
     </message>
     <message>
-        <source>The AEZORA Core developers</source>
-        <translation>AEZORA Core programeri</translation>
+        <source>The CRYPTCORE Core developers</source>
+        <translation>CRYPTCORE Core programeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2749,12 +2749,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>AZR Stake</source>
-        <translation>AZR Stake</translation>
+        <source>CORR Stake</source>
+        <translation>CORR Stake</translation>
     </message>
     <message>
-        <source>zAZR Stake</source>
-        <translation>zAZR Stake</translation>
+        <source>zCORR Stake</source>
+        <translation>zCORR Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2773,24 +2773,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted AZR to zAZR</source>
-        <translation>Pretvoreni AZR u zAZR</translation>
+        <source>Converted CORR to zCORR</source>
+        <translation>Pretvoreni CORR u zCORR</translation>
     </message>
     <message>
-        <source>Spent zAZR</source>
-        <translation>Utrošeni zAZR</translation>
+        <source>Spent zCORR</source>
+        <translation>Utrošeni zCORR</translation>
     </message>
     <message>
-        <source>Received AZR from zAZR</source>
-        <translation>Primljeni AZR od zAZR</translation>
+        <source>Received CORR from zCORR</source>
+        <translation>Primljeni CORR od zCORR</translation>
     </message>
     <message>
-        <source>Minted Change as zAZR from zAZR Spend</source>
-        <translation>Mintana razlika zAZR od zAZR Utroška</translation>
+        <source>Minted Change as zCORR from zCORR Spend</source>
+        <translation>Mintana razlika zCORR od zCORR Utroška</translation>
     </message>
     <message>
-        <source>Converted zAZR to AZR</source>
-        <translation>Pretvoreni zAZR u AZR</translation>
+        <source>Converted zCORR to CORR</source>
+        <translation>Pretvoreni zCORR u CORR</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2886,8 +2886,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 AZR.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 AZR.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CORR.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 CORR.</translation>
     </message>
 </context>
 <context>
@@ -2909,18 +2909,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZAzrControlDialog</name>
+    <name>ZCorrControlDialog</name>
     <message>
-        <source>Select zAZR to Spend</source>
-        <translation>Odabrani zAZR za utrošiti</translation>
+        <source>Select zCORR to Spend</source>
+        <translation>Odabrani zCORR za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
         <translation>Upravljanje novčićem</translation>
     </message>
     <message>
-        <source>zAzr</source>
-        <translation>zAzr</translation>
+        <source>zCorr</source>
+        <translation>zCorr</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2940,7 +2940,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     </context>
 <context>
-    <name>aezora-core</name>
+    <name>cryptcore-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
@@ -2966,8 +2966,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izračunata kontrolna točka akumulatora nije ono što se bilježi indeksom blokova</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. AEZORA Core is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. AEZORA Core vjerojatno već radi.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTCORE Core is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. CRYPTCORE Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -2994,16 +2994,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zAZR mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zCORR mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za AZR unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za CORR unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zAZR unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zCORR unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3038,12 +3038,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u AZR / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u CORR / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u AZR / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u CORR / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3138,20 +3138,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ovaj proizvod uključuje softver razvijen od strane OpenSSL projekta za uporabu u OpenSSL Toolkitu i kriptografskom softveru kojeg je napisao Eric Young i UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. AEZORA Core is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. AEZORA Core vjerojatno već radi.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTCORE Core is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. CRYPTCORE Core vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 AZR.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 CORR.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 AZR.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 CORR.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3166,8 +3166,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, AEZORA Core neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, CRYPTCORE Core neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3294,8 +3294,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The AEZORA Core Developers</source>
-        <translation>Autorska prava (C) 2015-%i The AEZORA Core Developers</translation>
+        <source>Copyright (C) 2015-%i The CRYPTCORE Core Developers</source>
+        <translation>Autorska prava (C) 2015-%i The CRYPTCORE Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3375,8 +3375,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pogreška pri učitavanju wallet.dat: novčanik oštećen</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of AEZORA Core</source>
-        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju AEZORA jezgre</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CRYPTCORE Core</source>
+        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju CRYPTCORE jezgre</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3423,8 +3423,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in AZR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u AZR / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in CORR/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u CORR / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3463,8 +3463,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. AEZORA Core is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. AEZORA Core se zatvara.</translation>
+        <source>Initialization sanity check failed. CRYPTCORE Core is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. CRYPTCORE Core se zatvara.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -3523,8 +3523,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the AZR and zAZR money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku AZR i zAZR ponude novca</translation>
+        <source>Reindex the CORR and zCORR money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku CORR i zCORR ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3562,8 +3562,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
-        <source>Disable all AEZORA specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije AEZORA (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all CRYPTCORE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije CRYPTCORE (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -3598,8 +3598,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zAZR sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zCORR sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4002,8 +4002,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zAZR wallet...</source>
-        <translation>Sinkronizacija zAZR novčanika...</translation>
+        <source>Syncing zCORR wallet...</source>
+        <translation>Sinkronizacija zCORR novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4110,8 +4110,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zAZR</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zAZR-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCORR</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zCORR-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4126,8 +4126,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart AEZORA Core to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite AEZORA Core</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTCORE Core to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Wallet options:</source>

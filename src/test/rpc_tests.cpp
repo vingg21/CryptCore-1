@@ -10,7 +10,7 @@
 #include "netbase.h"
 #include "util.h"
 
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <boost/algorithm/string.hpp>
 #include <boost/test/unit_test.hpp>

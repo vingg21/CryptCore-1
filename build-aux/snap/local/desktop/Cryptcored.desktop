@@ -2,14 +2,14 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=AEZORA Core Daemon SNAP
+Name=CRYPTCORE Core Daemon SNAP
 Comment=main
-GenericName=AEZORA Digital Currency Daemon Client main network
-Exec=aezora-core.daemon %u
+GenericName=CRYPTCORE Digital Currency Daemon Client main network
+Exec=cryptcore-core.daemon %u
 Terminal=true
 Type=Application
-Icon=${SNAP}/share/pixmaps/aezora.png
-MimeType=x-scheme-handler/azr;
+Icon=${SNAP}/share/pixmaps/cryptcore.png
+MimeType=x-scheme-handler/corr;
 Categories=X-Office;X-Finance;
-Keywords=internet;aezora;zazr;core;wallet;daemon;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Keywords=internet;cryptcore;zcorr;core;wallet;daemon;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
 Version=1.0

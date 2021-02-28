@@ -10,7 +10,7 @@ if(CCACHE_PROGRAM)
     set(CXX_LAUNCHER "${CCACHE_PROGRAM}")
 endif()
 
-project(AEZORA)
+project(CRYPTCORE)
 
 set(BDB_VER "4.8.30")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/contrib/cmake")
@@ -42,7 +42,7 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
         message(STATUS "Compiling on WSL")
         set(ENV{DISPLAY} ":0")
         set(ENV{LIBGL_ALWAYS_INDIRECT} 1)
-        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/aezora-run)
+        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/cryptcore-run)
         message(WARNING "WSL Runtime support requires VcXsrv to be installed and running")
     else()
         message(STATUS "Compiling on Linux")
@@ -96,8 +96,8 @@ else()
     )
 endif()
 
-# run configure if aezora_config.h doesn't exist
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/aezora-config.h")
+# run configure if cryptcore_config.h doesn't exist
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/cryptcore-config.h")
 else()
     execute_process(
         COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/configure ${CONFIGSITE} ${BDB_CONFIGURE_FLAGS} ${BIGNUM_CONFIGURE_FLAGS} ${SSL_CONFIGURE_FLAGS}
@@ -319,7 +319,7 @@ set(SERVER_SOURCES
         ./src/txdb.cpp
         ./src/txmempool.cpp
         ./src/validationinterface.cpp
-        ./src/zazrchain.cpp
+        ./src/zcorrchain.cpp
         )
 add_library(SERVER_A STATIC ${BitcoinHeaders} ${SERVER_SOURCES})
 if(MINIUPNP_FOUND)
@@ -358,11 +358,11 @@ set(WALLET_SOURCES
         ./src/masternodeconfig.cpp
         ./src/masternodeman.cpp
         ./src/messagesigner.cpp
-        ./src/zazr/mintpool.cpp
+        ./src/zcorr/mintpool.cpp
         ./src/wallet/hdchain.cpp
         ./src/wallet/rpcdump.cpp
-        ./src/zazr/deterministicmint.cpp
-        ./src/zazr/zerocoin.cpp
+        ./src/zcorr/deterministicmint.cpp
+        ./src/zcorr/zerocoin.cpp
         ./src/wallet/scriptpubkeyman.cpp
         ./src/wallet/rpcwallet.cpp
         ./src/kernel.cpp
@@ -371,10 +371,10 @@ set(WALLET_SOURCES
         ./src/wallet/wallet_zerocoin.cpp
         ./src/wallet/wallet_ismine.cpp
         ./src/wallet/walletdb.cpp
-        ./src/zazr/zazrwallet.cpp
-        ./src/zazr/zazrtracker.cpp
-        ./src/zazr/zazrmodule.cpp
-        ./src/zazr/zpos.cpp
+        ./src/zcorr/zcorrwallet.cpp
+        ./src/zcorr/zcorrtracker.cpp
+        ./src/zcorr/zcorrmodule.cpp
+        ./src/zcorr/zpos.cpp
         ./src/stakeinput.cpp
         )
 add_library(WALLET_A STATIC ${BitcoinHeaders} ${WALLET_SOURCES})
@@ -469,9 +469,9 @@ set(COMMON_SOURCES
         ./src/consensus/tx_verify.cpp
         ./src/consensus/zerocoin_verify.cpp
         ./src/primitives/block.cpp
-        ./src/zazr/deterministicmint.cpp
+        ./src/zcorr/deterministicmint.cpp
         ./src/primitives/transaction.cpp
-        ./src/zazr/zerocoin.cpp
+        ./src/zcorr/zerocoin.cpp
         ./src/core_read.cpp
         ./src/core_write.cpp
         ./src/hash.cpp
@@ -539,13 +539,13 @@ link_directories(
         ${CMAKE_SOURCE_DIR}/src/secp256k1/.libs
         )
 
-set(aezora-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezora-cli.cpp)
+set(cryptcore-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcore-cli.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND aezora-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezora-cli-res.rc)
+    list(APPEND cryptcore-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcore-cli-res.rc)
 endif()
-add_executable(aezora-cli ${aezora-cli_SOURCES})
-add_dependencies(aezora-cli libunivalue)
-target_link_libraries(aezora-cli
+add_executable(cryptcore-cli ${cryptcore-cli_SOURCES})
+add_dependencies(cryptcore-cli libunivalue)
+target_link_libraries(cryptcore-cli
         CLI_A
         univalue
         UTIL_A
@@ -553,16 +553,16 @@ target_link_libraries(aezora-cli
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(aezora-cli ${WINDOWS_LDADD})
+    target_link_libraries(cryptcore-cli ${WINDOWS_LDADD})
 endif()
 
-set(aezora-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezora-tx.cpp)
+set(cryptcore-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcore-tx.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND aezora-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezora-tx-res.rc)
+    list(APPEND cryptcore-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcore-tx-res.rc)
 endif()
-add_executable(aezora-tx ${aezora-tx_SOURCES})
-add_dependencies(aezora-tx libunivalue libsecp256k1)
-target_link_libraries(aezora-tx
+add_executable(cryptcore-tx ${cryptcore-tx_SOURCES})
+add_dependencies(cryptcore-tx libunivalue libsecp256k1)
+target_link_libraries(cryptcore-tx
         univalue
         COMMON_A
         ZEROCOIN_A
@@ -572,26 +572,26 @@ target_link_libraries(aezora-tx
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(aezora-tx ${WINDOWS_LDADD})
+    target_link_libraries(cryptcore-tx ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(aezora-tx ${GMP_LIBRARY})
+    target_link_libraries(cryptcore-tx ${GMP_LIBRARY})
 endif()
 
 link_directories(${CMAKE_BINARY_DIR})
 
-set(aezorad_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezorad.cpp)
+set(cryptcored_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcored.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND aezorad_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/aezorad-res.rc)
+    list(APPEND cryptcored_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/cryptcored-res.rc)
 endif()
-add_executable(aezorad ${aezorad_SOURCES} ${BitcoinHeaders})
-add_dependencies(aezorad libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_include_directories(aezorad PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
+add_executable(cryptcored ${cryptcored_SOURCES} ${BitcoinHeaders})
+add_dependencies(cryptcored libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_include_directories(cryptcored PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
         ${LIBEVENT_INCLUDE_DIR})
-target_link_libraries(aezorad
+target_link_libraries(cryptcored
         pthread
         SERVER_A
         WALLET_A
@@ -608,22 +608,22 @@ target_link_libraries(aezorad
         )
 if($ENV{target} MATCHES "Windows")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wstack-protector -fstack-protector-all -fPIE -pipe -O2 -pthread -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie --static")
-    target_link_libraries(aezorad ${WINDOWS_LDADD})
+    target_link_libraries(cryptcored ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(aezorad ${GMP_LIBRARY})
-    target_include_directories(aezorad PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(cryptcored ${GMP_LIBRARY})
+    target_include_directories(cryptcored PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(aezorad ZMQ_A ${ZMQ_LIB})
-    target_include_directories(aezorad PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(cryptcored ZMQ_A ${ZMQ_LIB})
+    target_include_directories(cryptcored PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(aezorad PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(aezorad ${MINIUPNP_LIBRARY})
-    target_include_directories(aezorad PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(cryptcored PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(cryptcored ${MINIUPNP_LIBRARY})
+    target_include_directories(cryptcored PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(aezorad -lpthread)
+target_link_libraries(cryptcored -lpthread)
 
 add_subdirectory(src/qt)

@@ -448,7 +448,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from Aezora core
+    // Update address book model from Cryptcore core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

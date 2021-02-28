@@ -1,14 +1,14 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The AEZORA developers
+// Copyright (c) 2015-2019 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
-#include "qt/aezora/aezoragui.h"
+#include "qt/cryptcore/cryptcoregui.h"
 
 #include "clientmodel.h"
 #include "guiconstants.h"
@@ -17,8 +17,8 @@
 #include "net.h"
 #include "networkstyle.h"
 #include "optionsmodel.h"
-#include "qt/aezora/splash.h"
-#include "qt/aezora/welcomecontentwidget.h"
+#include "qt/cryptcore/splash.h"
+#include "qt/cryptcore/welcomecontentwidget.h"
 #include "utilitydialog.h"
 #include "winshutdownmonitor.h"
 
@@ -83,7 +83,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("aezora-core", psz).toStdString();
+    return QCoreApplication::translate("cryptcore-core", psz).toStdString();
 }
 
 static QString GetLangTerritory(bool forceLangFromSetting = false)
@@ -130,11 +130,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in aezora.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in cryptcore.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in aezora.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in cryptcore.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -150,7 +150,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating AEZORA Core startup and shutdown.
+/** Class encapsulating CRYPTCORE Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore : public QObject
@@ -177,7 +177,7 @@ private:
     void handleRunawayException(const std::exception* e);
 };
 
-/** Main AEZORA application object */
+/** Main CRYPTCORE application object */
 class BitcoinApplication : public QApplication
 {
     Q_OBJECT
@@ -209,7 +209,7 @@ public:
     /// Get process return value
     int getReturnValue() { return returnValue; }
 
-    /// Get window identifier of QMainWindow (AEZORAGUI)
+    /// Get window identifier of QMainWindow (CRYPTCOREGUI)
     WId getMainWinId() const;
 
 public Q_SLOTS:
@@ -230,7 +230,7 @@ private:
     QThread* coreThread;
     OptionsModel* optionsModel;
     ClientModel* clientModel;
-    AEZORAGUI* window;
+    CRYPTCOREGUI* window;
     QTimer* pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer;
@@ -242,7 +242,7 @@ private:
     void startThread();
 };
 
-#include "aezora.moc"
+#include "cryptcore.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -360,10 +360,10 @@ void BitcoinApplication::createOptionsModel()
 
 void BitcoinApplication::createWindow(const NetworkStyle* networkStyle)
 {
-    window = new AEZORAGUI(networkStyle, 0);
+    window = new CRYPTCOREGUI(networkStyle, 0);
 
     pollShutdownTimer = new QTimer(window);
-    connect(pollShutdownTimer, &QTimer::timeout, window, &AEZORAGUI::detectShutdown);
+    connect(pollShutdownTimer, &QTimer::timeout, window, &CRYPTCOREGUI::detectShutdown);
     pollShutdownTimer->start(200);
 }
 
@@ -411,7 +411,7 @@ void BitcoinApplication::startThread()
     connect(executor, &BitcoinCore::runawayException, this, &BitcoinApplication::handleRunawayException);
     connect(this, &BitcoinApplication::requestedInitialize, executor, &BitcoinCore::initialize);
     connect(this, &BitcoinApplication::requestedShutdown, executor, &BitcoinCore::shutdown);
-    connect(window, &AEZORAGUI::requestedRestart, executor, &BitcoinCore::restart);
+    connect(window, &CRYPTCOREGUI::requestedRestart, executor, &BitcoinCore::restart);
     /*  make sure executor object is deleted in its own thread */
     connect(this, &BitcoinApplication::stopThread, executor, &QObject::deleteLater);
     connect(this, &BitcoinApplication::stopThread, coreThread, &QThread::quit);
@@ -477,8 +477,8 @@ void BitcoinApplication::initializeResult(int retval)
         if (pwalletMain) {
             walletModel = new WalletModel(pwalletMain, optionsModel);
 
-            window->addWallet(AEZORAGUI::DEFAULT_WALLET, walletModel);
-            window->setCurrentWallet(AEZORAGUI::DEFAULT_WALLET);
+            window->addWallet(CRYPTCOREGUI::DEFAULT_WALLET, walletModel);
+            window->setCurrentWallet(CRYPTCOREGUI::DEFAULT_WALLET);
 
             connect(walletModel, &WalletModel::coinsSent,
                     paymentServer, &PaymentServer::fetchPaymentACK);
@@ -495,9 +495,9 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // AEZORA: URIs or payment requests:
-        //connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &AEZORAGUI::handlePaymentRequest);
-        connect(window, &AEZORAGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
+        // CRYPTCORE: URIs or payment requests:
+        //connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &CRYPTCOREGUI::handlePaymentRequest);
+        connect(window, &CRYPTCOREGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
         connect(paymentServer, &PaymentServer::message, [this](const QString& title, const QString& message, unsigned int style) {
           window->message(title, message, style);
         });
@@ -516,7 +516,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString& message)
 {
-    QMessageBox::critical(0, "Runaway exception", AEZORAGUI::tr("A fatal error occurred. AEZORA can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", CRYPTCOREGUI::tr("A fatal error occurred. CRYPTCORE can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(1);
 }
 
@@ -540,8 +540,8 @@ int main(int argc, char* argv[])
 // Do not refer to data directory yet, this can be overridden by Intro::pickDataDirectory
 
 /// 2. Basic Qt initialization (not dependent on parameters or configuration)
-    Q_INIT_RESOURCE(aezora_locale);
-    Q_INIT_RESOURCE(aezora);
+    Q_INIT_RESOURCE(cryptcore_locale);
+    Q_INIT_RESOURCE(cryptcore);
 
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
@@ -602,17 +602,17 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse aezora.conf
+    /// 6. Determine availability of data directory and parse cryptcore.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false))) {
-        QMessageBox::critical(0, QObject::tr("AEZORA Core"),
+        QMessageBox::critical(0, QObject::tr("CRYPTCORE Core"),
             QObject::tr("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
     } catch (const std::exception& e) {
-        QMessageBox::critical(0, QObject::tr("AEZORA Core"),
+        QMessageBox::critical(0, QObject::tr("CRYPTCORE Core"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return 0;
     }
@@ -625,7 +625,7 @@ int main(int argc, char* argv[])
 
     // Check for -testnet or -regtest parameter (Params() calls are only valid after this clause)
     if (!SelectParamsFromCommandLine()) {
-        QMessageBox::critical(0, QObject::tr("AEZORA Core"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
+        QMessageBox::critical(0, QObject::tr("CRYPTCORE Core"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
         return 1;
     }
 #ifdef ENABLE_WALLET
@@ -644,7 +644,7 @@ int main(int argc, char* argv[])
     /// 7a. parse masternode.conf
     std::string strErr;
     if (!masternodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("AEZORA Core"),
+        QMessageBox::critical(0, QObject::tr("CRYPTCORE Core"),
             QObject::tr("Error reading masternode configuration file: %1").arg(strErr.c_str()));
         return 0;
     }
@@ -659,7 +659,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // aezora: links repeatedly have their payment requests routed to this process:
+    // cryptcore: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -708,7 +708,7 @@ int main(int argc, char* argv[])
         app.createWindow(networkStyle.data());
         app.requestInitialize();
 #if defined(Q_OS_WIN)
-        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("AEZORA Core didn't yet exit safely..."), (HWND)app.getMainWinId());
+        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("CRYPTCORE Core didn't yet exit safely..."), (HWND)app.getMainWinId());
 #endif
         app.exec();
         app.requestShutdown();

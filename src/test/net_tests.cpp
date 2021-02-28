@@ -9,7 +9,7 @@
 #include "serialize.h"
 #include "streams.h"
 
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <string>
 

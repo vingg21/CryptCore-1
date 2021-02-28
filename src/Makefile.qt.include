@@ -2,10 +2,10 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/aezora-qt
+bin_PROGRAMS += qt/cryptcore-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# aezora qt core #
+# cryptcore qt core #
 include Makefile.qt_locale.include
 
 QT_FORMS_UI = \
@@ -18,56 +18,56 @@ QT_FORMS_UI = \
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/aezora/forms/loadingdialog.ui \
-  qt/forms/zazrcontroldialog.ui \
-  qt/aezora/forms/snackbar.ui \
-  qt/aezora/forms/navmenuwidget.ui \
-  qt/aezora/forms/lockunlock.ui \
-  qt/aezora/forms/expandablebutton.ui \
-  qt/aezora/forms/receivedialog.ui \
-  qt/aezora/forms/topbar.ui \
-  qt/aezora/forms/txrow.ui \
-  qt/aezora/forms/dashboardwidget.ui \
-  qt/aezora/forms/addresslabelrow.ui \
-  qt/aezora/forms/contactdropdownrow.ui \
-  qt/aezora/forms/mninfodialog.ui \
-  qt/aezora/forms/optionbutton.ui \
-  qt/aezora/forms/masternodewizarddialog.ui \
-  qt/aezora/forms/mnrow.ui \
-  qt/aezora/forms/masternodeswidget.ui \
-  qt/aezora/forms/myaddressrow.ui \
-  qt/aezora/forms/csrow.ui \
-  qt/aezora/forms/sendchangeaddressdialog.ui \
-  qt/aezora/forms/sendconfirmdialog.ui \
-  qt/aezora/forms/sendcustomfeedialog.ui \
-  qt/aezora/forms/sendchangeaddressdialog.ui \
-  qt/aezora/forms/sendmultirow.ui \
-  qt/aezora/forms/send.ui \
-  qt/aezora/forms/addnewaddressdialog.ui \
-  qt/aezora/forms/addnewcontactdialog.ui \
-  qt/aezora/forms/requestdialog.ui \
-  qt/aezora/forms/receivewidget.ui \
-  qt/aezora/forms/tooltipmenu.ui \
-  qt/aezora/forms/addresseswidget.ui \
-  qt/aezora/forms/defaultdialog.ui \
-  qt/aezora/forms/privacywidget.ui \
-  qt/aezora/forms/coldstakingwidget.ui \
-  qt/aezora/settings/forms/settingsbackupwallet.ui \
-  qt/aezora/settings/forms/settingsexportcsv.ui \
-  qt/aezora/settings/forms/settingsbittoolwidget.ui \
-  qt/aezora/settings/forms/settingsconsolewidget.ui \
-  qt/aezora/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/aezora/settings/forms/settingsfaqwidget.ui \
-  qt/aezora/settings/forms/settingsinformationwidget.ui \
-  qt/aezora/settings/forms/settingsmainoptionswidget.ui \
-  qt/aezora/settings/forms/settingsmultisenddialog.ui \
-  qt/aezora/settings/forms/settingsmultisendwidget.ui \
-  qt/aezora/settings/forms/settingssignmessagewidgets.ui \
-  qt/aezora/settings/forms/settingswalletoptionswidget.ui \
-  qt/aezora/settings/forms/settingswalletrepairwidget.ui \
-  qt/aezora/settings/forms/settingswidget.ui \
-  qt/aezora/forms/welcomecontentwidget.ui \
-  qt/aezora/forms/splash.ui
+  qt/cryptcore/forms/loadingdialog.ui \
+  qt/forms/zcorrcontroldialog.ui \
+  qt/cryptcore/forms/snackbar.ui \
+  qt/cryptcore/forms/navmenuwidget.ui \
+  qt/cryptcore/forms/lockunlock.ui \
+  qt/cryptcore/forms/expandablebutton.ui \
+  qt/cryptcore/forms/receivedialog.ui \
+  qt/cryptcore/forms/topbar.ui \
+  qt/cryptcore/forms/txrow.ui \
+  qt/cryptcore/forms/dashboardwidget.ui \
+  qt/cryptcore/forms/addresslabelrow.ui \
+  qt/cryptcore/forms/contactdropdownrow.ui \
+  qt/cryptcore/forms/mninfodialog.ui \
+  qt/cryptcore/forms/optionbutton.ui \
+  qt/cryptcore/forms/masternodewizarddialog.ui \
+  qt/cryptcore/forms/mnrow.ui \
+  qt/cryptcore/forms/masternodeswidget.ui \
+  qt/cryptcore/forms/myaddressrow.ui \
+  qt/cryptcore/forms/csrow.ui \
+  qt/cryptcore/forms/sendchangeaddressdialog.ui \
+  qt/cryptcore/forms/sendconfirmdialog.ui \
+  qt/cryptcore/forms/sendcustomfeedialog.ui \
+  qt/cryptcore/forms/sendchangeaddressdialog.ui \
+  qt/cryptcore/forms/sendmultirow.ui \
+  qt/cryptcore/forms/send.ui \
+  qt/cryptcore/forms/addnewaddressdialog.ui \
+  qt/cryptcore/forms/addnewcontactdialog.ui \
+  qt/cryptcore/forms/requestdialog.ui \
+  qt/cryptcore/forms/receivewidget.ui \
+  qt/cryptcore/forms/tooltipmenu.ui \
+  qt/cryptcore/forms/addresseswidget.ui \
+  qt/cryptcore/forms/defaultdialog.ui \
+  qt/cryptcore/forms/privacywidget.ui \
+  qt/cryptcore/forms/coldstakingwidget.ui \
+  qt/cryptcore/settings/forms/settingsbackupwallet.ui \
+  qt/cryptcore/settings/forms/settingsexportcsv.ui \
+  qt/cryptcore/settings/forms/settingsbittoolwidget.ui \
+  qt/cryptcore/settings/forms/settingsconsolewidget.ui \
+  qt/cryptcore/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/cryptcore/settings/forms/settingsfaqwidget.ui \
+  qt/cryptcore/settings/forms/settingsinformationwidget.ui \
+  qt/cryptcore/settings/forms/settingsmainoptionswidget.ui \
+  qt/cryptcore/settings/forms/settingsmultisenddialog.ui \
+  qt/cryptcore/settings/forms/settingsmultisendwidget.ui \
+  qt/cryptcore/settings/forms/settingssignmessagewidgets.ui \
+  qt/cryptcore/settings/forms/settingswalletoptionswidget.ui \
+  qt/cryptcore/settings/forms/settingswalletrepairwidget.ui \
+  qt/cryptcore/settings/forms/settingswidget.ui \
+  qt/cryptcore/forms/welcomecontentwidget.ui \
+  qt/cryptcore/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -76,7 +76,7 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/aezora/moc_aezoragui.cpp \
+  qt/cryptcore/moc_cryptcoregui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
@@ -104,79 +104,79 @@ QT_MOC_CPP = \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
-  qt/aezora/moc_loadingdialog.cpp \
-  qt/moc_zazrcontroldialog.cpp \
-  qt/aezora/moc_pwidget.cpp \
-  qt/aezora/moc_focuseddialog.cpp \
-  qt/aezora/moc_snackbar.cpp \
-  qt/aezora/moc_navmenuwidget.cpp \
-  qt/aezora/moc_lockunlock.cpp \
-  qt/aezora/moc_expandablebutton.cpp \
-  qt/aezora/moc_furabstractlistitemdelegate.cpp \
-  qt/aezora/moc_receivedialog.cpp \
-  qt/aezora/moc_pfborderimage.cpp \
-  qt/aezora/moc_topbar.cpp \
-  qt/aezora/moc_txrow.cpp \
-  qt/aezora/moc_dashboardwidget.cpp \
-  qt/aezora/moc_addresslabelrow.cpp \
-  qt/aezora/moc_contactdropdownrow.cpp \
-  qt/aezora/moc_mninfodialog.cpp \
-  qt/aezora/moc_optionbutton.cpp \
-  qt/aezora/moc_coldstakingmodel.cpp \
-  qt/aezora/moc_mnmodel.cpp \
-  qt/aezora/moc_masternodewizarddialog.cpp \
-  qt/aezora/moc_mnrow.cpp \
-  qt/aezora/moc_masternodeswidget.cpp \
-  qt/aezora/moc_myaddressrow.cpp \
-  qt/aezora/moc_csrow.cpp \
-  qt/aezora/moc_contactsdropdown.cpp \
-  qt/aezora/moc_sendchangeaddressdialog.cpp \
-  qt/aezora/moc_sendconfirmdialog.cpp \
-  qt/aezora/moc_sendcustomfeedialog.cpp \
-  qt/aezora/moc_sendchangeaddressdialog.cpp \
-  qt/aezora/moc_sendmultirow.cpp \
-  qt/aezora/moc_send.cpp \
-  qt/aezora/moc_addnewaddressdialog.cpp \
-  qt/aezora/moc_addnewcontactdialog.cpp \
-  qt/aezora/moc_requestdialog.cpp \
-  qt/aezora/moc_receivewidget.cpp \
-  qt/aezora/moc_tooltipmenu.cpp \
-  qt/aezora/moc_addresseswidget.cpp \
-  qt/aezora/moc_defaultdialog.cpp \
-  qt/aezora/moc_privacywidget.cpp \
-  qt/aezora/moc_coldstakingwidget.cpp \
-  qt/aezora/settings/moc_settingsbackupwallet.cpp \
-  qt/aezora/settings/moc_settingsexportcsv.cpp \
-  qt/aezora/settings/moc_settingsbittoolwidget.cpp \
-  qt/aezora/settings/moc_settingsconsolewidget.cpp \
-  qt/aezora/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/aezora/settings/moc_settingsfaqwidget.cpp \
-  qt/aezora/settings/moc_settingsinformationwidget.cpp \
-  qt/aezora/settings/moc_settingsmainoptionswidget.cpp \
-  qt/aezora/settings/moc_settingsmultisenddialog.cpp \
-  qt/aezora/settings/moc_settingsmultisendwidget.cpp \
-  qt/aezora/settings/moc_settingssignmessagewidgets.cpp \
-  qt/aezora/settings/moc_settingswalletoptionswidget.cpp \
-  qt/aezora/settings/moc_settingswalletrepairwidget.cpp \
-  qt/aezora/settings/moc_settingswidget.cpp \
-  qt/aezora/moc_welcomecontentwidget.cpp \
-  qt/aezora/moc_splash.cpp
+  qt/cryptcore/moc_loadingdialog.cpp \
+  qt/moc_zcorrcontroldialog.cpp \
+  qt/cryptcore/moc_pwidget.cpp \
+  qt/cryptcore/moc_focuseddialog.cpp \
+  qt/cryptcore/moc_snackbar.cpp \
+  qt/cryptcore/moc_navmenuwidget.cpp \
+  qt/cryptcore/moc_lockunlock.cpp \
+  qt/cryptcore/moc_expandablebutton.cpp \
+  qt/cryptcore/moc_furabstractlistitemdelegate.cpp \
+  qt/cryptcore/moc_receivedialog.cpp \
+  qt/cryptcore/moc_pfborderimage.cpp \
+  qt/cryptcore/moc_topbar.cpp \
+  qt/cryptcore/moc_txrow.cpp \
+  qt/cryptcore/moc_dashboardwidget.cpp \
+  qt/cryptcore/moc_addresslabelrow.cpp \
+  qt/cryptcore/moc_contactdropdownrow.cpp \
+  qt/cryptcore/moc_mninfodialog.cpp \
+  qt/cryptcore/moc_optionbutton.cpp \
+  qt/cryptcore/moc_coldstakingmodel.cpp \
+  qt/cryptcore/moc_mnmodel.cpp \
+  qt/cryptcore/moc_masternodewizarddialog.cpp \
+  qt/cryptcore/moc_mnrow.cpp \
+  qt/cryptcore/moc_masternodeswidget.cpp \
+  qt/cryptcore/moc_myaddressrow.cpp \
+  qt/cryptcore/moc_csrow.cpp \
+  qt/cryptcore/moc_contactsdropdown.cpp \
+  qt/cryptcore/moc_sendchangeaddressdialog.cpp \
+  qt/cryptcore/moc_sendconfirmdialog.cpp \
+  qt/cryptcore/moc_sendcustomfeedialog.cpp \
+  qt/cryptcore/moc_sendchangeaddressdialog.cpp \
+  qt/cryptcore/moc_sendmultirow.cpp \
+  qt/cryptcore/moc_send.cpp \
+  qt/cryptcore/moc_addnewaddressdialog.cpp \
+  qt/cryptcore/moc_addnewcontactdialog.cpp \
+  qt/cryptcore/moc_requestdialog.cpp \
+  qt/cryptcore/moc_receivewidget.cpp \
+  qt/cryptcore/moc_tooltipmenu.cpp \
+  qt/cryptcore/moc_addresseswidget.cpp \
+  qt/cryptcore/moc_defaultdialog.cpp \
+  qt/cryptcore/moc_privacywidget.cpp \
+  qt/cryptcore/moc_coldstakingwidget.cpp \
+  qt/cryptcore/settings/moc_settingsbackupwallet.cpp \
+  qt/cryptcore/settings/moc_settingsexportcsv.cpp \
+  qt/cryptcore/settings/moc_settingsbittoolwidget.cpp \
+  qt/cryptcore/settings/moc_settingsconsolewidget.cpp \
+  qt/cryptcore/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/cryptcore/settings/moc_settingsfaqwidget.cpp \
+  qt/cryptcore/settings/moc_settingsinformationwidget.cpp \
+  qt/cryptcore/settings/moc_settingsmainoptionswidget.cpp \
+  qt/cryptcore/settings/moc_settingsmultisenddialog.cpp \
+  qt/cryptcore/settings/moc_settingsmultisendwidget.cpp \
+  qt/cryptcore/settings/moc_settingssignmessagewidgets.cpp \
+  qt/cryptcore/settings/moc_settingswalletoptionswidget.cpp \
+  qt/cryptcore/settings/moc_settingswalletrepairwidget.cpp \
+  qt/cryptcore/settings/moc_settingswidget.cpp \
+  qt/cryptcore/moc_welcomecontentwidget.cpp \
+  qt/cryptcore/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/aezora.moc \
+  qt/cryptcore.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/rpcconsole.moc \
-  qt/aezora/settings/moc_settingsconsolewidget.cpp
+  qt/cryptcore/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_aezora.cpp
-QT_QRC = qt/aezora.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_aezora_locale.cpp
-QT_QRC_LOCALE = qt/aezora_locale.qrc
+QT_QRC_CPP = qt/qrc_cryptcore.cpp
+QT_QRC = qt/cryptcore.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_cryptcore_locale.cpp
+QT_QRC_LOCALE = qt/cryptcore_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -189,7 +189,7 @@ BITCOIN_QT_H = \
   qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/aezora/aezoragui.h \
+  qt/cryptcore/cryptcoregui.h \
   qt/bitcoinunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
@@ -223,71 +223,71 @@ BITCOIN_QT_H = \
   qt/utilitydialog.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/aezora/prunnable.h \
-  qt/aezora/pfborderimage.h \
-  qt/aezora/loadingdialog.h \
+  qt/cryptcore/prunnable.h \
+  qt/cryptcore/pfborderimage.h \
+  qt/cryptcore/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zazrcontroldialog.h \
-  qt/aezora/pwidget.h \
-  qt/aezora/focuseddialog.h \
-  qt/aezora/guitransactionsutils.h \
-  qt/aezora/snackbar.h \
-  qt/aezora/navmenuwidget.h \
-  qt/aezora/lockunlock.h \
-  qt/aezora/receivedialog.h \
-  qt/aezora/furlistrow.h \
-  qt/aezora/furabstractlistitemdelegate.h \
-  qt/aezora/txviewholder.h \
-  qt/aezora/qtutils.h \
-  qt/aezora/expandablebutton.h \
-  qt/aezora/topbar.h \
-  qt/aezora/txrow.h \
-  qt/aezora/addressholder.h \
-  qt/aezora/addressfilterproxymodel.h \
-  qt/aezora/dashboardwidget.h \
-  qt/aezora/addresslabelrow.h \
-  qt/aezora/contactdropdownrow.h \
-  qt/aezora/mninfodialog.h \
-  qt/aezora/optionbutton.h \
-  qt/aezora/coldstakingmodel.h \
-  qt/aezora/mnmodel.h \
-  qt/aezora/masternodewizarddialog.h \
-  qt/aezora/mnrow.h \
-  qt/aezora/masternodeswidget.h \
-  qt/aezora/myaddressrow.h \
-  qt/aezora/csrow.h \
-  qt/aezora/contactsdropdown.h \
-  qt/aezora/sendchangeaddressdialog.h \
-  qt/aezora/sendconfirmdialog.h \
-  qt/aezora/sendcustomfeedialog.h \
-  qt/aezora/sendchangeaddressdialog.h \
-  qt/aezora/sendmultirow.h \
-  qt/aezora/send.h \
-  qt/aezora/addnewaddressdialog.h \
-  qt/aezora/addnewcontactdialog.h \
-  qt/aezora/requestdialog.h \
-  qt/aezora/receivewidget.h \
-  qt/aezora/tooltipmenu.h \
-  qt/aezora/addresseswidget.h \
-  qt/aezora/defaultdialog.h \
-  qt/aezora/privacywidget.h \
-  qt/aezora/coldstakingwidget.h \
-  qt/aezora/settings/settingsbackupwallet.h \
-  qt/aezora/settings/settingsexportcsv.h \
-  qt/aezora/settings/settingsbittoolwidget.h \
-  qt/aezora/settings/settingsconsolewidget.h \
-  qt/aezora/settings/settingsdisplayoptionswidget.h \
-  qt/aezora/settings/settingsfaqwidget.h \
-  qt/aezora/settings/settingsinformationwidget.h \
-  qt/aezora/settings/settingsmainoptionswidget.h \
-  qt/aezora/settings/settingsmultisenddialog.h \
-  qt/aezora/settings/settingsmultisendwidget.h \
-  qt/aezora/settings/settingssignmessagewidgets.h \
-  qt/aezora/settings/settingswalletoptionswidget.h \
-  qt/aezora/settings/settingswalletrepairwidget.h \
-  qt/aezora/settings/settingswidget.h \
-  qt/aezora/welcomecontentwidget.h \
-  qt/aezora/splash.h
+  qt/zcorrcontroldialog.h \
+  qt/cryptcore/pwidget.h \
+  qt/cryptcore/focuseddialog.h \
+  qt/cryptcore/guitransactionsutils.h \
+  qt/cryptcore/snackbar.h \
+  qt/cryptcore/navmenuwidget.h \
+  qt/cryptcore/lockunlock.h \
+  qt/cryptcore/receivedialog.h \
+  qt/cryptcore/furlistrow.h \
+  qt/cryptcore/furabstractlistitemdelegate.h \
+  qt/cryptcore/txviewholder.h \
+  qt/cryptcore/qtutils.h \
+  qt/cryptcore/expandablebutton.h \
+  qt/cryptcore/topbar.h \
+  qt/cryptcore/txrow.h \
+  qt/cryptcore/addressholder.h \
+  qt/cryptcore/addressfilterproxymodel.h \
+  qt/cryptcore/dashboardwidget.h \
+  qt/cryptcore/addresslabelrow.h \
+  qt/cryptcore/contactdropdownrow.h \
+  qt/cryptcore/mninfodialog.h \
+  qt/cryptcore/optionbutton.h \
+  qt/cryptcore/coldstakingmodel.h \
+  qt/cryptcore/mnmodel.h \
+  qt/cryptcore/masternodewizarddialog.h \
+  qt/cryptcore/mnrow.h \
+  qt/cryptcore/masternodeswidget.h \
+  qt/cryptcore/myaddressrow.h \
+  qt/cryptcore/csrow.h \
+  qt/cryptcore/contactsdropdown.h \
+  qt/cryptcore/sendchangeaddressdialog.h \
+  qt/cryptcore/sendconfirmdialog.h \
+  qt/cryptcore/sendcustomfeedialog.h \
+  qt/cryptcore/sendchangeaddressdialog.h \
+  qt/cryptcore/sendmultirow.h \
+  qt/cryptcore/send.h \
+  qt/cryptcore/addnewaddressdialog.h \
+  qt/cryptcore/addnewcontactdialog.h \
+  qt/cryptcore/requestdialog.h \
+  qt/cryptcore/receivewidget.h \
+  qt/cryptcore/tooltipmenu.h \
+  qt/cryptcore/addresseswidget.h \
+  qt/cryptcore/defaultdialog.h \
+  qt/cryptcore/privacywidget.h \
+  qt/cryptcore/coldstakingwidget.h \
+  qt/cryptcore/settings/settingsbackupwallet.h \
+  qt/cryptcore/settings/settingsexportcsv.h \
+  qt/cryptcore/settings/settingsbittoolwidget.h \
+  qt/cryptcore/settings/settingsconsolewidget.h \
+  qt/cryptcore/settings/settingsdisplayoptionswidget.h \
+  qt/cryptcore/settings/settingsfaqwidget.h \
+  qt/cryptcore/settings/settingsinformationwidget.h \
+  qt/cryptcore/settings/settingsmainoptionswidget.h \
+  qt/cryptcore/settings/settingsmultisenddialog.h \
+  qt/cryptcore/settings/settingsmultisendwidget.h \
+  qt/cryptcore/settings/settingssignmessagewidgets.h \
+  qt/cryptcore/settings/settingswalletoptionswidget.h \
+  qt/cryptcore/settings/settingswalletrepairwidget.h \
+  qt/cryptcore/settings/settingswidget.h \
+  qt/cryptcore/welcomecontentwidget.h \
+  qt/cryptcore/splash.h
 
 RES_ICONS = \
   qt/res/icons/bitcoin.ico \
@@ -302,211 +302,211 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/aezora/res/img/bg-dashboard-banner.png \
-  qt/aezora/res/img/bg-multi-number-dark.svg \
-  qt/aezora/res/img/ic-check-locked.svg \
-  qt/aezora/res/img/ic-nav-address.svg \
-  qt/aezora/res/img/ic-update.svg \
-  qt/aezora/res/img/bg-multi-number.svg \
-  qt/aezora/res/img/ic-check-mint-off.svg \
-  qt/aezora/res/img/ic-nav-cold-staking.svg \
-  qt/aezora/res/img/ic-nav-cold-staking-active.svg \
-  qt/aezora/res/img/ic-nav-dashboard-active.svg \
-  qt/aezora/res/img/ic-wallet-status-locked.svg \
-  qt/aezora/res/img/bg-splash.svg \
-  qt/aezora/res/img/bg-splash.png \
-  qt/aezora/res/img/ic-check-mint.svg \
-  qt/aezora/res/img/ic-nav-dashboard-hover.svg \
-  qt/aezora/res/img/ic-wallet-status-staking.svg \
-  qt/aezora/res/img/ic-check-peers-off.svg \
-  qt/aezora/res/img/ic-nav-dashboard.svg \
-  qt/aezora/res/img/ic-wallet-status-unlocked.svg \
-  qt/aezora/res/img/ic-check-peers.svg \
-  qt/aezora/res/img/ic-nav-master-active.svg \
-  qt/aezora/res/img/ic-watch-password-white.svg \
-  qt/aezora/res/img/bg-welcome-container.jpg \
-  qt/aezora/res/img/bg-welcome-container.png \
-  qt/aezora/res/img/bg-welcome-container.svg \
-  qt/aezora/res/img/bg-welcome-container@2x.png \
-  qt/aezora/res/img/bg-welcome-container@3x.png \
-  qt/aezora/res/img/ic-check-staking-off.svg \
-  qt/aezora/res/img/ic-nav-master-hover.svg \
-  qt/aezora/res/img/ic-watch-password.svg \
-  qt/aezora/res/img/bg-welcome.jpg \
-  qt/aezora/res/img/bg-welcome.svg \
-  qt/aezora/res/img/bg-welcome@2x.jpg \
-  qt/aezora/res/img/bg-welcome@3x.jpg \
-  qt/aezora/res/img/bg-welcome.png \
-  qt/aezora/res/img/ic-check-staking.svg \
-  qt/aezora/res/img/ic-nav-master.svg \
-  qt/aezora/res/img/img-dashboard-banner.jpg \
-  qt/aezora/res/img/btn-radio-active.svg \
-  qt/aezora/res/img/ic-check-sync-off.svg \
-  qt/aezora/res/img/ic-nav-privacy-active.svg \
-  qt/aezora/res/img/img-empty-contacts.svg \
-  qt/aezora/res/img/btn-radio-off.svg \
-  qt/aezora/res/img/ic-check-sync.png \
-  qt/aezora/res/img/ic-nav-privacy-hover.svg \
-  qt/aezora/res/img/img-empty-dark-contacts.svg \
-  qt/aezora/res/img/ic-contact-arrow-down.svg \
-  qt/aezora/res/img/ic-contact-arrow-down-white.svg \
-  qt/aezora/res/img/ic-check-sync.svg \
-  qt/aezora/res/img/ic-check-faq.svg \
-  qt/aezora/res/img/ic-nav-privacy.svg \
-  qt/aezora/res/img/img-empty-dark-error.svg \
-  qt/aezora/res/img/ic-add-label.svg \
-  qt/aezora/res/img/ic-pending.svg \
-  qt/aezora/res/img/ic-check-theme-dark.svg \
-  qt/aezora/res/img/ic-nav-receive-active.svg \
-  qt/aezora/res/img/img-empty-dark-masternode.svg \
-  qt/aezora/res/img/ic-add-liliac.svg \
-  qt/aezora/res/img/ic-check-theme-light.svg \
-  qt/aezora/res/img/ic-nav-receive-hover.svg \
-  qt/aezora/res/img/img-empty-dark-multisend.svg \
-  qt/aezora/res/img/ic-add-purple.svg \
-  qt/aezora/res/img/ic-check-white.svg \
-  qt/aezora/res/img/ic-nav-receive.svg \
-  qt/aezora/res/img/img-empty-dark-peers.svg \
-  qt/aezora/res/img/ic-add.svg \
-  qt/aezora/res/img/ic-check.svg \
-  qt/aezora/res/img/ic-nav-send-active.svg \
-  qt/aezora/res/img/img-empty-dark-staking-off.svg \
-  qt/aezora/res/img/img-empty-dark-staking-on.svg \
-  qt/aezora/res/img/ic-address-book-grey.svg \
-  qt/aezora/res/img/ic-chevron-left.svg \
-  qt/aezora/res/img/ic-nav-send-hover.svg \
-  qt/aezora/res/img/img-empty-dark-transactions.svg \
-  qt/aezora/res/img/ic-address-book-white.svg \
-  qt/aezora/res/img/ic-chevron-right.svg \
-  qt/aezora/res/img/ic-nav-send.svg \
-  qt/aezora/res/img/img-empty-error.svg \
-  qt/aezora/res/img/ic-address-book.svg \
-  qt/aezora/res/img/ic-clear-liliac.svg \
-  qt/aezora/res/img/ic-nav-settings-active.svg \
-  qt/aezora/res/img/img-empty-masternode.svg \
-  qt/aezora/res/img/ic-address-send-white.svg \
-  qt/aezora/res/img/ic-clear-purple.svg \
-  qt/aezora/res/img/ic-nav-settings-hover.svg \
-  qt/aezora/res/img/img-empty-multisend.svg \
-  qt/aezora/res/img/ic-address-send.svg \
-  qt/aezora/res/img/ic-close-white.svg \
-  qt/aezora/res/img/ic-nav-settings.svg \
-  qt/aezora/res/img/img-empty-peers.svg \
-  qt/aezora/res/img/img-empty-privacy.svg \
-  qt/aezora/res/img/img-empty-privacy-dark.svg \
-  qt/aezora/res/img/ic-arrow-drop-down-white.svg \
-  qt/aezora/res/img/ic-close.svg \
-  qt/aezora/res/img/ic-radio-liliac-on.svg \
-  qt/aezora/res/img/img-empty-staking-off.svg \
-  qt/aezora/res/img/ic-arrow-drop-down.svg \
-  qt/aezora/res/img/ic-coin-azr.svg \
-  qt/aezora/res/img/ic-receive-off.svg \
-  qt/aezora/res/img/img-empty-staking-on.svg \
-  qt/aezora/res/img/ic-arrow-drop-up-white.svg \
-  qt/aezora/res/img/ic-coin-zazr.png \
-  qt/aezora/res/img/ic-receive-on.svg \
-  qt/aezora/res/img/img-empty-transactions.svg \
-  qt/aezora/res/img/ic-arrow-drop-up.svg \
-  qt/aezora/res/img/ic-coin-zazr.svg \
-  qt/aezora/res/img/ic-received.svg \
-  qt/aezora/res/img/img-logo-aezora.png \
-  qt/aezora/res/img/ic-arrow-drop-white-down.svg \
-  qt/aezora/res/img/ic-combo-box.svg \
-  qt/aezora/res/img/ic-send.svg \
-  qt/aezora/res/img/img-logo-aezora@2x.png \
-  qt/aezora/res/img/ic-arrow-purple-down.svg \
-  qt/aezora/res/img/ic-connect.svg \
-  qt/aezora/res/img/ic-submenu-lock.svg \
-  qt/aezora/res/img/img-logo-aezora@3x.png \
-  qt/aezora/res/img/img-logo-aezora.svg \
-  qt/aezora/res/img/ic-arrow-right-white.svg \
-  qt/aezora/res/img/ic-arrow-left-white.svg \
-  qt/aezora/res/img/ic-arrow-left.svg \
-  qt/aezora/res/img/ic-copy-liliac.svg \
-  qt/aezora/res/img/ic-submenu-staking.svg \
-  qt/aezora/res/img/img-nav-logo-aezora.png \
-  qt/aezora/res/img/ic-arrow-right.svg \
-  qt/aezora/res/img/ic-copy.svg \
-  qt/aezora/res/img/ic-copy-big.svg \
-  qt/aezora/res/img/ic-copy-big-white.svg \
-  qt/aezora/res/img/ic-submenu-unlock.svg \
-  qt/aezora/res/img/img-nav-logo.png \
-  qt/aezora/res/img/ic-arrow-white-left.svg \
-  qt/aezora/res/img/ic-exit.svg \
-  qt/aezora/res/img/ic-switch-liliac-on.svg \
-  qt/aezora/res/img/img-nav-logo.svg \
-  qt/aezora/res/img/ic-arrow-white-right.svg \
-  qt/aezora/res/img/ic-expand.svg \
-  qt/aezora/res/img/ic-switch-off.svg \
-  qt/aezora/res/img/img-qr-test-big.png \
-  qt/aezora/res/img/ic-check-active.svg \
-  qt/aezora/res/img/ic-folder.svg \
-  qt/aezora/res/img/ic-switch-on.svg \
-  qt/aezora/res/img/img-qr-test.png \
-  qt/aezora/res/img/ic-check-box.svg \
-  qt/aezora/res/img/ic-check-box-dark-active.svg \
-  qt/aezora/res/img/ic-check-box-indeterminate.svg \
-  qt/aezora/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/aezora/res/img/ic-label-liliac.svg \
-  qt/aezora/res/img/ic-transaction-warning.svg \
-  qt/aezora/res/img/ic-transaction-mint.svg \
-  qt/aezora/res/img/ic-transaction-mint-inactive.svg \
-  qt/aezora/res/img/ic-check-cold-staking.svg \
-  qt/aezora/res/img/ic-check-cold-staking-off.svg \
-  qt/aezora/res/img/ic-check-cold-staking-enabled.svg \
-  qt/aezora/res/img/dark/ic-transaction-cs-contract.svg \
-  qt/aezora/res/img/dark/ic-transaction-cs-contract-inactive.svg \
-  qt/aezora/res/img/img-qr.svg \
-  qt/aezora/res/img/ic-check-connect-off.svg \
-  qt/aezora/res/img/ic-check-tor-off.svg \
-  qt/aezora/res/img/ic-check-tor.svg \
-  qt/aezora/res/img/ic-label.svg \
-  qt/aezora/res/img/ic-transaction-received.svg \
-  qt/aezora/res/img/dark/ic-transaction-received.svg \
-  qt/aezora/res/img/dark/ic-transaction-warning.svg \
-  qt/aezora/res/img/dark/ic-transaction-mint.svg \
-  qt/aezora/res/img/dark/ic-transaction-mint-inactive.svg \
-  qt/aezora/res/img/ic-transaction-received-inactive.svg \
-  qt/aezora/res/img/dark/ic-transaction-received-inactive.svg \
-  qt/aezora/res/img/img-welcome-step1.png \
-  qt/aezora/res/img/ic-check-connect.svg \
-  qt/aezora/res/img/ic-menu-hover.svg \
-  qt/aezora/res/img/ic-transaction-sent.svg \
-  qt/aezora/res/img/ic-transaction-sent-inactive.svg \
-  qt/aezora/res/img/dark/ic-transaction-sent.svg \
-  qt/aezora/res/img/dark/ic-transaction-sent-inactive.svg \
-  qt/aezora/res/img/img-welcome-step2.png \
-  qt/aezora/res/img/ic-check-dark.svg \
-  qt/aezora/res/img/ic-mint.svg \
-  qt/aezora/res/img/ic-transaction-staked.svg \
-  qt/aezora/res/img/ic-transaction-staked-inactive.svg \
-  qt/aezora/res/img/dark/ic-transaction-staked.svg \
-  qt/aezora/res/img/dark/ic-transaction-staked-inactive.svg \
-  qt/aezora/res/img/img-welcome-step3.png \
-  qt/aezora/res/img/ic-check-liliac-on.svg \
-  qt/aezora/res/img/ic-nav-address-active.svg \
-  qt/aezora/res/img/ic-unlock-staking.svg \
-  qt/aezora/res/img/img-welcome-step4.png \
-  qt/aezora/res/img/ic-check-locked-off.svg \
-  qt/aezora/res/img/ic-nav-address-hover.svg \
-  qt/aezora/res/img/ic-update-liliac.svg \
-  qt/aezora/res/img/ic-arrow-drop-down-purple.svg \
-  qt/aezora/res/img/ic-arrow-drop-up-purple.svg \
-  qt/aezora/res/img/ic-check-liliac-indeterminate.svg \
-  qt/aezora/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/aezora/res/img/ic-transaction-stake-delegated.svg \
-  qt/aezora/res/img/ic-transaction-stake-delegated-inactive.svg \
-  qt/aezora/res/img/ic-transaction-stake-hot.svg \
-  qt/aezora/res/img/ic-transaction-stake-hot-inactive.svg \
-  qt/aezora/res/img/dark/ic-transaction-stake-hot.svg \
-  qt/aezora/res/img/dark/ic-transaction-stake-hot-inactive.svg \
-  qt/aezora/res/img/dark/ic-transaction-stake-delegated.svg \
-  qt/aezora/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
-  qt/aezora/res/img/ic-transaction-cs-contract.svg \
-  qt/aezora/res/img/ic-transaction-cs-contract-inactive.svg \
-  qt/aezora/res/img/ic-check-box-indeterminate.svg \
-  qt/aezora/res/img/ani-loading-dark.gif \
-  qt/aezora/res/img/ani-loading.gif
+  qt/cryptcore/res/img/bg-dashboard-banner.png \
+  qt/cryptcore/res/img/bg-multi-number-dark.svg \
+  qt/cryptcore/res/img/ic-check-locked.svg \
+  qt/cryptcore/res/img/ic-nav-address.svg \
+  qt/cryptcore/res/img/ic-update.svg \
+  qt/cryptcore/res/img/bg-multi-number.svg \
+  qt/cryptcore/res/img/ic-check-mint-off.svg \
+  qt/cryptcore/res/img/ic-nav-cold-staking.svg \
+  qt/cryptcore/res/img/ic-nav-cold-staking-active.svg \
+  qt/cryptcore/res/img/ic-nav-dashboard-active.svg \
+  qt/cryptcore/res/img/ic-wallet-status-locked.svg \
+  qt/cryptcore/res/img/bg-splash.svg \
+  qt/cryptcore/res/img/bg-splash.png \
+  qt/cryptcore/res/img/ic-check-mint.svg \
+  qt/cryptcore/res/img/ic-nav-dashboard-hover.svg \
+  qt/cryptcore/res/img/ic-wallet-status-staking.svg \
+  qt/cryptcore/res/img/ic-check-peers-off.svg \
+  qt/cryptcore/res/img/ic-nav-dashboard.svg \
+  qt/cryptcore/res/img/ic-wallet-status-unlocked.svg \
+  qt/cryptcore/res/img/ic-check-peers.svg \
+  qt/cryptcore/res/img/ic-nav-master-active.svg \
+  qt/cryptcore/res/img/ic-watch-password-white.svg \
+  qt/cryptcore/res/img/bg-welcome-container.jpg \
+  qt/cryptcore/res/img/bg-welcome-container.png \
+  qt/cryptcore/res/img/bg-welcome-container.svg \
+  qt/cryptcore/res/img/bg-welcome-container@2x.png \
+  qt/cryptcore/res/img/bg-welcome-container@3x.png \
+  qt/cryptcore/res/img/ic-check-staking-off.svg \
+  qt/cryptcore/res/img/ic-nav-master-hover.svg \
+  qt/cryptcore/res/img/ic-watch-password.svg \
+  qt/cryptcore/res/img/bg-welcome.jpg \
+  qt/cryptcore/res/img/bg-welcome.svg \
+  qt/cryptcore/res/img/bg-welcome@2x.jpg \
+  qt/cryptcore/res/img/bg-welcome@3x.jpg \
+  qt/cryptcore/res/img/bg-welcome.png \
+  qt/cryptcore/res/img/ic-check-staking.svg \
+  qt/cryptcore/res/img/ic-nav-master.svg \
+  qt/cryptcore/res/img/img-dashboard-banner.jpg \
+  qt/cryptcore/res/img/btn-radio-active.svg \
+  qt/cryptcore/res/img/ic-check-sync-off.svg \
+  qt/cryptcore/res/img/ic-nav-privacy-active.svg \
+  qt/cryptcore/res/img/img-empty-contacts.svg \
+  qt/cryptcore/res/img/btn-radio-off.svg \
+  qt/cryptcore/res/img/ic-check-sync.png \
+  qt/cryptcore/res/img/ic-nav-privacy-hover.svg \
+  qt/cryptcore/res/img/img-empty-dark-contacts.svg \
+  qt/cryptcore/res/img/ic-contact-arrow-down.svg \
+  qt/cryptcore/res/img/ic-contact-arrow-down-white.svg \
+  qt/cryptcore/res/img/ic-check-sync.svg \
+  qt/cryptcore/res/img/ic-check-faq.svg \
+  qt/cryptcore/res/img/ic-nav-privacy.svg \
+  qt/cryptcore/res/img/img-empty-dark-error.svg \
+  qt/cryptcore/res/img/ic-add-label.svg \
+  qt/cryptcore/res/img/ic-pending.svg \
+  qt/cryptcore/res/img/ic-check-theme-dark.svg \
+  qt/cryptcore/res/img/ic-nav-receive-active.svg \
+  qt/cryptcore/res/img/img-empty-dark-masternode.svg \
+  qt/cryptcore/res/img/ic-add-liliac.svg \
+  qt/cryptcore/res/img/ic-check-theme-light.svg \
+  qt/cryptcore/res/img/ic-nav-receive-hover.svg \
+  qt/cryptcore/res/img/img-empty-dark-multisend.svg \
+  qt/cryptcore/res/img/ic-add-purple.svg \
+  qt/cryptcore/res/img/ic-check-white.svg \
+  qt/cryptcore/res/img/ic-nav-receive.svg \
+  qt/cryptcore/res/img/img-empty-dark-peers.svg \
+  qt/cryptcore/res/img/ic-add.svg \
+  qt/cryptcore/res/img/ic-check.svg \
+  qt/cryptcore/res/img/ic-nav-send-active.svg \
+  qt/cryptcore/res/img/img-empty-dark-staking-off.svg \
+  qt/cryptcore/res/img/img-empty-dark-staking-on.svg \
+  qt/cryptcore/res/img/ic-address-book-grey.svg \
+  qt/cryptcore/res/img/ic-chevron-left.svg \
+  qt/cryptcore/res/img/ic-nav-send-hover.svg \
+  qt/cryptcore/res/img/img-empty-dark-transactions.svg \
+  qt/cryptcore/res/img/ic-address-book-white.svg \
+  qt/cryptcore/res/img/ic-chevron-right.svg \
+  qt/cryptcore/res/img/ic-nav-send.svg \
+  qt/cryptcore/res/img/img-empty-error.svg \
+  qt/cryptcore/res/img/ic-address-book.svg \
+  qt/cryptcore/res/img/ic-clear-liliac.svg \
+  qt/cryptcore/res/img/ic-nav-settings-active.svg \
+  qt/cryptcore/res/img/img-empty-masternode.svg \
+  qt/cryptcore/res/img/ic-address-send-white.svg \
+  qt/cryptcore/res/img/ic-clear-purple.svg \
+  qt/cryptcore/res/img/ic-nav-settings-hover.svg \
+  qt/cryptcore/res/img/img-empty-multisend.svg \
+  qt/cryptcore/res/img/ic-address-send.svg \
+  qt/cryptcore/res/img/ic-close-white.svg \
+  qt/cryptcore/res/img/ic-nav-settings.svg \
+  qt/cryptcore/res/img/img-empty-peers.svg \
+  qt/cryptcore/res/img/img-empty-privacy.svg \
+  qt/cryptcore/res/img/img-empty-privacy-dark.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-down-white.svg \
+  qt/cryptcore/res/img/ic-close.svg \
+  qt/cryptcore/res/img/ic-radio-liliac-on.svg \
+  qt/cryptcore/res/img/img-empty-staking-off.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-down.svg \
+  qt/cryptcore/res/img/ic-coin-corr.svg \
+  qt/cryptcore/res/img/ic-receive-off.svg \
+  qt/cryptcore/res/img/img-empty-staking-on.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-up-white.svg \
+  qt/cryptcore/res/img/ic-coin-zcorr.png \
+  qt/cryptcore/res/img/ic-receive-on.svg \
+  qt/cryptcore/res/img/img-empty-transactions.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-up.svg \
+  qt/cryptcore/res/img/ic-coin-zcorr.svg \
+  qt/cryptcore/res/img/ic-received.svg \
+  qt/cryptcore/res/img/img-logo-cryptcore.png \
+  qt/cryptcore/res/img/ic-arrow-drop-white-down.svg \
+  qt/cryptcore/res/img/ic-combo-box.svg \
+  qt/cryptcore/res/img/ic-send.svg \
+  qt/cryptcore/res/img/img-logo-cryptcore@2x.png \
+  qt/cryptcore/res/img/ic-arrow-purple-down.svg \
+  qt/cryptcore/res/img/ic-connect.svg \
+  qt/cryptcore/res/img/ic-submenu-lock.svg \
+  qt/cryptcore/res/img/img-logo-cryptcore@3x.png \
+  qt/cryptcore/res/img/img-logo-cryptcore.svg \
+  qt/cryptcore/res/img/ic-arrow-right-white.svg \
+  qt/cryptcore/res/img/ic-arrow-left-white.svg \
+  qt/cryptcore/res/img/ic-arrow-left.svg \
+  qt/cryptcore/res/img/ic-copy-liliac.svg \
+  qt/cryptcore/res/img/ic-submenu-staking.svg \
+  qt/cryptcore/res/img/img-nav-logo-cryptcore.png \
+  qt/cryptcore/res/img/ic-arrow-right.svg \
+  qt/cryptcore/res/img/ic-copy.svg \
+  qt/cryptcore/res/img/ic-copy-big.svg \
+  qt/cryptcore/res/img/ic-copy-big-white.svg \
+  qt/cryptcore/res/img/ic-submenu-unlock.svg \
+  qt/cryptcore/res/img/img-nav-logo.png \
+  qt/cryptcore/res/img/ic-arrow-white-left.svg \
+  qt/cryptcore/res/img/ic-exit.svg \
+  qt/cryptcore/res/img/ic-switch-liliac-on.svg \
+  qt/cryptcore/res/img/img-nav-logo.svg \
+  qt/cryptcore/res/img/ic-arrow-white-right.svg \
+  qt/cryptcore/res/img/ic-expand.svg \
+  qt/cryptcore/res/img/ic-switch-off.svg \
+  qt/cryptcore/res/img/img-qr-test-big.png \
+  qt/cryptcore/res/img/ic-check-active.svg \
+  qt/cryptcore/res/img/ic-folder.svg \
+  qt/cryptcore/res/img/ic-switch-on.svg \
+  qt/cryptcore/res/img/img-qr-test.png \
+  qt/cryptcore/res/img/ic-check-box.svg \
+  qt/cryptcore/res/img/ic-check-box-dark-active.svg \
+  qt/cryptcore/res/img/ic-check-box-indeterminate.svg \
+  qt/cryptcore/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/cryptcore/res/img/ic-label-liliac.svg \
+  qt/cryptcore/res/img/ic-transaction-warning.svg \
+  qt/cryptcore/res/img/ic-transaction-mint.svg \
+  qt/cryptcore/res/img/ic-transaction-mint-inactive.svg \
+  qt/cryptcore/res/img/ic-check-cold-staking.svg \
+  qt/cryptcore/res/img/ic-check-cold-staking-off.svg \
+  qt/cryptcore/res/img/ic-check-cold-staking-enabled.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/cryptcore/res/img/img-qr.svg \
+  qt/cryptcore/res/img/ic-check-connect-off.svg \
+  qt/cryptcore/res/img/ic-check-tor-off.svg \
+  qt/cryptcore/res/img/ic-check-tor.svg \
+  qt/cryptcore/res/img/ic-label.svg \
+  qt/cryptcore/res/img/ic-transaction-received.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-received.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-warning.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-mint.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/cryptcore/res/img/ic-transaction-received-inactive.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/cryptcore/res/img/img-welcome-step1.png \
+  qt/cryptcore/res/img/ic-check-connect.svg \
+  qt/cryptcore/res/img/ic-menu-hover.svg \
+  qt/cryptcore/res/img/ic-transaction-sent.svg \
+  qt/cryptcore/res/img/ic-transaction-sent-inactive.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-sent.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/cryptcore/res/img/img-welcome-step2.png \
+  qt/cryptcore/res/img/ic-check-dark.svg \
+  qt/cryptcore/res/img/ic-mint.svg \
+  qt/cryptcore/res/img/ic-transaction-staked.svg \
+  qt/cryptcore/res/img/ic-transaction-staked-inactive.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-staked.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/cryptcore/res/img/img-welcome-step3.png \
+  qt/cryptcore/res/img/ic-check-liliac-on.svg \
+  qt/cryptcore/res/img/ic-nav-address-active.svg \
+  qt/cryptcore/res/img/ic-unlock-staking.svg \
+  qt/cryptcore/res/img/img-welcome-step4.png \
+  qt/cryptcore/res/img/ic-check-locked-off.svg \
+  qt/cryptcore/res/img/ic-nav-address-hover.svg \
+  qt/cryptcore/res/img/ic-update-liliac.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-down-purple.svg \
+  qt/cryptcore/res/img/ic-arrow-drop-up-purple.svg \
+  qt/cryptcore/res/img/ic-check-liliac-indeterminate.svg \
+  qt/cryptcore/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/cryptcore/res/img/ic-transaction-stake-delegated.svg \
+  qt/cryptcore/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/cryptcore/res/img/ic-transaction-stake-hot.svg \
+  qt/cryptcore/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/cryptcore/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/cryptcore/res/img/ic-transaction-cs-contract.svg \
+  qt/cryptcore/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/cryptcore/res/img/ic-check-box-indeterminate.svg \
+  qt/cryptcore/res/img/ani-loading-dark.gif \
+  qt/cryptcore/res/img/ani-loading.gif
 
 
 
@@ -514,7 +514,7 @@ BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/aezora/aezoragui.cpp \
+  qt/cryptcore/cryptcoregui.cpp \
   qt/bitcoinunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
@@ -552,67 +552,67 @@ BITCOIN_QT_WALLET_CPP = \
   qt/transactiontablemodel.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/aezora/loadingdialog.cpp \
-  qt/zazrcontroldialog.cpp \
-  qt/aezora/pwidget.cpp \
-  qt/aezora/focuseddialog.cpp \
-  qt/aezora/guitransactionsutils.cpp \
-  qt/aezora/snackbar.cpp \
-  qt/aezora/navmenuwidget.cpp \
-  qt/aezora/lockunlock.cpp \
-  qt/aezora/receivedialog.cpp \
-  qt/aezora/furabstractlistitemdelegate.cpp \
-  qt/aezora/txviewholder.cpp \
-  qt/aezora/qtutils.cpp \
-  qt/aezora/expandablebutton.cpp \
-  qt/aezora/topbar.cpp \
-  qt/aezora/txrow.cpp \
-  qt/aezora/addressholder.cpp \
-  qt/aezora/addressfilterproxymodel.cpp \
-  qt/aezora/dashboardwidget.cpp \
-  qt/aezora/addresslabelrow.cpp \
-  qt/aezora/contactdropdownrow.cpp \
-  qt/aezora/contactsdropdown.cpp \
-  qt/aezora/optionbutton.cpp \
-  qt/aezora/mninfodialog.cpp \
-  qt/aezora/coldstakingmodel.cpp \
-  qt/aezora/mnmodel.cpp \
-  qt/aezora/masternodewizarddialog.cpp \
-  qt/aezora/mnrow.cpp \
-  qt/aezora/masternodeswidget.cpp \
-  qt/aezora/myaddressrow.cpp \
-  qt/aezora/csrow.cpp \
-  qt/aezora/sendchangeaddressdialog.cpp \
-  qt/aezora/sendconfirmdialog.cpp \
-  qt/aezora/sendcustomfeedialog.cpp \
-  qt/aezora/sendchangeaddressdialog.cpp \
-  qt/aezora/sendmultirow.cpp \
-  qt/aezora/send.cpp \
-  qt/aezora/addnewaddressdialog.cpp \
-  qt/aezora/addnewcontactdialog.cpp \
-  qt/aezora/requestdialog.cpp \
-  qt/aezora/receivewidget.cpp \
-  qt/aezora/tooltipmenu.cpp \
-  qt/aezora/addresseswidget.cpp \
-  qt/aezora/defaultdialog.cpp \
-  qt/aezora/privacywidget.cpp \
-  qt/aezora/coldstakingwidget.cpp \
-  qt/aezora/settings/settingsbackupwallet.cpp \
-  qt/aezora/settings/settingsexportcsv.cpp \
-  qt/aezora/settings/settingsbittoolwidget.cpp \
-  qt/aezora/settings/settingsconsolewidget.cpp \
-  qt/aezora/settings/settingsdisplayoptionswidget.cpp \
-  qt/aezora/settings/settingsfaqwidget.cpp \
-  qt/aezora/settings/settingsinformationwidget.cpp \
-  qt/aezora/settings/settingsmainoptionswidget.cpp \
-  qt/aezora/settings/settingsmultisenddialog.cpp \
-  qt/aezora/settings/settingsmultisendwidget.cpp \
-  qt/aezora/settings/settingssignmessagewidgets.cpp \
-  qt/aezora/settings/settingswalletoptionswidget.cpp \
-  qt/aezora/settings/settingswalletrepairwidget.cpp \
-  qt/aezora/settings/settingswidget.cpp \
-  qt/aezora/welcomecontentwidget.cpp \
-  qt/aezora/splash.cpp
+  qt/cryptcore/loadingdialog.cpp \
+  qt/zcorrcontroldialog.cpp \
+  qt/cryptcore/pwidget.cpp \
+  qt/cryptcore/focuseddialog.cpp \
+  qt/cryptcore/guitransactionsutils.cpp \
+  qt/cryptcore/snackbar.cpp \
+  qt/cryptcore/navmenuwidget.cpp \
+  qt/cryptcore/lockunlock.cpp \
+  qt/cryptcore/receivedialog.cpp \
+  qt/cryptcore/furabstractlistitemdelegate.cpp \
+  qt/cryptcore/txviewholder.cpp \
+  qt/cryptcore/qtutils.cpp \
+  qt/cryptcore/expandablebutton.cpp \
+  qt/cryptcore/topbar.cpp \
+  qt/cryptcore/txrow.cpp \
+  qt/cryptcore/addressholder.cpp \
+  qt/cryptcore/addressfilterproxymodel.cpp \
+  qt/cryptcore/dashboardwidget.cpp \
+  qt/cryptcore/addresslabelrow.cpp \
+  qt/cryptcore/contactdropdownrow.cpp \
+  qt/cryptcore/contactsdropdown.cpp \
+  qt/cryptcore/optionbutton.cpp \
+  qt/cryptcore/mninfodialog.cpp \
+  qt/cryptcore/coldstakingmodel.cpp \
+  qt/cryptcore/mnmodel.cpp \
+  qt/cryptcore/masternodewizarddialog.cpp \
+  qt/cryptcore/mnrow.cpp \
+  qt/cryptcore/masternodeswidget.cpp \
+  qt/cryptcore/myaddressrow.cpp \
+  qt/cryptcore/csrow.cpp \
+  qt/cryptcore/sendchangeaddressdialog.cpp \
+  qt/cryptcore/sendconfirmdialog.cpp \
+  qt/cryptcore/sendcustomfeedialog.cpp \
+  qt/cryptcore/sendchangeaddressdialog.cpp \
+  qt/cryptcore/sendmultirow.cpp \
+  qt/cryptcore/send.cpp \
+  qt/cryptcore/addnewaddressdialog.cpp \
+  qt/cryptcore/addnewcontactdialog.cpp \
+  qt/cryptcore/requestdialog.cpp \
+  qt/cryptcore/receivewidget.cpp \
+  qt/cryptcore/tooltipmenu.cpp \
+  qt/cryptcore/addresseswidget.cpp \
+  qt/cryptcore/defaultdialog.cpp \
+  qt/cryptcore/privacywidget.cpp \
+  qt/cryptcore/coldstakingwidget.cpp \
+  qt/cryptcore/settings/settingsbackupwallet.cpp \
+  qt/cryptcore/settings/settingsexportcsv.cpp \
+  qt/cryptcore/settings/settingsbittoolwidget.cpp \
+  qt/cryptcore/settings/settingsconsolewidget.cpp \
+  qt/cryptcore/settings/settingsdisplayoptionswidget.cpp \
+  qt/cryptcore/settings/settingsfaqwidget.cpp \
+  qt/cryptcore/settings/settingsinformationwidget.cpp \
+  qt/cryptcore/settings/settingsmainoptionswidget.cpp \
+  qt/cryptcore/settings/settingsmultisenddialog.cpp \
+  qt/cryptcore/settings/settingsmultisendwidget.cpp \
+  qt/cryptcore/settings/settingssignmessagewidgets.cpp \
+  qt/cryptcore/settings/settingswalletoptionswidget.cpp \
+  qt/cryptcore/settings/settingswalletrepairwidget.cpp \
+  qt/cryptcore/settings/settingswidget.cpp \
+  qt/cryptcore/welcomecontentwidget.cpp \
+  qt/cryptcore/splash.cpp
 
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
@@ -631,10 +631,10 @@ RES_IMAGES = \
 
 RES_CSS = \
   qt/res/css/default.css \
-  qt/aezora/res/css/style_dark.css \
-  qt/aezora/res/css/style_light.css
+  qt/cryptcore/res/css/style_dark.css \
+  qt/cryptcore/res/css/style_light.css
 
-BITCOIN_RC = qt/res/aezora-qt-res.rc
+BITCOIN_RC = qt/res/cryptcore-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
@@ -656,71 +656,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_aezora_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_cryptcore_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# aezora-qt binary #
-qt_aezora_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# cryptcore-qt binary #
+qt_cryptcore_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
-qt_aezora_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_cryptcore_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_aezora_qt_SOURCES = qt/aezora.cpp
+qt_cryptcore_qt_SOURCES = qt/cryptcore.cpp
 if TARGET_DARWIN
-  qt_aezora_qt_SOURCES += $(BITCOIN_MM)
+  qt_cryptcore_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_aezora_qt_SOURCES += $(BITCOIN_RC)
+  qt_cryptcore_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_aezora_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_cryptcore_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_aezora_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_cryptcore_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_aezora_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_cryptcore_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_aezora_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_cryptcore_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_aezora_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_aezora_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_cryptcore_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_cryptcore_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/aezorastrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/cryptcorestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/aezorastrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/aezora.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/cryptcorestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/cryptcore.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/aezora_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/cryptcore_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name aezora_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name cryptcore_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name aezora $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name cryptcore $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_aezora_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_cryptcore_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-aezora_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_aezora_qt_OBJECTS) qt/aezora-qt$(EXEEXT) $(LIBBITCOINQT)
+cryptcore_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_cryptcore_qt_OBJECTS) qt/cryptcore-qt$(EXEEXT) $(LIBBITCOINQT)
 
-aezora_qt : qt/aezora-qt$(EXEEXT)
+cryptcore_qt : qt/cryptcore-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

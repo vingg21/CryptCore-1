@@ -1,10 +1,10 @@
 // Copyright (c) 2020 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_HDCHAIN_H
-#define AEZORA_HDCHAIN_H
+#ifndef CRYPTCORE_HDCHAIN_H
+#define CRYPTCORE_HDCHAIN_H
 
 #include "key.h"
 
@@ -64,4 +64,4 @@ public:
     }
 };
 
-#endif // AEZORA_HDCHAIN_H
+#endif // CRYPTCORE_HDCHAIN_H

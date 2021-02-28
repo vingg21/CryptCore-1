@@ -7,7 +7,7 @@
 #include "script/standard.h"
 #include "uint256.h"
 #include "utilstrencodings.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <vector>
 #include <map>

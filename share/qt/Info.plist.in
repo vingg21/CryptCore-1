@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@.@CLIENT_VERSION_BUILD@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The AEZORA Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@.@CLIENT_VERSION_BUILD@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The CRYPTCORE Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>AEZORA-Qt</string>
+  <string>CRYPTCORE-Qt</string>
 
   <key>CFBundleName</key>
-  <string>AEZORA-Qt</string>
+  <string>CRYPTCORE-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.aezora.Aezora-Qt</string>
+  <string>io.cryptcore.Cryptcore-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.aezora.AezoraPayment</string>
+      <string>io.cryptcore.CryptcorePayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>aezora</string>
+        <string>cryptcore</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.aezora.paymentrequest</string>
+      <string>io.cryptcore.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Aezora payment request</string>
+      <string>Cryptcore payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-aezora-payment-request</string>
+        <string>application/x-cryptcore-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>aezorapaymentrequest</string>
+          <string>cryptcorepaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.aezora.paymentrequest</string>
+        <string>io.cryptcore.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

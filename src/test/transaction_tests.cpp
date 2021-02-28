@@ -5,7 +5,7 @@
 
 #include "data/tx_invalid.json.h"
 #include "data/tx_valid.json.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include "clientversion.h"
 #include "key.h"
@@ -14,7 +14,7 @@
 #include "script/script.h"
 #include "script/script_error.h"
 #include "core_io.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #include <map>
 #include <string>

@@ -1,10 +1,10 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_ZAZRCHAIN_H
-#define AEZORA_ZAZRCHAIN_H
+#ifndef CRYPTCORE_ZCORRCHAIN_H
+#define CRYPTCORE_ZCORRCHAIN_H
 
 #include "chain.h"
 #include "libzerocoin/Coin.h"
@@ -43,7 +43,7 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
 /** Global variable for the zerocoin supply */
 extern std::map<libzerocoin::CoinDenomination, int64_t> mapZerocoinSupply;
 int64_t GetZerocoinSupply();
-bool UpdateZAZRSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
-bool UpdateZAZRSupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
+bool UpdateZCORRSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
+bool UpdateZCORRSupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
 
-#endif //AEZORA_ZAZRCHAIN_H
+#endif //CRYPTCORE_ZCORRCHAIN_H

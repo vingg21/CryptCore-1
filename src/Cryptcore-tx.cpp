@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -46,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Aezora Core aezora-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Cryptcore Core cryptcore-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  aezora-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded aezora transaction") + "\n" +
-                               "  aezora-tx [options] -create [commands]   " + _("Create hex-encoded aezora transaction") + "\n" +
+                               "  cryptcore-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded cryptcore transaction") + "\n" +
+                               "  cryptcore-tx [options] -create [commands]   " + _("Create hex-encoded cryptcore transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -566,7 +566,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded aezora transaction
+            // param: hex-encoded cryptcore transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

@@ -7,17 +7,17 @@
 #include "chainparams.h"
 #include "main.h"
 #include "txdb.h"
-#include "zazr/deterministicmint.h"
+#include "zcorr/deterministicmint.h"
 #include "key.h"
-#include "zazr/accumulatorcheckpoints.h"
+#include "zcorr/accumulatorcheckpoints.h"
 #include "libzerocoin/bignum.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
-#include <zazr/accumulators.h>
+#include <zcorr/accumulators.h>
 #include "wallet/wallet.h"
-#include "zazr/zazrwallet.h"
-#include "zazrchain.h"
-#include "test_aezora.h"
+#include "zcorr/zcorrwallet.h"
+#include "zcorrchain.h"
+#include "test_cryptcore.h"
 
 
 extern bool DecodeHexTx(CTransaction& tx, const std::string& strHexTx);
@@ -474,7 +474,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     CWalletDB walletdb(strWalletFile, "cr+");
 
     CWallet wallet(strWalletFile);
-    CzAZRWallet zWallet(wallet.strWalletFile);
+    CzCORRWallet zWallet(wallet.strWalletFile);
     zWallet.SetMasterSeed(seedMaster);
     wallet.setZWallet(&zWallet);
 
@@ -486,7 +486,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         libzerocoin::PrivateCoin coin(Params().Zerocoin_Params(false), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZAZR(denom, coin, dMint);
+        zWallet.GenerateDeterministicZCORR(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

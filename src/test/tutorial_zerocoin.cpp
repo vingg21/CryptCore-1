@@ -24,7 +24,7 @@
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 
 #define COINS_TO_ACCUMULATE     5

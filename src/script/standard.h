@@ -79,7 +79,7 @@ public:
  *  * CNoDestination: no destination set
  *  * CKeyID: TX_PUBKEYHASH destination
  *  * CScriptID: TX_SCRIPTHASH destination
- *  A CTxDestination is the internal data type encoded in a AEZORA address
+ *  A CTxDestination is the internal data type encoded in a CRYPTCORE address
  */
 typedef boost::variant<CNoDestination, CKeyID, CScriptID> CTxDestination;
 

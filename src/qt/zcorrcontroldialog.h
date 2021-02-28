@@ -2,37 +2,37 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZAZRCONTROLDIALOG_H
-#define ZAZRCONTROLDIALOG_H
+#ifndef ZCORRCONTROLDIALOG_H
+#define ZCORRCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
-#include "zazr/zerocoin.h"
+#include "zcorr/zerocoin.h"
 
 class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZAzrControlDialog;
+class ZCorrControlDialog;
 }
 
-class CZAzrControlWidgetItem : public QTreeWidgetItem
+class CZCorrControlWidgetItem : public QTreeWidgetItem
 {
 public:
-    explicit CZAzrControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
-    explicit CZAzrControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
-    explicit CZAzrControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZCorrControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZCorrControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZCorrControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZAzrControlDialog : public QDialog
+class ZCorrControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZAzrControlDialog(QWidget *parent);
-    ~ZAzrControlDialog();
+    explicit ZCorrControlDialog(QWidget *parent);
+    ~ZCorrControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -41,7 +41,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZAzrControlDialog *ui;
+    Ui::ZCorrControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -55,11 +55,11 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
-    friend class CZAzrControlWidgetItem;
+    friend class CZCorrControlWidgetItem;
 
 private Q_SLOTS:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZAZRCONTROLDIALOG_H
+#endif // ZCORRCONTROLDIALOG_H

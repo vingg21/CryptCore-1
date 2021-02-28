@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_TEST_TEST_AEZORA_H
-#define AEZORA_TEST_TEST_AEZORA_H
+#ifndef CRYPTCORE_TEST_TEST_CRYPTCORE_H
+#define CRYPTCORE_TEST_TEST_CRYPTCORE_H
 
 #include "txdb.h"
 

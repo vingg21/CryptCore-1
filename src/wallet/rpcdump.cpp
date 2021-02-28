@@ -83,12 +83,12 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 4)
         throw std::runtime_error(
-            "importprivkey \"aezoraprivkey\" ( \"label\" rescan fStakingAddress )\n"
+            "importprivkey \"cryptcoreprivkey\" ( \"label\" rescan fStakingAddress )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"aezoraprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"cryptcoreprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "4. fStakingAddress      (boolean, optional, default=false) Whether this key refers to a (cold) staking address\n"
@@ -191,7 +191,7 @@ UniValue importaddress(const UniValue& params, bool fHelp)
         std::vector<unsigned char> data(ParseHex(params[0].get_str()));
         script = CScript(data.begin(), data.end());
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid AEZORA address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRYPTCORE address or script");
     }
 
     std::string strLabel = "";
@@ -344,13 +344,13 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
-            "dumpprivkey \"aezoraaddress\"\n"
-            "\nReveals the private key corresponding to 'aezoraaddress'.\n"
+            "dumpprivkey \"cryptcoreaddress\"\n"
+            "\nReveals the private key corresponding to 'cryptcoreaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"aezoraaddress\"   (string, required) The aezora address for the private key\n"
+            "1. \"cryptcoreaddress\"   (string, required) The cryptcore address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -365,7 +365,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
     std::string strAddress = params[0].get_str();
     CTxDestination dest = DecodeDestination(strAddress);
     if (!IsValidDestination(dest))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid AEZORA address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRYPTCORE address");
     CKeyID keyID = *boost::get<CKeyID>(&dest);
     if (!keyID)
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -427,7 +427,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
 
     CBlockIndex* tip = chainActive.Tip();
     // produce output
-    file << strprintf("# Wallet dump created by AEZORA %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by CRYPTCORE %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     if (tip) {
         file << strprintf("# * Best block at time of backup was %i (%s),\n", tip->nHeight,
@@ -489,12 +489,12 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "bip38encrypt \"aezoraaddress\" \"passphrase\"\n"
-            "\nEncrypts a private key corresponding to 'aezoraaddress'.\n" +
+            "bip38encrypt \"cryptcoreaddress\" \"passphrase\"\n"
+            "\nEncrypts a private key corresponding to 'cryptcoreaddress'.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"aezoraaddress\"   (string, required) The aezora address for the private key (you must hold the key already)\n"
+            "1. \"cryptcoreaddress\"   (string, required) The cryptcore address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
@@ -513,7 +513,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 
     CTxDestination address = DecodeDestination(strAddress);
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid AEZORA address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid CRYPTCORE address");
     CKeyID keyID = *boost::get<CKeyID>(&address);
     if (!keyID)
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -535,7 +535,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "bip38decrypt \"aezoraaddress\" \"passphrase\"\n"
+            "bip38decrypt \"cryptcoreaddress\" \"passphrase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
             HelpRequiringPassphrase() + "\n"
 

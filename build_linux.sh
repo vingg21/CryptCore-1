@@ -10,11 +10,11 @@ fi
 	sudo apt update
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 -y
 
-# Clone Aezora code from the official Github repository
-	git clone https://github.com/Aezora/Aezora.git
+# Clone Cryptcore code from the official Github repository
+	git clone https://github.com/Cryptcore/Cryptcore.git
 
-# Entering Aezora directory
-	cd Aezora
+# Entering Cryptcore directory
+	cd Cryptcore
 
 # Compile dependencies
 	cd depends
@@ -23,7 +23,7 @@ fi
 	make -j$(echo $CPU_CORES) HOST=x86_64-pc-linux-gnu 
 	cd ..
 
-# Compile Aezora
+# Compile Cryptcore
 	chmod +x share/genbuild.sh
 	chmod +x autogen.sh
 	./autogen.sh
@@ -32,6 +32,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp Aezora/src/aezorad Aezora/src/aezora-cli Aezora/src/aezora-tx Aezora/src/qt/aezora-qt .
-	zip Aezora-Linux.zip aezorad aezora-cli aezora-tx aezora-qt
-	rm -f aezorad aezora-cli aezora-tx aezora-qt
+	cp Cryptcore/src/cryptcored Cryptcore/src/cryptcore-cli Cryptcore/src/cryptcore-tx Cryptcore/src/qt/cryptcore-qt .
+	zip Cryptcore-Linux.zip cryptcored cryptcore-cli cryptcore-tx cryptcore-qt
+	rm -f cryptcored cryptcore-cli cryptcore-tx cryptcore-qt

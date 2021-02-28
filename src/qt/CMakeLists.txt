@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 set(QT_MINIMUM_VERSION 5.5.1)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/aezora/forms ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/forms)
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/forms ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/forms)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -102,7 +102,7 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/addresstablemodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/askpassphrasedialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/coincontroldialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/zazrcontroldialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zcorrcontroldialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/coincontroltreewidget.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/editaddressdialog.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/openuridialog.cpp
@@ -115,82 +115,82 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/transactiontablemodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodeltransaction.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/zazrcontroldialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/aezoragui.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/loadingdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/pwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/focuseddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/guitransactionsutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/snackbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/navmenuwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/lockunlock.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/receivedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/furabstractlistitemdelegate.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/txviewholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/qtutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/expandablebutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/topbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/txrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addressfilterproxymodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/dashboardwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addresslabelrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/contactdropdownrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/contactsdropdown.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/optionbutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/mninfodialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/coldstakingmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/mnmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/masternodewizarddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/mnrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/masternodeswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/sendconfirmdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/sendcustomfeedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/sendmultirow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/send.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addnewaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addnewcontactdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/requestdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/receivewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/myaddressrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/csrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addressholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/tooltipmenu.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/addresseswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/defaultdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/privacywidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/coldstakingwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsbackupwallet.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsbittoolwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsconsolewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsdisplayoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsfaqwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsinformationwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsmainoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsmultisenddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsmultisendwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingssignmessagewidgets.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingswalletoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingswalletrepairwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsexportcsv.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/welcomecontentwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/splash.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/zcorrcontroldialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/cryptcoregui.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/loadingdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/pwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/focuseddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/guitransactionsutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/snackbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/navmenuwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/lockunlock.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/receivedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/furabstractlistitemdelegate.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/txviewholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/qtutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/expandablebutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/topbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/txrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addressfilterproxymodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/dashboardwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addresslabelrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/contactdropdownrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/contactsdropdown.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/optionbutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/mninfodialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/coldstakingmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/mnmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/masternodewizarddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/mnrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/masternodeswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/sendconfirmdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/sendcustomfeedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/sendmultirow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/send.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addnewaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addnewcontactdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/requestdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/receivewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/myaddressrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/csrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addressholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/tooltipmenu.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/addresseswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/defaultdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/privacywidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/coldstakingwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsbackupwallet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsbittoolwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsconsolewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsdisplayoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsfaqwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsinformationwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsmainoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsmultisenddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsmultisendwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingssignmessagewidgets.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingswalletoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingswalletrepairwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsexportcsv.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/welcomecontentwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/splash.cpp
         )
 
 # Workaround until the old rpcconsole UI window is fully removed
-set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
+set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
 execute_process(
         COMMAND ${MOC_BIN} -o moc_settingsconsolewidget.cpp settingsconsolewidget.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings
 )
 
 execute_process(
         COMMAND ${MOC_BIN} -o moc_pfborderimage.cpp pfborderimage.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/aezora
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore
 )
-list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/aezora/moc_pfborderimage.cpp)
+list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/moc_pfborderimage.cpp)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macdockiconhandler.mm)
@@ -203,8 +203,8 @@ target_include_directories(qt_stuff PUBLIC ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/src/univalue/include
         ${CMAKE_SOURCE_DIR}/src/secp256k1/include
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora
-        ${CMAKE_CURRENT_SOURCE_DIR}/aezora/settings
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore
+        ${CMAKE_CURRENT_SOURCE_DIR}/cryptcore/settings
         ${OPENSSL_INCLUDE_DIR}
         ${BerkeleyDB_INCLUDE_DIRS}
         )
@@ -218,13 +218,13 @@ set_source_files_properties(${QT_TRANSLATIONS_FILES} PROPERTIES OUTPUT_LOCATION 
 QT5_ADD_TRANSLATION(QM ${QT_TRANSLATIONS_FILES})
 add_custom_target(translations_target ALL DEPENDS ${QM})
 
-QT5_ADD_RESOURCES(QRC_RESOURCE aezora.qrc)
-QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE aezora_locale.qrc)
+QT5_ADD_RESOURCES(QRC_RESOURCE cryptcore.qrc)
+QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE cryptcore_locale.qrc)
 
-add_executable(aezora-qt aezora.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
-add_dependencies(aezora-qt translations_target libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_include_directories(aezora-qt PUBLIC ${ENDIAN_INCLUDES})
-target_link_libraries(aezora-qt
+add_executable(cryptcore-qt cryptcore.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
+add_dependencies(cryptcore-qt translations_target libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_include_directories(cryptcore-qt PUBLIC ${ENDIAN_INCLUDES})
+target_link_libraries(cryptcore-qt
         qt_stuff
         univalue
         SERVER_A UTIL_A WALLET_A CLI_A COMMON_A BITCOIN_CRYPTO_A ZEROCOIN_A
@@ -233,30 +233,30 @@ target_link_libraries(aezora-qt
         pthread
         )
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-    target_link_libraries(aezora-qt "-framework Cocoa")
+    target_link_libraries(cryptcore-qt "-framework Cocoa")
 endif()
 if(GMP_FOUND)
-    target_link_libraries(aezora-qt ${GMP_LIBRARY})
-    target_include_directories(aezora-qt PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(cryptcore-qt ${GMP_LIBRARY})
+    target_include_directories(cryptcore-qt PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(aezora-qt ZMQ_A ${ZMQ_LIB})
-    target_include_directories(aezora-qt PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(cryptcore-qt ZMQ_A ${ZMQ_LIB})
+    target_include_directories(cryptcore-qt PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if (QRCODE_FOUND)
-    target_link_libraries(aezora-qt ${QRCODE_LIB})
-    target_include_directories(aezora-qt PUBLIC ${QRCODE_INCLUDE_DIR})
+    target_link_libraries(cryptcore-qt ${QRCODE_LIB})
+    target_include_directories(cryptcore-qt PUBLIC ${QRCODE_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(aezora-qt PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(aezora-qt ${MINIUPNP_LIBRARY})
-    target_include_directories(aezora-qt PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(cryptcore-qt PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(cryptcore-qt ${MINIUPNP_LIBRARY})
+    target_include_directories(cryptcore-qt PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(aezora-qt Qt5::Gui Qt5::Core Qt5::Widgets Qt5::Network Qt5::Svg ${QT_LIBRARIES})
+target_link_libraries(cryptcore-qt Qt5::Gui Qt5::Core Qt5::Widgets Qt5::Network Qt5::Svg ${QT_LIBRARIES})
 if (Qt5DBus_FOUND)
-    target_link_libraries(aezora-qt Qt5::DBus ${QT_LIBRARIES})
+    target_link_libraries(cryptcore-qt Qt5::DBus ${QT_LIBRARIES})
 endif()
 if (Qt5Charts_FOUND)
-    target_link_libraries(aezora-qt Qt5::Charts ${QT_LIBRARIES})
+    target_link_libraries(cryptcore-qt Qt5::Charts ${QT_LIBRARIES})
 endif()

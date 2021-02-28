@@ -1,11 +1,11 @@
 // Copyright (c) 2019 The Bitcoin Core developers
 // Copyright (c) 2020 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_SCRIPTPUBKEYMAN_H
-#define AEZORA_SCRIPTPUBKEYMAN_H
+#ifndef CRYPTCORE_SCRIPTPUBKEYMAN_H
+#define CRYPTCORE_SCRIPTPUBKEYMAN_H
 
 #include "wallet/hdchain.h"
 #include "wallet/wallet.h"
@@ -161,4 +161,4 @@ private:
 };
 
 
-#endif //AEZORA_SCRIPTPUBKEYMAN_H
+#endif //CRYPTCORE_SCRIPTPUBKEYMAN_H

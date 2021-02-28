@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/aezora/aezora.conf
+# /etc/cryptcore/cryptcore.conf
 
 [Unit]
-Description=AEZORA daemon
+Description=CRYPTCORE daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/aezorad -daemon -conf=/etc/aezora/aezora.conf -pid=/run/aezorad/aezorad.pid
-# Creates /run/aezorad owned by aezora
-RuntimeDirectory=aezorad
-User=aezora
+ExecStart=/usr/bin/cryptcored -daemon -conf=/etc/cryptcore/cryptcore.conf -pid=/run/cryptcored/cryptcored.pid
+# Creates /run/cryptcored owned by cryptcore
+RuntimeDirectory=cryptcored
+User=cryptcore
 Type=forking
-PIDFile=/run/aezorad/aezorad.pid
+PIDFile=/run/cryptcored/cryptcored.pid
 Restart=on-failure
 
 # Hardening measures

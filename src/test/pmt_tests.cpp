@@ -9,7 +9,7 @@
 #include "uint256.h"
 #include "version.h"
 #include "consensus/merkle.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <vector>
 

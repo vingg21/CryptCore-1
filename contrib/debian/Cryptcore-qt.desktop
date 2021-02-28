@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=AEZORA Core
-Comment=AEZORA P2P Cryptocurrency
-Comment[fr]=AEZORA, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=AEZORA, eşten eşe kriptografik sanal para birimi
-Exec=aezora-qt %u
+Name=CRYPTCORE Core
+Comment=CRYPTCORE P2P Cryptocurrency
+Comment[fr]=CRYPTCORE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CRYPTCORE, eşten eşe kriptografik sanal para birimi
+Exec=cryptcore-qt %u
 Terminal=false
 Type=Application
-Icon=aezora128
-MimeType=x-scheme-handler/aezora;
+Icon=cryptcore128
+MimeType=x-scheme-handler/cryptcore;
 Categories=Office;Finance;
-StartupWMClass=Aezora-qt
+StartupWMClass=Cryptcore-qt

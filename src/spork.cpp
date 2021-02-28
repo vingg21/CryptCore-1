@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2016-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@
 std::vector<CSporkDef> sporkDefs = {
     MAKE_SPORK_DEF(SPORK_2_SWIFTTX,                         0),             // ON
     MAKE_SPORK_DEF(SPORK_3_SWIFTTX_BLOCK_FILTERING,         0),             // ON
-    MAKE_SPORK_DEF(SPORK_5_MAX_VALUE,                       1000),          // 1000 AZR
+    MAKE_SPORK_DEF(SPORK_5_MAX_VALUE,                       1000),          // 1000 CORR
     MAKE_SPORK_DEF(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT,  4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT,   4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_13_ENABLE_SUPERBLOCKS,             4070908800ULL), // OFF
@@ -45,7 +45,7 @@ void CSporkManager::Clear()
     mapSporksActive.clear();
 }
 
-// AEZORA: on startup load spork values from previous session if they exist in the sporkDB
+// CRYPTCORE: on startup load spork values from previous session if they exist in the sporkDB
 void CSporkManager::LoadSporksFromDB()
 {
     for (const auto& sporkDef : sporkDefs) {
@@ -158,7 +158,7 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         }
         spork.Relay();
 
-        // AEZORA: add to spork database.
+        // CRYPTCORE: add to spork database.
         pSporkDB->WriteSpork(spork.nSporkID, spork);
     }
     if (strCommand == NetMsgType::GETSPORKS) {

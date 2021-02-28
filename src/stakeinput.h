@@ -1,10 +1,10 @@
 // Copyright (c) 2017-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_STAKEINPUT_H
-#define AEZORA_STAKEINPUT_H
+#ifndef CRYPTCORE_STAKEINPUT_H
+#define CRYPTCORE_STAKEINPUT_H
 
 #include "chain.h"
 #include "streams.h"
@@ -28,20 +28,20 @@ public:
     virtual bool GetTxOutFrom(CTxOut& out) const = 0;
     virtual CAmount GetValue() const = 0;
     virtual bool CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal) = 0;
-    virtual bool IsZAZR() const = 0;
+    virtual bool IsZCORR() const = 0;
     virtual CDataStream GetUniqueness() const = 0;
     virtual bool ContextCheck(int nHeight, uint32_t nTime) = 0;
 };
 
 
-class CAzrStake : public CStakeInput
+class CCorrStake : public CStakeInput
 {
 private:
     CTransaction txFrom{CTransaction()};
     unsigned int nPosition{0};
 
 public:
-    CAzrStake() {}
+    CCorrStake() {}
 
     bool InitFromTxIn(const CTxIn& txin) override;
     bool SetPrevout(CTransaction txPrev, unsigned int n);
@@ -53,9 +53,9 @@ public:
     CDataStream GetUniqueness() const override;
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = UINT256_ZERO) override;
     bool CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal) override;
-    bool IsZAZR() const override { return false; }
+    bool IsZCORR() const override { return false; }
     bool ContextCheck(int nHeight, uint32_t nTime) override;
 };
 
 
-#endif //AEZORA_STAKEINPUT_H
+#endif //CRYPTCORE_STAKEINPUT_H

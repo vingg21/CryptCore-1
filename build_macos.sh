@@ -6,18 +6,18 @@ then
 	CPU_CORES=1
 fi
 
-# Clone Aezora code from the official Github repository
-	git clone https://github.com/Aezora/Aezora.git
+# Clone Cryptcore code from the official Github repository
+	git clone https://github.com/Cryptcore/Cryptcore.git
 
-# Entering Aezora directory
-	cd Aezora
+# Entering Cryptcore directory
+	cd Cryptcore
 
 # Compile dependencies
 	cd depends
 	make -j$(echo $CPU_CORES) HOST=x86_64-apple-darwin17 
 	cd ..
 
-# Compile Aezora
+# Compile Cryptcore
 	./autogen.sh
 	./configure --prefix=$(pwd)/depends/x86_64-apple-darwin17 --enable-cxx --enable-static --disable-shared --disable-debug --disable-tests --disable-bench
 	make -j$(echo $CPU_CORES) HOST=x86_64-apple-darwin17
@@ -25,6 +25,6 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp Aezora/src/aezorad Aezora/src/aezora-cli Aezora/src/aezora-tx Aezora/src/qt/aezora-qt Aezora/Aezora.dmg .
-	zip Aezora-MacOS.zip aezorad aezora-cli aezora-tx aezora-qt Aezora.dmg
-	rm -f aezorad aezora-cli aezora-tx aezora-qt Aezora.dmg
+	cp Cryptcore/src/cryptcored Cryptcore/src/cryptcore-cli Cryptcore/src/cryptcore-tx Cryptcore/src/qt/cryptcore-qt Cryptcore/Cryptcore.dmg .
+	zip Cryptcore-MacOS.zip cryptcored cryptcore-cli cryptcore-tx cryptcore-qt Cryptcore.dmg
+	rm -f cryptcored cryptcore-cli cryptcore-tx cryptcore-qt Cryptcore.dmg

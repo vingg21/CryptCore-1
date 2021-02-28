@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2014 The Bitcoin developers
 // Copyright (c) 2017-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -125,7 +125,7 @@ bool CBloomFilter::IsWithinSizeConstraints() const
 }
 
 /**
- * Returns true if this filter will match anything. See {@link org.aezoraj.core.BloomFilter#setMatchAll()}
+ * Returns true if this filter will match anything. See {@link org.cryptcorej.core.BloomFilter#setMatchAll()}
  * for when this can be a useful thing to do.
  */
 bool CBloomFilter::MatchesAll() const {

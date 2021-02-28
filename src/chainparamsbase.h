@@ -1,6 +1,6 @@
 // Copyright (c) 2014 The Bitcoin developers
 // Copyright (c) 2017-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,8 +11,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between aezora-cli and aezorad)
- * of a given instance of the Aezora system.
+ * CBaseChainParams defines the base parameters (shared between cryptcore-cli and cryptcored)
+ * of a given instance of the Cryptcore system.
  */
 class CBaseChainParams
 {

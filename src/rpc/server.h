@@ -8,7 +8,7 @@
 #define BITCOIN_RPCSERVER_H
 
 #include "amount.h"
-#include "zazr/zerocoin.h"
+#include "zcorr/zerocoin.h"
 #include "rpc/protocol.h"
 #include "uint256.h"
 
@@ -129,7 +129,7 @@ public:
 };
 
 /**
- * AEZORA RPC command dispatcher.
+ * CRYPTCORE RPC command dispatcher.
  */
 class CRPCTable
 {
@@ -181,7 +181,7 @@ extern std::string HelpExampleRpc(std::string methodname, std::string args);
 extern void EnsureWalletIsUnlocked(bool fAllowAnonOnly = false);
 // Ensure the wallet's existence.
 extern void EnsureWallet();
-extern UniValue DoZazrSpend(const CAmount nAmount, std::vector<CZerocoinMint>& vMintsSelected, std::string address_str);
+extern UniValue DoZcorrSpend(const CAmount nAmount, std::vector<CZerocoinMint>& vMintsSelected, std::string address_str);
 
 extern UniValue getconnectioncount(const UniValue& params, bool fHelp); // in rpc/net.cpp
 extern UniValue getpeerinfo(const UniValue& params, bool fHelp);
@@ -278,11 +278,11 @@ extern UniValue importzerocoins(const UniValue& params, bool fHelp);
 extern UniValue exportzerocoins(const UniValue& params, bool fHelp);
 extern UniValue reconsiderzerocoins(const UniValue& params, bool fHelp);
 extern UniValue getspentzerocoinamount(const UniValue& params, bool fHelp);
-extern UniValue setzazrseed(const UniValue& params, bool fHelp);
-extern UniValue getzazrseed(const UniValue& params, bool fHelp);
+extern UniValue setzcorrseed(const UniValue& params, bool fHelp);
+extern UniValue getzcorrseed(const UniValue& params, bool fHelp);
 extern UniValue generatemintlist(const UniValue& params, bool fHelp);
-extern UniValue searchdzazr(const UniValue& params, bool fHelp);
-extern UniValue dzazrstate(const UniValue& params, bool fHelp);
+extern UniValue searchdzcorr(const UniValue& params, bool fHelp);
+extern UniValue dzcorrstate(const UniValue& params, bool fHelp);
 
 extern UniValue getrawtransaction(const UniValue& params, bool fHelp); // in rpc/rawtransaction.cpp
 extern UniValue listunspent(const UniValue& params, bool fHelp);

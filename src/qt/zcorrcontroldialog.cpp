@@ -2,28 +2,28 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zazrcontroldialog.h"
-#include "ui_zazrcontroldialog.h"
+#include "zcorrcontroldialog.h"
+#include "ui_zcorrcontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 
 
-std::set<std::string> ZAzrControlDialog::setSelectedMints;
-std::set<CMintMeta> ZAzrControlDialog::setMints;
+std::set<std::string> ZCorrControlDialog::setSelectedMints;
+std::set<CMintMeta> ZCorrControlDialog::setMints;
 
-bool CZAzrControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
+bool CZCorrControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
     int column = treeWidget()->sortColumn();
-    if (column == ZAzrControlDialog::COLUMN_DENOMINATION || column == ZAzrControlDialog::COLUMN_VERSION || column == ZAzrControlDialog::COLUMN_CONFIRMATIONS)
+    if (column == ZCorrControlDialog::COLUMN_DENOMINATION || column == ZCorrControlDialog::COLUMN_VERSION || column == ZCorrControlDialog::COLUMN_CONFIRMATIONS)
         return data(column, Qt::UserRole).toLongLong() < other.data(column, Qt::UserRole).toLongLong();
     return QTreeWidgetItem::operator<(other);
 }
 
 
-ZAzrControlDialog::ZAzrControlDialog(QWidget *parent) :
+ZCorrControlDialog::ZCorrControlDialog(QWidget *parent) :
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
-    ui(new Ui::ZAzrControlDialog),
+    ui(new Ui::ZCorrControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -35,13 +35,13 @@ ZAzrControlDialog::ZAzrControlDialog(QWidget *parent) :
     ui->frame->setProperty("cssClass", "container-dialog");
 
     // Title
-    ui->labelTitle->setText(tr("Select zAZR Denominations to Spend"));
+    ui->labelTitle->setText(tr("Select zCORR Denominations to Spend"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
 
     // Label Style
-    ui->labelZAzr->setProperty("cssClass", "text-main-purple");
-    ui->labelZAzr_int->setProperty("cssClass", "text-main-purple");
+    ui->labelZCorr->setProperty("cssClass", "text-main-purple");
+    ui->labelZCorr_int->setProperty("cssClass", "text-main-purple");
     ui->labelQuantity->setProperty("cssClass", "text-main-purple");
     ui->labelQuantity_int->setProperty("cssClass", "text-main-purple");
 
@@ -55,17 +55,17 @@ ZAzrControlDialog::ZAzrControlDialog(QWidget *parent) :
     ui->pushButtonAll->setProperty("cssClass", "btn-check");
 
     // click on checkbox
-    connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &ZAzrControlDialog::updateSelection);
+    connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &ZCorrControlDialog::updateSelection);
     // push select/deselect all button
-    connect(ui->pushButtonAll, &QPushButton::clicked, this, &ZAzrControlDialog::ButtonAllClicked);
+    connect(ui->pushButtonAll, &QPushButton::clicked, this, &ZCorrControlDialog::ButtonAllClicked);
 }
 
-ZAzrControlDialog::~ZAzrControlDialog()
+ZCorrControlDialog::~ZCorrControlDialog()
 {
     delete ui;
 }
 
-void ZAzrControlDialog::setModel(WalletModel *model)
+void ZCorrControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
@@ -73,7 +73,7 @@ void ZAzrControlDialog::setModel(WalletModel *model)
 
 
 //Update the tree widget
-void ZAzrControlDialog::updateList()
+void ZCorrControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -83,7 +83,7 @@ void ZAzrControlDialog::updateList()
     QFlags<Qt::ItemFlag> flgTristate = Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;
     std::map<libzerocoin::CoinDenomination, int> mapDenomPosition;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        CZAzrControlWidgetItem* itemDenom(new CZAzrControlWidgetItem);
+        CZCorrControlWidgetItem* itemDenom(new CZCorrControlWidgetItem);
         ui->treeWidget->addTopLevelItem(itemDenom);
 
         //keep track of where this is positioned in tree widget
@@ -104,7 +104,7 @@ void ZAzrControlDialog::updateList()
     for (const CMintMeta& mint : setMints) {
         // assign this mint to the correct denomination in the tree view
         libzerocoin::CoinDenomination denom = mint.denom;
-        CZAzrControlWidgetItem *itemMint = new CZAzrControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
+        CZCorrControlWidgetItem *itemMint = new CZCorrControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
 
         // if the mint is already selected, then it needs to have the checkbox checked
         std::string strPubCoinHash = mint.hashPubcoin.GetHex();
@@ -150,9 +150,9 @@ void ZAzrControlDialog::updateList()
             if(nConfirmations < nRequiredConfs)
                 strReason = strprintf("Needs %d more confirmations", nRequiredConfs - nConfirmations);
             else if (model->getEncryptionStatus() == WalletModel::EncryptionStatus::Locked)
-                strReason = "Your wallet is locked. Impossible to spend zAZR.";
+                strReason = "Your wallet is locked. Impossible to spend zCORR.";
             else if (!mint.isSeedCorrect)
-                strReason = "The zAZR seed used to mint this zAZR is not the same as currently hold in the wallet";
+                strReason = "The zCORR seed used to mint this zCORR is not the same as currently hold in the wallet";
             else
                 strReason = "Needs 1 more mint added to network";
 
@@ -167,7 +167,7 @@ void ZAzrControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZAzrControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZCorrControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -189,7 +189,7 @@ void ZAzrControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZAzrControlDialog::updateLabels()
+void ZCorrControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -198,14 +198,14 @@ void ZAzrControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZAzr_int->setText(QString::number(nAmount));
+    ui->labelZCorr_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    //privacyDialog->setZAzrControlLabels(nAmount, setSelectedMints.size());
+    //privacyDialog->setZCorrControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> ZAzrControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZCorrControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -217,7 +217,7 @@ std::vector<CMintMeta> ZAzrControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZAzrControlDialog::ButtonAllClicked()
+void ZCorrControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

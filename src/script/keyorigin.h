@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_SCRIPT_KEYORIGIN_H
-#define AEZORA_SCRIPT_KEYORIGIN_H
+#ifndef CRYPTCORE_SCRIPT_KEYORIGIN_H
+#define CRYPTCORE_SCRIPT_KEYORIGIN_H
 
 #include <serialize.h>
 #include <vector>
@@ -52,4 +52,4 @@ struct KeyOriginInfo
     }
 };
 
-#endif // AEZORA_SCRIPT_KEYORIGIN_H
+#endif // CRYPTCORE_SCRIPT_KEYORIGIN_H

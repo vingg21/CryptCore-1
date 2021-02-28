@@ -5,7 +5,7 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +13,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
 #include "amount.h"
@@ -25,8 +25,8 @@
 #include "pow.h"
 #include "primitives/block.h"
 #include "primitives/transaction.h"
-#include "zazr/zerocoin.h"
-#include "zazr/zazrmodule.h"
+#include "zcorr/zerocoin.h"
+#include "zcorr/zcorrmodule.h"
 #include "script/script.h"
 #include "script/sigcache.h"
 #include "script/standard.h"

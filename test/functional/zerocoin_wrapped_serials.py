@@ -13,9 +13,9 @@ from time import sleep
 from test_framework.authproxy import JSONRPCException
 from test_framework.util import assert_equal, assert_greater_than
 
-from fake_stake.base_test import AEZORA_FakeStakeTest
+from fake_stake.base_test import CRYPTCORE_FakeStakeTest
 
-class zAZRwrappedSerialsTest(AEZORA_FakeStakeTest):
+class zCORRwrappedSerialsTest(CRYPTCORE_FakeStakeTest):
 
     def run_test(self):
         q = 73829871667027927151400291810255409637272593023945445234219354687881008052707
@@ -35,7 +35,7 @@ class zAZRwrappedSerialsTest(AEZORA_FakeStakeTest):
         sleep(2)
 
         # 2) Mint zerocoins
-        self.log.info("Minting %d-denom zAZRs..." % DENOM_TO_USE)
+        self.log.info("Minting %d-denom zCORRs..." % DENOM_TO_USE)
         balance = self.node.getbalance("*", 100)
         assert_greater_than(balance, DENOM_TO_USE)
         total_mints = 0
@@ -105,4 +105,4 @@ class zAZRwrappedSerialsTest(AEZORA_FakeStakeTest):
 
 
 if __name__ == '__main__':
-    zAZRwrappedSerialsTest().main()
+    zCORRwrappedSerialsTest().main()

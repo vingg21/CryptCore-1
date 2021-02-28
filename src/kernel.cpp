@@ -2,7 +2,7 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,8 +14,8 @@
 #include "util.h"
 #include "stakeinput.h"
 #include "utilmoneystr.h"
-#include "zazrchain.h"
-#include "zazr/zpos.h"
+#include "zcorrchain.h"
+#include "zcorr/zpos.h"
 
 #include <boost/assign/list_of.hpp>
 
@@ -108,8 +108,8 @@ bool LoadStakeInput(const CBlock& block, const CBlockIndex* pindexPrev, std::uni
     // Construct the stakeinput object
     const CTxIn& txin = block.vtx[1].vin[0];
     stake = txin.IsZerocoinSpend() ?
-            std::unique_ptr<CStakeInput>(new CLegacyZAzrStake()) :
-            std::unique_ptr<CStakeInput>(new CAzrStake());
+            std::unique_ptr<CStakeInput>(new CLegacyZCorrStake()) :
+            std::unique_ptr<CStakeInput>(new CCorrStake());
 
     return stake->InitFromTxIn(txin);
 }
@@ -173,7 +173,7 @@ bool CheckProofOfStake(const CBlock& block, std::string& strError, const CBlockI
     }
 
     // zPoS disabled (ContextCheck) before blocks V7, and the tx input signature is in CoinSpend
-    if (stakeInput->IsZAZR()) return true;
+    if (stakeInput->IsZCORR()) return true;
 
     // Verify tx input signature
     CTxOut stakePrevout;

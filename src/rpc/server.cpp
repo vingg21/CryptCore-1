@@ -269,11 +269,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop AEZORA server.");
+            "\nStop CRYPTCORE server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "AEZORA server stopping";
+    return "CRYPTCORE server stopping";
 }
 
 
@@ -362,33 +362,33 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true,  true,  false  },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
-        /* AEZORA features */
-        {"aezora", "listmasternodes", &listmasternodes, true, true, false},
-        {"aezora", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"aezora", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"aezora", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"aezora", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"aezora", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"aezora", "masternodedebug", &masternodedebug, true, true, false},
-        {"aezora", "startmasternode", &startmasternode, true, true, false},
-        {"aezora", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"aezora", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"aezora", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"aezora", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"aezora", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"aezora", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"aezora", "preparebudget", &preparebudget, true, true, false},
-        {"aezora", "submitbudget", &submitbudget, true, true, false},
-        {"aezora", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"aezora", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"aezora", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"aezora", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"aezora", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"aezora", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"aezora", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"aezora", "checkbudgets", &checkbudgets, true, true, false},
-        {"aezora", "mnsync", &mnsync, true, true, false},
-        {"aezora", "spork", &spork, true, true, false},
+        /* CRYPTCORE features */
+        {"cryptcore", "listmasternodes", &listmasternodes, true, true, false},
+        {"cryptcore", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"cryptcore", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"cryptcore", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"cryptcore", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"cryptcore", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"cryptcore", "masternodedebug", &masternodedebug, true, true, false},
+        {"cryptcore", "startmasternode", &startmasternode, true, true, false},
+        {"cryptcore", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"cryptcore", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"cryptcore", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"cryptcore", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"cryptcore", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"cryptcore", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"cryptcore", "preparebudget", &preparebudget, true, true, false},
+        {"cryptcore", "submitbudget", &submitbudget, true, true, false},
+        {"cryptcore", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"cryptcore", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"cryptcore", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"cryptcore", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"cryptcore", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"cryptcore", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"cryptcore", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"cryptcore", "checkbudgets", &checkbudgets, true, true, false},
+        {"cryptcore", "mnsync", &mnsync, true, true, false},
+        {"cryptcore", "spork", &spork, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -615,7 +615,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> aezora-cli " + methodname + " " + args + "\n";
+    return "> cryptcore-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

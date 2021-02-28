@@ -10,7 +10,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/aezorastrings.cpp"
+OUT_CPP="qt/cryptcorestrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -74,10 +74,10 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *aezora_strings[] = {\n')
+f.write('static const char UNUSED *cryptcore_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("aezora-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("cryptcore-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

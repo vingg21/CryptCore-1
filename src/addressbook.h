@@ -1,10 +1,10 @@
 // Copyright (c) 2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_ADDRESSBOOK_H
-#define AEZORA_ADDRESSBOOK_H
+#ifndef CRYPTCORE_ADDRESSBOOK_H
+#define CRYPTCORE_ADDRESSBOOK_H
 
 #include <map>
 #include <string>
@@ -44,4 +44,4 @@ namespace AddressBook {
 
 }
 
-#endif //AEZORA_ADDRESSBOOK_H
+#endif //CRYPTCORE_ADDRESSBOOK_H

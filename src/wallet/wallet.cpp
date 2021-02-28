@@ -17,7 +17,7 @@
 #include "swifttx.h"    // mapTxLockReq
 #include "util.h"
 #include "utilmoneystr.h"
-#include "zazrchain.h"
+#include "zcorrchain.h"
 
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
@@ -35,7 +35,7 @@ bool fSendFreeTransactions = false;
 bool fPayAtLeastCustomFee = true;
 
 /**
- * Fees smaller than this (in uazr) are considered zero fee (for transaction creation)
+ * Fees smaller than this (in ucorr) are considered zero fee (for transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minTxFee 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
@@ -376,7 +376,7 @@ bool CWallet::Unlock(const CKeyingMaterial& vMasterKeyIn)
             if (CWalletDB(strWalletFile).ReadCurrentSeedHash(hashSeed)) {
                 uint256 nSeed;
                 if (!GetDeterministicSeed(hashSeed, nSeed)) {
-                    return error("Failed to read zAZR seed from DB. Wallet is probably corrupt.");
+                    return error("Failed to read zCORR seed from DB. Wallet is probably corrupt.");
                 }
                 zwalletMain->SetMasterSeed(nSeed, false);
             }
@@ -1648,9 +1648,9 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate, b
 {
     int ret = 0;
     int64_t nNow = GetTime();
-    bool fCheckZAZR = GetBoolArg("-zapwallettxes", false);
-    if (fCheckZAZR)
-        zazrTracker->Init();
+    bool fCheckZCORR = GetBoolArg("-zapwallettxes", false);
+    if (fCheckZCORR)
+        zcorrTracker->Init();
 
     CBlockIndex* pindex = pindexStart;
     {
@@ -1680,8 +1680,8 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate, b
                     ret++;
             }
 
-            //If this is a zapwallettx, need to readd zazr
-            if (fCheckZAZR && pindex->nHeight >= Params().GetConsensus().height_start_ZC) {
+            //If this is a zapwallettx, need to readd zcorr
+            if (fCheckZCORR && pindex->nHeight >= Params().GetConsensus().height_start_ZC) {
                 std::list<CZerocoinMint> listMints;
                 BlockToZerocoinMintList(block, listMints, true);
                 CWalletDB walletdb(strWalletFile);
@@ -2315,7 +2315,7 @@ bool CWallet::GetBudgetSystemCollateralTX(CWalletTx& tx, uint256 hash, bool useI
     CAmount nFeeRet = 0;
     std::string strFail = "";
     std::vector<std::pair<CScript, CAmount> > vecSend;
-    vecSend.push_back(std::make_pair(scriptChange, BUDGET_FEE_TX_OLD)); // Old 50 AZR collateral
+    vecSend.push_back(std::make_pair(scriptChange, BUDGET_FEE_TX_OLD)); // Old 50 CORR collateral
 
     CCoinControl* coinControl = NULL;
     bool success = CreateTransaction(vecSend, tx, reservekey, nFeeRet, strFail, coinControl, ALL_COINS, useIX, (CAmount)0);
@@ -2338,7 +2338,7 @@ bool CWallet::GetBudgetFinalizationCollateralTX(CWalletTx& tx, uint256 hash, boo
     CAmount nFeeRet = 0;
     std::string strFail = "";
     std::vector<std::pair<CScript, CAmount> > vecSend;
-    vecSend.push_back(std::make_pair(scriptChange, BUDGET_FEE_TX)); // New 5 AZR collateral
+    vecSend.push_back(std::make_pair(scriptChange, BUDGET_FEE_TX)); // New 5 CORR collateral
 
     CCoinControl* coinControl = NULL;
     bool success = CreateTransaction(vecSend, tx, reservekey, nFeeRet, strFail, coinControl, ALL_COINS, useIX, (CAmount)0);
@@ -2461,7 +2461,7 @@ bool CWallet::CreateTransaction(const std::vector<std::pair<CScript, CAmount> >&
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-aezora-address
+                    // change transaction isn't always pay-to-cryptcore-address
                     CScript scriptChange;
                     bool combineChange = false;
 
@@ -2597,10 +2597,10 @@ bool CWallet::CreateCoinStake(
         return false;
     }
 
-    // Parse utxos into CAzrStakes
+    // Parse utxos into CCorrStakes
     std::list<std::unique_ptr<CStakeInput> > listInputs;
     for (const COutput &out : vCoins) {
-        std::unique_ptr<CAzrStake> input(new CAzrStake());
+        std::unique_ptr<CCorrStake> input(new CCorrStake());
         input->SetPrevout((CTransaction) *out.tx, out.i);
         listInputs.emplace_back(std::move(input));
     }
@@ -2629,7 +2629,7 @@ bool CWallet::CreateCoinStake(
         if (IsLocked() || ShutdownRequested()) return false;
 
         // This should never happen
-        if (stakeInput->IsZAZR()) {
+        if (stakeInput->IsZCORR()) {
             LogPrintf("%s: ERROR - zPOS is disabled\n", __func__);
             continue;
         }
@@ -2703,7 +2703,7 @@ bool CWallet::CreateCoinStake(
     if (!fKernelFound)
         return false;
 
-    // Sign for AZR
+    // Sign for CORR
     int nIn = 0;
     if (!txNew.vin[0].scriptSig.IsZerocoinSpend()) {
         for (CTxIn txIn : txNew.vin) {
@@ -2723,13 +2723,13 @@ bool CWallet::CreateCoinStake(
                 return error("%s: extracting pubcoin from txout failed", __func__);
 
             uint256 hashPubcoin = GetPubCoinHash(pubcoin.getValue());
-            if (!zazrTracker->HasPubcoinHash(hashPubcoin))
+            if (!zcorrTracker->HasPubcoinHash(hashPubcoin))
                 return error("%s: could not find pubcoinhash %s in tracker", __func__, hashPubcoin.GetHex());
 
-            CMintMeta meta = zazrTracker->GetMetaFromPubcoin(hashPubcoin);
+            CMintMeta meta = zcorrTracker->GetMetaFromPubcoin(hashPubcoin);
             meta.txid = txNew.GetHash();
             meta.nHeight = chainActive.Height() + 1;
-            if (!zazrTracker->UpdateState(meta))
+            if (!zcorrTracker->UpdateState(meta))
                 return error("%s: failed to update metadata in tracker", __func__);
         }
     }
@@ -3763,7 +3763,7 @@ void CWallet::SetNull()
     // Stake split threshold
     nStakeSplitThreshold = DEFAULT_STAKE_SPLIT_THRESHOLD;
 
-    // User-defined fee AZR/kb
+    // User-defined fee CORR/kb
     fUseCustomFee = false;
     nCustomFee = CWallet::minTxFee.GetFeePerK();
 

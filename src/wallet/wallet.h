@@ -20,7 +20,7 @@
 #include "pairresult.h"
 #include "primitives/block.h"
 #include "primitives/transaction.h"
-#include "zazr/zerocoin.h"
+#include "zcorr/zerocoin.h"
 #include "guiinterface.h"
 #include "util.h"
 #include "util/memory.h"
@@ -28,9 +28,9 @@
 #include "wallet/wallet_ismine.h"
 #include "wallet/scriptpubkeyman.h"
 #include "wallet/walletdb.h"
-#include "zazr/zazrmodule.h"
-#include "zazr/zazrwallet.h"
-#include "zazr/zazrtracker.h"
+#include "zcorr/zcorrmodule.h"
+#include "zcorr/zcorrwallet.h"
+#include "zcorr/zcorrtracker.h"
 
 #include <algorithm>
 #include <map>
@@ -82,7 +82,7 @@ enum WalletFeature {
     FEATURE_WALLETCRYPT = 40000, // wallet encryption
     FEATURE_COMPRPUBKEY = 60000, // compressed public keys
 
-    FEATURE_PRE_AEZORA = 61000, // inherited version..
+    FEATURE_PRE_CRYPTCORE = 61000, // inherited version..
 
     // The following features were implemented in BTC but not in our wallet, we can simply skip them.
     // FEATURE_HD = 130000,  Hierarchical key derivation after BIP32 (HD Wallet)
@@ -99,25 +99,25 @@ enum AvailableCoinsType {
     STAKEABLE_COINS = 6                             // UTXO's that are valid for staking
 };
 
-// Possible states for zAZR send
+// Possible states for zCORR send
 enum ZerocoinSpendStatus {
-    ZAZR_SPEND_OKAY = 0,                            // No error
-    ZAZR_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZAZR_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZAZR_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZAZR_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZAZR_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZAZR_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZAZR_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZAZR_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZAZR_TXMINT_GENERAL = 9,                        // General errors in MintsToInputVectorPublicSpend
-    ZAZR_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZAZR_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZAZR_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZAZR_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZAZR_SPENT_USED_ZAZR = 14,                      // Coin has already been spend
-    ZAZR_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZAZR_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZCORR_SPEND_OKAY = 0,                            // No error
+    ZCORR_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZCORR_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZCORR_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZCORR_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZCORR_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZCORR_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZCORR_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZCORR_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZCORR_TXMINT_GENERAL = 9,                        // General errors in MintsToInputVectorPublicSpend
+    ZCORR_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZCORR_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZCORR_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZCORR_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZCORR_SPENT_USED_ZCORR = 14,                      // Coin has already been spend
+    ZCORR_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZCORR_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -293,7 +293,7 @@ public:
     // Staker status (last hashed block and time)
     CStakerStatus* pStakerStatus = nullptr;
 
-    // User-defined fee AZR/kb
+    // User-defined fee CORR/kb
     bool fUseCustomFee;
     CAmount nCustomFee;
 
@@ -362,7 +362,7 @@ public:
 
     std::map<CBitcoinAddress, std::vector<COutput> > AvailableCoinsByAddress(bool fConfirmed = true, CAmount maxCoinValue = 0);
 
-    /// Get 10000 AZR output and keys which can be used for the Masternode
+    /// Get 10000 CORR output and keys which can be used for the Masternode
     bool GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, std::string strTxHash = "", std::string strOutputIndex = "");
     /// Extract txin information and keys from output
     bool GetVinAndKeysFromOutput(COutput out, CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, bool fColdStake = false);
@@ -591,7 +591,7 @@ public:
     //- ZC Mints (Only for regtest)
     std::string MintZerocoin(CAmount nValue, CWalletTx& wtxNew, std::vector<CDeterministicMint>& vDMints, const CCoinControl* coinControl = NULL);
     std::string MintZerocoinFromOutPoint(CAmount nValue, CWalletTx& wtxNew, std::vector<CDeterministicMint>& vDMints, const std::vector<COutPoint> vOutpts);
-    bool CreateZAZROutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZCORROutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool CreateZerocoinMintTransaction(const CAmount nValue,
             CMutableTransaction& txNew,
             std::vector<CDeterministicMint>& vDMints,
@@ -618,11 +618,11 @@ public:
     CAmount GetImmatureZerocoinBalance() const;
     std::map<libzerocoin::CoinDenomination, CAmount> GetMyZerocoinDistribution() const;
 
-    // zAZR wallet
-    CzAZRWallet* zwalletMain{nullptr};
-    std::unique_ptr<CzAZRTracker> zazrTracker{nullptr};
-    void setZWallet(CzAZRWallet* zwallet);
-    CzAZRWallet* getZWallet();
+    // zCORR wallet
+    CzCORRWallet* zwalletMain{nullptr};
+    std::unique_ptr<CzCORRTracker> zcorrTracker{nullptr};
+    void setZWallet(CzCORRWallet* zwallet);
+    CzCORRWallet* getZWallet();
     bool IsMyZerocoinSpend(const CBigNum& bnSerial) const;
     bool IsMyMint(const CBigNum& bnValue) const;
     std::string ResetMintZerocoin();
@@ -636,8 +636,8 @@ public:
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
     // Zerocoin entry changed. (called with lock cs_wallet held)
     boost::signals2::signal<void(CWallet* wallet, const std::string& pubCoin, const std::string& isUsed, ChangeType status)> NotifyZerocoinChanged;
-    // zAZR reset
-    boost::signals2::signal<void()> NotifyzAZRReset;
+    // zCORR reset
+    boost::signals2::signal<void()> NotifyzCORRReset;
 
     /* Wallets parameter interaction */
     static bool ParameterInteraction();

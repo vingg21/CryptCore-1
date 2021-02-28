@@ -8,7 +8,7 @@
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
 #if defined(USE_NUM_OPENSSL)

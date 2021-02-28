@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2016-2018 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_PUBKEY_H
-#define AEZORA_PUBKEY_H
+#ifndef CRYPTCORE_PUBKEY_H
+#define CRYPTCORE_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -260,4 +260,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // AEZORA_PUBKEY_H
+#endif // CRYPTCORE_PUBKEY_H

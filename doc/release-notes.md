@@ -1,10 +1,10 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-AEZORA Core version *version* is now available from:  <https://github.com/Aezora/aezora/releases>
+CRYPTCORE Core version *version* is now available from:  <https://github.com/Cryptcore/cryptcore/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/Aezora/aezora/issues>
+Please report bugs using the issue tracker at github: <https://github.com/Cryptcore/cryptcore/issues>
 
 
 Mandatory Update
@@ -14,19 +14,19 @@ Mandatory Update
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/AEZORA-Qt (on Mac) or aezorad/aezora-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/CRYPTCORE-Qt (on Mac) or cryptcored/cryptcore-qt (on Linux).
 
 
 Compatibility
 ==============
 
-AEZORA Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.10+, and Windows 7 and later.
+CRYPTCORE Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.10+, and Windows 7 and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support), No attempt is made to prevent installing or running the software on Windows XP, you can still do so at your own risk but be aware that there are known instabilities and issues. Please do not report issues about Windows XP to the issue tracker.
 
-Apple released it's last Mountain Lion update August 13, 2015, and officially ended support on [December 14, 2015](http://news.fnal.gov/2015/10/mac-os-x-mountain-lion-10-8-end-of-life-december-14/). AEZORA Core software starting with v3.2.0 will no longer run on MacOS versions prior to Yosemite (10.10). Please do not report issues about MacOS versions prior to Yosemite to the issue tracker.
+Apple released it's last Mountain Lion update August 13, 2015, and officially ended support on [December 14, 2015](http://news.fnal.gov/2015/10/mac-os-x-mountain-lion-10-8-end-of-life-december-14/). CRYPTCORE Core software starting with v3.2.0 will no longer run on MacOS versions prior to Yosemite (10.10). Please do not report issues about MacOS versions prior to Yosemite to the issue tracker.
 
-AEZORA Core should also work on most other Unix-like systems but is not frequently tested on them.
+CRYPTCORE Core should also work on most other Unix-like systems but is not frequently tested on them.
 
 
 Notable Changes
@@ -85,4 +85,4 @@ configured specifically to process scriptPubKey and not scriptSig scripts.
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/Aezora-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/Cryptcore-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

@@ -2,7 +2,7 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2020 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -115,7 +115,7 @@ bool GetOldStakeModifier(CStakeInput* stake, uint64_t& nStakeModifier)
 {
     CBlockIndex* pindexFrom = stake->GetIndexFrom();
     if (!pindexFrom) return error("%s : failed to get index from", __func__);
-    if (stake->IsZAZR()) {
+    if (stake->IsZCORR()) {
         int64_t nTimeBlockFrom = pindexFrom->GetBlockTime();
         const int nHeightStop = std::min(chainActive.Height(), Params().GetConsensus().height_last_ZC_AccumCheckpoint-1);
         while (pindexFrom && pindexFrom->nHeight + 1 <= nHeightStop) {

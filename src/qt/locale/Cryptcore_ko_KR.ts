@@ -122,12 +122,12 @@
         <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 송금할 AEZORA 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
+        <source>These are your CRYPTCORE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 송금할 CRYPTCORE 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 입금 받을 AEZORA 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your CRYPTCORE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 입금 받을 CRYPTCORE 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -235,8 +235,8 @@
         <translation>예) 홍길동</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>AEZORA 주소를 입력하세요.</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>CRYPTCORE 주소를 입력하세요.</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -352,16 +352,16 @@ for staking</source>
         <translation>취소</translation>
     </message>
     <message>
-        <source>AEZORA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AZRs from being stolen by malware infecting your computer.</source>
-        <translation>AEZORA는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 AZRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>CRYPTCORE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORRs from being stolen by malware infecting your computer.</source>
+        <translation>CRYPTCORE는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 CORRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AZR&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 AZR를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORR&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 CORR를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -446,8 +446,8 @@ for staking</source>
         <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aezora.conf).</source>
-        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (aezora.conf)에 txindex = 1을 설정해야합니다.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptcore.conf).</source>
+        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (cryptcore.conf)에 txindex = 1을 설정해야합니다.</translation>
     </message>
 </context>
 <context>
@@ -519,8 +519,8 @@ for staking</source>
         <translation>누르기</translation>
     </message>
     <message>
-        <source>0.00 AZR</source>
-        <translation>0.00 AZR</translation>
+        <source>0.00 CORR</source>
+        <translation>0.00 CORR</translation>
     </message>
     <message>
         <source>0</source>
@@ -691,8 +691,8 @@ for staking</source>
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uazr per input.</source>
-        <translation>Can vary +/- %1 uazr per input.</translation>
+        <source>Can vary +/- %1 ucorr per input.</source>
+        <translation>Can vary +/- %1 ucorr per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -708,7 +708,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlAzrWidget</name>
+    <name>CoinControlCorrWidget</name>
     <message>
         <source>Transaction Details</source>
         <translation>전송 상세내역</translation>
@@ -718,8 +718,8 @@ for staking</source>
         <translation>누르기</translation>
     </message>
     <message>
-        <source>AZR:</source>
-        <translation>AZR:</translation>
+        <source>CORR:</source>
+        <translation>CORR:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -847,12 +847,12 @@ for staking</source>
         <translation>스테이킹 통계</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
-        <source>zAZR</source>
-        <translation>zAZR</translation>
+        <source>zCORR</source>
+        <translation>zCORR</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -875,8 +875,8 @@ for staking</source>
         <translation>당신의 입출금 이력을 확인할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Amount of AZR staked.</source>
-        <translation>스테이킹 된 AZR 양</translation>
+        <source>Amount of CORR staked.</source>
+        <translation>스테이킹 된 CORR 양</translation>
     </message>
     <message>
         <source>All</source>
@@ -907,8 +907,8 @@ for staking</source>
         <translation>자신에게</translation>
     </message>
     <message>
-        <source>How to get AZR</source>
-        <translation>AZR를 얻는 법</translation>
+        <source>How to get CORR</source>
+        <translation>CORR를 얻는 법</translation>
     </message>
     <message>
         <source>You have no staking rewards</source>
@@ -1028,8 +1028,8 @@ for staking</source>
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AEZORA address.</source>
-        <translation>입력된 주소 "%1"는 올바른 AEZORA 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid CRYPTCORE address.</source>
+        <translation>입력된 주소 "%1"는 올바른 CRYPTCORE 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1108,16 +1108,16 @@ for staking</source>
         <translation>버전</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AEZORA Core</source>
-        <translation>AEZORA Core 정보</translation>
+        <source>About CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1167,16 +1167,16 @@ for staking</source>
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to AEZORA Core.</source>
-        <translation>AEZORA Core에 오신 것을 환영합니다.</translation>
+        <source>Welcome to CRYPTCORE Core.</source>
+        <translation>CRYPTCORE Core에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AEZORA Core will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 AEZORA Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTCORE Core will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 CRYPTCORE Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>AEZORA Core will download and store a copy of the AEZORA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AEZORA Core는 AEZORA 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>CRYPTCORE Core will download and store a copy of the CRYPTCORE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTCORE Core는 CRYPTCORE 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1191,8 +1191,8 @@ for staking</source>
         <translation>선택</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1267,8 +1267,8 @@ for staking</source>
         <translation>새로운 마스터노드 컨트롤러 생성</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a AEZORA Masternode you must dedicate 10.000 AZR (the unit of AEZORA) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;AEZORA 마스터노드 생성을 위해서는 최소 10,000 AZR (AEZORA 단위) 가 네트워크 상에 존재해야 합니다. (해당 코인들의 소유권은 그대로 유지되며 사라지지 않습니다) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; 언제든지 소유하고 있는 노드를 비활성화 시키거나 코인의 잠금상태를 해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRYPTCORE Masternode you must dedicate 10.000 CORR (the unit of CRYPTCORE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CRYPTCORE 마스터노드 생성을 위해서는 최소 10,000 CORR (CRYPTCORE 단위) 가 네트워크 상에 존재해야 합니다. (해당 코인들의 소유권은 그대로 유지되며 사라지지 않습니다) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; 언제든지 소유하고 있는 노드를 비활성화 시키거나 코인의 잠금상태를 해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s Name</source>
@@ -1529,8 +1529,8 @@ for staking</source>
         <translation>확인되지 않은 변경사항을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션에 변경사항을 적용할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
     </message>
     <message>
-        <source>Automatically open the AEZORA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 AEZORA 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
+        <source>Automatically open the CRYPTCORE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터에서 CRYPTCORE 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1549,12 +1549,12 @@ for staking</source>
         <translation>전문적</translation>
     </message>
     <message>
-        <source>Automatically start AEZORA after logging in to the system.</source>
-        <translation>시스템 로그인 후 AEZORA을 자동으로 시작합니다.</translation>
+        <source>Automatically start CRYPTCORE after logging in to the system.</source>
+        <translation>시스템 로그인 후 CRYPTCORE을 자동으로 시작합니다.</translation>
     </message>
     <message>
-        <source>&amp;Start AEZORA on system login</source>
-        <translation>&amp;시스템 로그인시 AEZORA 시작</translation>
+        <source>&amp;Start CRYPTCORE on system login</source>
+        <translation>&amp;시스템 로그인시 CRYPTCORE 시작</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1581,54 +1581,54 @@ for staking</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AEZORA.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 AEZORA을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTCORE.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 CRYPTCORE을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Aezora/Aezora-translations</source>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</source>
         <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
-https://www.transifex.com/Aezora/Aezora-translations</translation>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of AZR units to zAZR</source>
-        <translation>보상받은 AZR를 zAZR로 자동변환 활성화</translation>
+        <source>Enable automatic minting of CORR units to zCORR</source>
+        <translation>보상받은 CORR를 zCORR로 자동변환 활성화</translation>
     </message>
     <message>
-        <source>Enable zAZR Automint</source>
-        <translation>zAZR 자동생성 활성화</translation>
+        <source>Enable zCORR Automint</source>
+        <translation>zCORR 자동생성 활성화</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint 주소 사용</translation>
     </message>
     <message>
-        <source>Percentage of incoming AZR which get automatically converted to zAZR via Zerocoin Protocol (min: 10%)</source>
-        <translation>AZR수신시 자동변환 zAZR 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming CORR which get automatically converted to zCORR via Zerocoin Protocol (min: 10%)</source>
+        <translation>CORR수신시 자동변환 zCORR 비율 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zAZR</source>
-        <translation>자동 변환되는 zAZR 비율</translation>
+        <source>Percentage of autominted zCORR</source>
+        <translation>자동 변환되는 zCORR 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough AZR for this denomination is available</source>
-        <translation>이 디노미네이션의 AZR가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CORR for this denomination is available</source>
+        <translation>이 디노미네이션의 CORR가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zAZR Denomination</source>
-        <translation>선호하는 자동생성 zAZR 디노미네이션 </translation>
+        <source>Preferred Automint zCORR Denomination</source>
+        <translation>선호하는 자동생성 zCORR 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the AEZORA network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 AEZORA 네트워크에 연결해주세요.</translation>
+        <source>Connect to the CRYPTCORE network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 프록시를 통해 CRYPTCORE 네트워크에 연결해주세요.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1760,10 +1760,10 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
     </message>
 </context>
 <context>
-    <name>AEZORAGUI</name>
+    <name>CRYPTCOREGUI</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1790,8 +1790,8 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
         <translation>어플리케이션 종료</translation>
     </message>
     <message>
-        <source>AEZORA Core client</source>
-        <translation>AEZORA Core 클라이언트</translation>
+        <source>CRYPTCORE Core client</source>
+        <translation>CRYPTCORE Core 클라이언트</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1860,12 +1860,12 @@ Address: %4
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start aezora: click-to-pay handler</source>
-        <translation>AEZORA을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <source>Cannot start cryptcore: click-to-pay handler</source>
+        <translation>CRYPTCORE을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AEZORA address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 AEZORA 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CRYPTCORE address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 CRYPTCORE 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1962,8 +1962,8 @@ Address: %4
         <translation>지금은 활성화된 마스터 노드가 없습니다.</translation>
     </message>
     <message>
-        <source>Convert back to AZR</source>
-        <translation>AZR 로 재변환</translation>
+        <source>Convert back to CORR</source>
+        <translation>CORR 로 재변환</translation>
     </message>
     <message>
         <source>Zerocoin</source>
@@ -1984,8 +1984,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address (e.g. %1)</source>
-        <translation>AEZORA 주소를 입력하세요 (예 %1)</translation>
+        <source>Enter a CRYPTCORE address (e.g. %1)</source>
+        <translation>CRYPTCORE 주소를 입력하세요 (예 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2028,8 +2028,8 @@ Address: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     </context>
 <context>
@@ -2103,8 +2103,8 @@ Address: %4
         <translation>블록체인</translation>
     </message>
     <message>
-        <source>Open the AEZORA debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리에서 AEZORA 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
+        <source>Open the CRYPTCORE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리에서 CRYPTCORE 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2239,8 +2239,8 @@ Address: %4
         <translation>맞춤 백업 경로 :</translation>
     </message>
     <message>
-        <source>Custom zAZR Backup Path:</source>
-        <translation>맞춤 zAZR 백업 경로 :</translation>
+        <source>Custom zCORR Backup Path:</source>
+        <translation>맞춤 zCORR 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2320,8 +2320,8 @@ Address: %4
         <translation>출력:</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>AEZORA RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>CRYPTCORE RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2500,8 +2500,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2588,12 +2588,12 @@ Address: %4
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance.</source>
-        <translation>zAZR는 현재 점검중입니다.</translation>
+        <source>zCORR is currently undergoing maintenance.</source>
+        <translation>zCORR는 현재 점검중입니다.</translation>
     </message>
     <message>
-        <source>Version 1 zAZR require a security level of 100 to successfully spend.</source>
-        <translation>zAZR 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+        <source>Version 1 zCORR require a security level of 100 to successfully spend.</source>
+        <translation>zCORR 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2669,8 +2669,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지우기</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>AEZORA 주소를 입력하세요.</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>CRYPTCORE 주소를 입력하세요.</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
@@ -2736,8 +2736,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>AEZORA RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>CRYPTCORE RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -3109,8 +3109,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AEZORA Core is shutting down...</source>
-        <translation>AEZORA Core가 종료됩니다...</translation>
+        <source>CRYPTCORE Core is shutting down...</source>
+        <translation>CRYPTCORE Core가 종료됩니다...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3131,15 +3131,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Form</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3154,8 +3154,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core 개발자</translation>
     </message>
     <message>
-        <source>The AEZORA Core developers</source>
-        <translation>AEZORA Core 개발자</translation>
+        <source>The CRYPTCORE Core developers</source>
+        <translation>CRYPTCORE Core 개발자</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3426,12 +3426,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화를 통해 수신 됨</translation>
     </message>
     <message>
-        <source>AZR Stake</source>
-        <translation>AZR stake</translation>
+        <source>CORR Stake</source>
+        <translation>CORR stake</translation>
     </message>
     <message>
-        <source>zAZR Stake</source>
-        <translation>zAZR stake</translation>
+        <source>zCORR Stake</source>
+        <translation>zCORR stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3450,24 +3450,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted AZR to zAZR</source>
-        <translation>AZR를 zAZR로 변환</translation>
+        <source>Converted CORR to zCORR</source>
+        <translation>CORR를 zCORR로 변환</translation>
     </message>
     <message>
-        <source>Spent zAZR</source>
-        <translation>zAZR 사용</translation>
+        <source>Spent zCORR</source>
+        <translation>zCORR 사용</translation>
     </message>
     <message>
-        <source>Received AZR from zAZR</source>
-        <translation>zAZR를 AZR로 받음</translation>
+        <source>Received CORR from zCORR</source>
+        <translation>zCORR를 CORR로 받음</translation>
     </message>
     <message>
-        <source>Minted Change as zAZR from zAZR Spend</source>
-        <translation>zAZR 전송후 남은 zAZR로 잔돈 생성</translation>
+        <source>Minted Change as zCORR from zCORR Spend</source>
+        <translation>zCORR 전송후 남은 zCORR로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted zAZR to AZR</source>
-        <translation>zAZR를 AZR로 변환</translation>
+        <source>Converted zCORR to CORR</source>
+        <translation>zCORR를 CORR로 변환</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3575,8 +3575,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 AZR.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 AZR로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CORR.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 CORR로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -3610,10 +3610,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZAzrControlDialog</name>
+    <name>ZCorrControlDialog</name>
     <message>
-        <source>Select zAZR to Spend</source>
-        <translation>사용할 zAZR 선택</translation>
+        <source>Select zCORR to Spend</source>
+        <translation>사용할 zCORR 선택</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3624,8 +3624,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>누르기</translation>
     </message>
     <message>
-        <source>zAzr</source>
-        <translation>zAzr</translation>
+        <source>zCorr</source>
+        <translation>zCorr</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3645,7 +3645,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     </context>
 <context>
-    <name>aezora-core</name>
+    <name>cryptcore-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
@@ -3671,8 +3671,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. AEZORA Core is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. AEZORA Core는 이미 실행 중입니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTCORE Core is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. CRYPTCORE Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3699,16 +3699,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3743,12 +3743,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (AZR/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CORR/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (AZR/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CORR/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3843,20 +3843,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. AEZORA Core is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. AEZORA Core는 이미 실행 중입니다.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTCORE Core is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. CRYPTCORE Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 AZR과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 CORR과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 AZR와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 CORR와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3871,8 +3871,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 AEZORA 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 CRYPTCORE 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3999,8 +3999,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The AEZORA Core Developers</source>
-        <translation>Copyright (C) 2015-%i The AEZORA Core 개발자</translation>
+        <source>Copyright (C) 2015-%i The CRYPTCORE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The CRYPTCORE Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4079,8 +4079,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of AEZORA Core</source>
-        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 AEZORA 코어가 필요합니다.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CRYPTCORE Core</source>
+        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 CRYPTCORE 코어가 필요합니다.</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4131,8 +4131,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in AZR/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (AZR/kB) (기본값: %s)</translation>
+        <source>Fee (in CORR/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (CORR/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4171,8 +4171,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. AEZORA Core is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. AEZORA Core가 종료됩니다.</translation>
+        <source>Initialization sanity check failed. CRYPTCORE Core is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. CRYPTCORE Core가 종료됩니다.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4228,11 +4228,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zAZR 비율  (1-100, default: %u)</translation>
+        <translation>자동생성 zCORR 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the AZR and zAZR money supply statistics</source>
-        <translation>AZR 및 zAZR 공급량 다시 색인</translation>
+        <source>Reindex the CORR and zCORR money supply statistics</source>
+        <translation>CORR 및 zCORR 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4271,8 +4271,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all AEZORA specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>AEZORA의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all CRYPTCORE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>CRYPTCORE의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -4307,8 +4307,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4711,8 +4711,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing zAZR wallet...</source>
-        <translation>zAZR 지갑 동기화중...</translation>
+        <source>Syncing zCORR wallet...</source>
+        <translation>zCORR 지갑 동기화중...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4819,8 +4819,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zAZR</source>
-        <translation>Value is below the smallest available denomination (= 1) of zAZR</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCORR</source>
+        <translation>Value is below the smallest available denomination (= 1) of zCORR</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4835,8 +4835,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart AEZORA Core to complete</source>
-        <translation>지갑을 다시 작성해야 합니다: 완료하려면 AEZORA 코어를 재시작해야 합니다</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTCORE Core to complete</source>
+        <translation>지갑을 다시 작성해야 합니다: 완료하려면 CRYPTCORE 코어를 재시작해야 합니다</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -4864,7 +4864,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zAZR 가 부족합니다.</translation>
+        <translation>지갑에 zCORR 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>

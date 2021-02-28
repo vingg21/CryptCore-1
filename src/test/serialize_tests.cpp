@@ -6,7 +6,7 @@
 #include "serialize.h"
 #include "streams.h"
 #include "hash.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <stdint.h>
 

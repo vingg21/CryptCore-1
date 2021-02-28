@@ -130,12 +130,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan AEZORA adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your CRYPTCORE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan CRYPTCORE adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan AEZORA adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your CRYPTCORE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan CRYPTCORE adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -247,8 +247,8 @@
         <translation>örn. Ad Soyad</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>Bir AEZORA adresi girin</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>Bir CRYPTCORE adresi girin</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -376,15 +376,15 @@ Stake için kaldırın</translation>
         <translation>İPTAL</translation>
     </message>
     <message>
-        <source>AEZORA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AZRs from being stolen by malware infecting your computer.</source>
-        <translation>AEZORA şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, AZR'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>CRYPTCORE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORRs from being stolen by malware infecting your computer.</source>
+        <translation>CRYPTCORE şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, CORR'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AZR&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORR&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -470,8 +470,8 @@ Stake için kaldırın</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aezora.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (aezora.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptcore.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (cryptcore.conf).
 </translation>
     </message>
 </context>
@@ -486,8 +486,8 @@ Stake için kaldırın</translation>
         <translation>Birikimler</translation>
     </message>
     <message>
-        <source>0,00 AZR</source>
-        <translation>0,00 AZR</translation>
+        <source>0,00 CORR</source>
+        <translation>0,00 CORR</translation>
     </message>
     <message>
         <source>address</source>
@@ -564,8 +564,8 @@ Stake için kaldırın</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>0.00 AZR</source>
-        <translation>0.00 AZR</translation>
+        <source>0.00 CORR</source>
+        <translation>0.00 CORR</translation>
     </message>
     <message>
         <source>0</source>
@@ -744,8 +744,8 @@ Stake için kaldırın</translation>
         <translation>Herhangi bir alıcı %1 'den küçük bir miktar alırsa, bu etiket kırmızıya döner.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uazr per input.</source>
-        <translation>Her giriş için +/- %1 uazr farkedebilir.</translation>
+        <source>Can vary +/- %1 ucorr per input.</source>
+        <translation>Her giriş için +/- %1 ucorr farkedebilir.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -761,7 +761,7 @@ Stake için kaldırın</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlAzrWidget</name>
+    <name>CoinControlCorrWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Diyalog</translation>
@@ -775,8 +775,8 @@ Stake için kaldırın</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>AZR:</source>
-        <translation>AZR:</translation>
+        <source>CORR:</source>
+        <translation>CORR:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -894,9 +894,9 @@ Stake için kaldırın</translation>
         <translation>Delegasyon</translation>
     </message>
     <message>
-        <source>You can delegate your AZRs and let a hot node (24/7 online node)
+        <source>You can delegate your CORRs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
-        <translation>AZR'lerinizi offline olarak güvenli bir yerde anahtarlarınızı saklarken
+        <translation>CORR'lerinizi offline olarak güvenli bir yerde anahtarlarınızı saklarken
 (24/7 online düğüm) olan bir sıcak düğüm ile adınıza stakeletebilirsiniz.</translation>
     </message>
     <message>
@@ -904,8 +904,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Sahip adresi ekle</translation>
     </message>
     <message>
-        <source>Delegate or Accept AZR delegation</source>
-        <translation>Delege et veya AZR delegasyonu kabul et</translation>
+        <source>Delegate or Accept CORR delegation</source>
+        <translation>Delege et veya CORR delegasyonu kabul et</translation>
     </message>
     <message>
         <source>Delegate</source>
@@ -948,8 +948,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Geçersiz giriş</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is 10 AZR</source>
-        <translation>Geçersiz giriş, delege edilebilir minimum tutar 10 AZR</translation>
+        <source>Invalid entry, minimum delegable amount is 10 CORR</source>
+        <translation>Geçersiz giriş, delege edilebilir minimum tutar 10 CORR</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -988,8 +988,8 @@ Devam etmek istiyor musunuz?</translation>
         <translation>Koinler delege edildi</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Seçebileceğiniz AZR'iniz bulunmuyor</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Seçebileceğiniz CORR'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1120,12 +1120,12 @@ kopyala</translation>
         <translation>Stake İstatistikleri</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
-        <source>zAZR</source>
-        <translation>zAZR</translation>
+        <source>zCORR</source>
+        <translation>zCORR</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1156,8 +1156,8 @@ kopyala</translation>
         <translation>Hesap geçmişinizde görebilirsiniz</translation>
     </message>
     <message>
-        <source>Amount of AZR staked.</source>
-        <translation>Stake edilmiş AZR miktarı</translation>
+        <source>Amount of CORR staked.</source>
+        <translation>Stake edilmiş CORR miktarı</translation>
     </message>
     <message>
         <source>All</source>
@@ -1212,8 +1212,8 @@ kopyala</translation>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>How to get AZR</source>
-        <translation>AZR nasıl alınır</translation>
+        <source>How to get CORR</source>
+        <translation>CORR nasıl alınır</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1371,8 +1371,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Gönderen adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AEZORA address.</source>
-        <translation>Girilen "%1" adresi geçerli bir AEZORA adresi değil.</translation>
+        <source>The entered address "%1" is not a valid CRYPTCORE address.</source>
+        <translation>Girilen "%1" adresi geçerli bir CRYPTCORE adresi değil.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1467,16 +1467,16 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA CORE</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE CORE</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AEZORA Core</source>
-        <translation>AEZORA Core Hakkında </translation>
+        <source>About CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core Hakkında </translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1526,16 +1526,16 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to AEZORA Core.</source>
-        <translation>AEZORA Core'a hoşgeldiniz.</translation>
+        <source>Welcome to CRYPTCORE Core.</source>
+        <translation>CRYPTCORE Core'a hoşgeldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AEZORA Core will store its data.</source>
-        <translation>Program ilk başlatıldığında AEZORA Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTCORE Core will store its data.</source>
+        <translation>Program ilk başlatıldığında CRYPTCORE Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>AEZORA Core will download and store a copy of the AEZORA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AEZORA Core, AEZORA blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
+        <source>CRYPTCORE Core will download and store a copy of the CRYPTCORE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTCORE Core, CRYPTCORE blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecektir. Ayrıca cüzdanınız da bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1554,8 +1554,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>TAMAM</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1666,8 +1666,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Yeni bir Masternode Kontrolörü Yarat</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a AEZORA Masternode you must dedicate 10.000 AZR (the unit of AEZORA) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Yeni bir Masternode yaratmak için ağa 10.000 AZR (AEZORA birimi) ayırmanız gerekmektedir (buna rağmen koinler hala size aittir ve sahipliğini kororsunuz). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;İstediğiniz zaman devre dışı bırakabilir ve koinlerinizin kilidini kaldırabilirsiniz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRYPTCORE Masternode you must dedicate 10.000 CORR (the unit of CRYPTCORE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Yeni bir Masternode yaratmak için ağa 10.000 CORR (CRYPTCORE birimi) ayırmanız gerekmektedir (buna rağmen koinler hala size aittir ve sahipliğini kororsunuz). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;İstediğiniz zaman devre dışı bırakabilir ve koinlerinizin kilidini kaldırabilirsiniz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1678,8 +1678,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Masternode'unuzun Adını Belirleyin</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AZR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 AZR'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CORR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 CORR'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1866,7 +1866,7 @@ Lütfen birkaç dakika bekleyiniz.</translation>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the aezora.conf file
+You will only have to paste the data in the cryptcore.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1874,7 +1874,7 @@ this controller wallet (select the Masternode in the list and press "start").
 panoya almak üzeresiniz.
 
 
-Bilgiyi uzak sunucunuzdaki aezora.conf dosyasına yapıştırmanız ve
+Bilgiyi uzak sunucunuzdaki cryptcore.conf dosyasına yapıştırmanız ve
  başlatmanız gerekecektir, ondan sonra bu kontrol cüzdanını kullanan
 Masternodu başlatın (Listeden Masternodu seçip "başlat" tuşuna basın).
 </translation>
@@ -2042,8 +2042,8 @@ Emin misiniz?</translation>
         <translation>Ayrıştırılmış bilgi çok büyük</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "aezora" prefix</source>
-        <translation>Geçersiz URI, "aezora" ön adıyla başlamıyor</translation>
+        <source>Invalid URI, not starting with "cryptcore" prefix</source>
+        <translation>Geçersiz URI, "cryptcore" ön adıyla başlamıyor</translation>
     </message>
 </context>
 <context>
@@ -2092,8 +2092,8 @@ Emin misiniz?</translation>
         <translation>Doğrulanmamış değişikliğin harcamasını devre dışı bırakırsanız, bir işlemdeki değişiklik&lt;br/&gt;Bu işlem en az bir onay alıncaya kadar kullanılamaz.&lt;br/&gt;Bu aynı zamanda bakiyenizin nasıl hesaplandığını etkiler.</translation>
     </message>
     <message>
-        <source>Automatically open the AEZORA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticideki AEZORA istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
+        <source>Automatically open the CRYPTCORE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticideki CRYPTCORE istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -2112,12 +2112,12 @@ Emin misiniz?</translation>
         <translation>Uzman</translation>
     </message>
     <message>
-        <source>Automatically start AEZORA after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak AEZORA'i başlatın.</translation>
+        <source>Automatically start CRYPTCORE after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak CRYPTCORE'i başlatın.</translation>
     </message>
     <message>
-        <source>&amp;Start AEZORA on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde AEZORA'i başlat</translation>
+        <source>&amp;Start CRYPTCORE on system login</source>
+        <translation>&amp; Sistem oturum açma işleminde CRYPTCORE'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2144,58 +2144,58 @@ Emin misiniz?</translation>
         <translation>&amp;Ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AEZORA.</source>
-        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, AEZORA yeniden başlatıldıktan sonra geçerli olur.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTCORE.</source>
+        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, CRYPTCORE yeniden başlatıldıktan sonra geçerli olur.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Aezora/Aezora-translations</source>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</source>
         <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/Aezora/Aezora-translations</translation>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of AZR units to zAZR</source>
-        <translation>AZR birimlerinin zAZR'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of CORR units to zCORR</source>
+        <translation>CORR birimlerinin zCORR'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zAZR Automint</source>
-        <translation>zAZR Otomatik basımı etkinleştir</translation>
+        <source>Enable zCORR Automint</source>
+        <translation>zCORR Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Enable automatic zAZR minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zAZR minting yapılmasını etkinleştir</translation>
+        <source>Enable automatic zCORR minting from specific addresses</source>
+        <translation>Belirli bir adresten otomatik zCORR minting yapılmasını etkinleştir</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming AZR which get automatically converted to zAZR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zAZR'ye dönüştürülen gelen AZR yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming CORR which get automatically converted to zCORR via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zCORR'ye dönüştürülen gelen CORR yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zAZR</source>
-        <translation>Otomatikleştirilmiş zAZR yüzdesi</translation>
+        <source>Percentage of autominted zCORR</source>
+        <translation>Otomatikleştirilmiş zCORR yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough AZR for this denomination is available</source>
-        <translation>Bu bölen için yeterli AZR bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CORR for this denomination is available</source>
+        <translation>Bu bölen için yeterli CORR bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
-        <source>Preferred Automint zAZR Denomination</source>
-        <translation>Tercih edilen Automint zAZR Nominal değeri</translation>
+        <source>Preferred Automint zCORR Denomination</source>
+        <translation>Tercih edilen Automint zCORR Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake bölme eşiği</translation>
     </message>
     <message>
-        <source>Connect to the AEZORA network through a SOCKS5 proxy.</source>
-        <translation>Bir SOCKS5 proxy vasıtasıyla AEZORA ağına bağlanın.</translation>
+        <source>Connect to the CRYPTCORE network through a SOCKS5 proxy.</source>
+        <translation>Bir SOCKS5 proxy vasıtasıyla CRYPTCORE ağına bağlanın.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2339,10 +2339,10 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
     </message>
 </context>
 <context>
-    <name>AEZORAGUI</name>
+    <name>CRYPTCOREGUI</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA CORE</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE CORE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2369,8 +2369,8 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
         <translation>Uygulamayı sonlandır</translation>
     </message>
     <message>
-        <source>AEZORA Core client</source>
-        <translation>AEZORA Core istemci</translation>
+        <source>CRYPTCORE Core client</source>
+        <translation>CRYPTCORE Core istemci</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2413,8 +2413,8 @@ Adres: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. AEZORA can no longer continue safely and will quit.</source>
-        <translation>Onarılamaz bir hata oluştu. AEZORA güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
+        <source>A fatal error occurred. CRYPTCORE can no longer continue safely and will quit.</source>
+        <translation>Onarılamaz bir hata oluştu. CRYPTCORE güvenli bir şekilde çalışamaz, kapanacaktır.</translation>
     </message>
 </context>
 <context>
@@ -2447,12 +2447,12 @@ Adres: %4
         <translation>Geçersiz ödeme adresi %1</translation>
     </message>
     <message>
-        <source>Cannot start aezora: click-to-pay handler</source>
-        <translation>Aezora başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
+        <source>Cannot start cryptcore: click-to-pay handler</source>
+        <translation>Cryptcore başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AEZORA address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir AEZORA adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CRYPTCORE address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir CRYPTCORE adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2565,13 +2565,13 @@ Adres: %4
         <translation>Mint</translation>
     </message>
     <message>
-        <source>Minting zAZR anonymizes your AZR by removing any
+        <source>Minting zCORR anonymizes your CORR by removing any
 transaction history, making transactions untraceable </source>
-        <translation>zAZR mintleme işlemi AZR'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
+        <translation>zCORR mintleme işlemi CORR'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
     </message>
     <message>
-        <source>Mint new zAZR or convert back to AZR</source>
-        <translation>Yeni zAZR mintle veya AZR'e geri dönüştür</translation>
+        <source>Mint new zCORR or convert back to CORR</source>
+        <translation>Yeni zCORR mintle veya CORR'e geri dönüştür</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2582,32 +2582,32 @@ transaction history, making transactions untraceable </source>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>Mint zAZR</source>
-        <translation>Mint ZAZR</translation>
+        <source>Mint zCORR</source>
+        <translation>Mint ZCORR</translation>
     </message>
     <message>
-        <source>Enter amount of AZR to mint into zAZR</source>
-        <translation>zAZR'e mintlenmek için dönüştürülecek AZR miktarını gir</translation>
+        <source>Enter amount of CORR to mint into zCORR</source>
+        <translation>zCORR'e mintlenmek için dönüştürülecek CORR miktarını gir</translation>
     </message>
     <message>
-        <source>Convert back to AZR</source>
-        <translation>AZR'e geri dönüştür</translation>
+        <source>Convert back to CORR</source>
+        <translation>CORR'e geri dönüştür</translation>
     </message>
     <message>
-        <source>Enter amount of zAZR to convert back into AZR</source>
-        <translation>AZR'e geri dönüştürülecek zAZR miktarını gir</translation>
+        <source>Enter amount of zCORR to convert back into CORR</source>
+        <translation>CORR'e geri dönüştürülecek zCORR miktarını gir</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance</source>
-        <translation>zAZR şu anda bakımdadır</translation>
+        <source>zCORR is currently undergoing maintenance</source>
+        <translation>zCORR şu anda bakımdadır</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zAZR</source>
-        <translation>%1 zAZR yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
+        <source>You need to unlock the wallet to be able to %1 zCORR</source>
+        <translation>%1 zCORR yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2622,16 +2622,16 @@ transaction history, making transactions untraceable </source>
         <translation>Geçersiz değer</translation>
     </message>
     <message>
-        <source>zAZR minted successfully</source>
-        <translation>zAZR minting başarılı</translation>
+        <source>zCORR minted successfully</source>
+        <translation>zCORR minting başarılı</translation>
     </message>
     <message>
-        <source>zAZR converted back to AZR</source>
-        <translation>zAZR AZR'e dönüştürüldü</translation>
+        <source>zCORR converted back to CORR</source>
+        <translation>zCORR CORR'e dönüştürüldü</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Seçebileceğiniz AZR'iniz bulunmuyor</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Seçebileceğiniz CORR'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2729,8 +2729,8 @@ transaction history, making transactions untraceable </source>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address (e.g. %1)</source>
-        <translation>Gir bir AEZORA addres (e.g. %1)</translation>
+        <source>Enter a CRYPTCORE address (e.g. %1)</source>
+        <translation>Gir bir CRYPTCORE addres (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2777,8 +2777,8 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA CORE</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE CORE</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2797,8 +2797,8 @@ transaction history, making transactions untraceable </source>
         <translation>Masternode konfigürasyon dosyası okuma hatası: %1</translation>
     </message>
     <message>
-        <source>AEZORA Core didn't yet exit safely...</source>
-        <translation>AEZORA Core henüz güvenle kapanmadı..</translation>
+        <source>CRYPTCORE Core didn't yet exit safely...</source>
+        <translation>CRYPTCORE Core henüz güvenle kapanmadı..</translation>
     </message>
 </context>
 <context>
@@ -2872,8 +2872,8 @@ transaction history, making transactions untraceable </source>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the AEZORA debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Geçerli veri dizininden AEZORA hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the CRYPTCORE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Geçerli veri dizininden CRYPTCORE hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3016,8 +3016,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel Yedekleme Yolu:</translation>
     </message>
     <message>
-        <source>Custom zAZR Backup Path:</source>
-        <translation>Özel zAZR Yedekleme Yolu:</translation>
+        <source>Custom zCORR Backup Path:</source>
+        <translation>Özel zCORR Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3096,8 +3096,8 @@ transaction history, making transactions untraceable </source>
         <translation>Dışa:</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>AEZORA RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>CRYPTCORE RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3266,8 +3266,8 @@ transaction history, making transactions untraceable </source>
         <translation>Al</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive AZR.</source>
-        <translation>AEZORA almak için QR kodunu okutun veya adresi kopyalayın</translation>
+        <source>Scan the QR code or copy the address to receive CORR.</source>
+        <translation>CRYPTCORE almak için QR kodunu okutun veya adresi kopyalayın</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3368,8 +3368,8 @@ transaction history, making transactions untraceable </source>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3396,8 +3396,8 @@ transaction history, making transactions untraceable </source>
         <translation>TALEP ET</translation>
     </message>
     <message>
-        <source>Instead of only sharing a AEZORA address, you can create a Payment Request message which bundles up more information than is contained in just a AEZORA address.</source>
-        <translation>AEZORA adresi paylaşmak yerine, AEZORA adresinden daha fazla bilgi içeren bir Ödeme Talebi oluşturabilirsin.</translation>
+        <source>Instead of only sharing a CRYPTCORE address, you can create a Payment Request message which bundles up more information than is contained in just a CRYPTCORE address.</source>
+        <translation>CRYPTCORE adresi paylaşmak yerine, CRYPTCORE adresinden daha fazla bilgi içeren bir Ödeme Talebi oluşturabilirsin.</translation>
     </message>
     <message>
         <source>Label</source>
@@ -3463,8 +3463,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel fark adresi</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" AEZORA address</source>
-        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" AZR adresine gider</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" CRYPTCORE address</source>
+        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" CORR adresine gider</translation>
     </message>
 </context>
 <context>
@@ -3556,16 +3556,16 @@ transaction history, making transactions untraceable </source>
         <translation>Gönder</translation>
     </message>
     <message>
-        <source>You can transfer public coins (AZR)</source>
-        <translation>Açık koin AZR transfer edebilirsiniz</translation>
+        <source>You can transfer public coins (CORR)</source>
+        <translation>Açık koin CORR transfer edebilirsiniz</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>Harcayacağınız koin tipini seçin</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address or contact label</source>
-        <translation>Bir AEZORA adresi veya bağlantı etiketi girin</translation>
+        <source>Enter a CRYPTCORE address or contact label</source>
+        <translation>Bir CRYPTCORE adresi veya bağlantı etiketi girin</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3592,12 +3592,12 @@ transaction history, making transactions untraceable </source>
         <translation>Gönderilecek toplam</translation>
     </message>
     <message>
-        <source>Send AZR</source>
-        <translation>AZR Gönder</translation>
+        <source>Send CORR</source>
+        <translation>CORR Gönder</translation>
     </message>
     <message>
-        <source>Send zAZR</source>
-        <translation>zAZR gönder</translation>
+        <source>Send zCORR</source>
+        <translation>zCORR gönder</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3652,8 +3652,8 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance.</source>
-        <translation>zAZR halen bakım alıyor.</translation>
+        <source>zCORR is currently undergoing maintenance.</source>
+        <translation>zCORR halen bakım alıyor.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3672,12 +3672,12 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
 %2 adreslerine gönderiliyor</translation>
     </message>
     <message>
-        <source>zAZR transaction sent!</source>
-        <translation>zAZR ödemesi gönderildi</translation>
+        <source>zCORR transaction sent!</source>
+        <translation>zCORR ödemesi gönderildi</translation>
     </message>
     <message>
-        <source>Version 1 zAZR require a security level of 100 to successfully spend.</source>
-        <translation>Versiyon 1 olan zAZR'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
+        <source>Version 1 zCORR require a security level of 100 to successfully spend.</source>
+        <translation>Versiyon 1 olan zCORR'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3716,12 +3716,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Belirlenmiş masraf %1</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Seçebileceğiniz AZR'iniz bulunmuyor</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Seçebileceğiniz CORR'iniz bulunmuyor</translation>
     </message>
     <message>
-        <source>You don't have any zAZR in your balance to select.</source>
-        <translation>Bakiyenizde seçebileceğiniz zAZR'iniz bulunmuyor</translation>
+        <source>You don't have any zCORR in your balance to select.</source>
+        <translation>Bakiyenizde seçebileceğiniz zCORR'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3898,8 +3898,8 @@ Paranıza erişiminizi kaybetmemek için yazmayı ve güvenli bir yerde saklamay
         <translation>ŞİFRE ÇÖZME ANAHTARI</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>Bir AEZORA adresi girin</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>Bir CRYPTCORE adresi girin</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -3990,7 +3990,7 @@ Paranıza erişiminizi kaybetmemek için yazmayı ve güvenli bir yerde saklamay
         <translation>Cüzdana anahtar ekleme hatası</translation>
     </message>
     <message>
-        <source>Successfully added azrate key to the wallet</source>
+        <source>Successfully added corrate key to the wallet</source>
         <translation>Özel cüzdana anahtar başarıyla eklendi</translation>
     </message>
 </context>
@@ -4027,8 +4027,8 @@ Verify that you have installed a predetermined text editor.</source>
 Önceden belirlenmiş bir text editleme programınız olup olmadığını kontrol ediniz.</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>AEZORA RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>CRYPTCORE RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -4121,34 +4121,34 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>1) What is AEZORA?</source>
-        <translation>1)AEZORA nedir?</translation>
+        <source>1) What is CRYPTCORE?</source>
+        <translation>1)CRYPTCORE nedir?</translation>
     </message>
     <message>
-        <source>2) Why are my AZR unspendable?</source>
-        <translation>2) AZR'lerim neden harcanabilir değil?</translation>
+        <source>2) Why are my CORR unspendable?</source>
+        <translation>2) CORR'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
-        <source>3) AEZORA privacy? What is Zerocoin (zAZR)?</source>
-        <translation>3)AEZORA gizliliği? Zerocoin (zAZR) nedir?</translation>
+        <source>3) CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
+        <translation>3)CRYPTCORE gizliliği? Zerocoin (zCORR) nedir?</translation>
     </message>
     <message>
-        <source>4) Why are my zAZR unspendable?</source>
-        <translation>4)  zAZR'lerim neden harcanabilir değil?</translation>
+        <source>4) Why are my zCORR unspendable?</source>
+        <translation>4)  zCORR'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zAZR automatically?</source>
+    into zCORR automatically?</source>
         <translation>5)Neden cüzdanım bakiyemi otomatik olarak
-zAZR'e dönüştürdü?</translation>
+zCORR'e dönüştürdü?</translation>
     </message>
     <message>
-        <source>6) How do I receive AZR/zAZR?</source>
-        <translation>6) Nasıl AZR/zAZR alabilirim?</translation>
+        <source>6) How do I receive CORR/zCORR?</source>
+        <translation>6) Nasıl CORR/zCORR alabilirim?</translation>
     </message>
     <message>
-        <source>7) How do I stake AZR/zAZR?</source>
-        <translation>7) Nasıl AZR/zAZR staking yapabilirim?</translation>
+        <source>7) How do I stake CORR/zCORR?</source>
+        <translation>7) Nasıl CORR/zCORR staking yapabilirim?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4167,34 +4167,34 @@ zAZR'e dönüştürdü?</translation>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is AEZORA?</source>
-        <translation>AEZORA Nedir?</translation>
+        <source>What is CRYPTCORE?</source>
+        <translation>CRYPTCORE Nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA is a form of digital online money using blockchain technology
+                           CRYPTCORE is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  AEZORA incorporates market leading security &amp;
+                           zero fees.  CRYPTCORE incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zAZR) and Zerocoin staking.
+                           to implement ZeroCoin(zCORR) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           AEZORA utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of AEZORA to participate in earning block rewards
+                           CRYPTCORE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of CRYPTCORE to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA blockchain teknolojisini kullanan bir dijital online para birimidir
+                           CRYPTCORE blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
-                           AEZORA sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zAZR) ve Zerocoin staking özelliklerini
+                           CRYPTCORE sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
+                          Zerocoin (zCORR) ve Zerocoin staking özelliklerini
                           uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           AEZORA bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
-bu sayede AEZORA sahipleri blok ödülü kazanımına katılabilmektedir
+                           CRYPTCORE bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
+bu sayede CRYPTCORE sahipleri blok ödülü kazanımına katılabilmektedir
                            ağı diğer tam düğüm sahibi cüzdanlarla birlikte güvenli hale getirirler
                            ayrıca Masternode oluşturarak tekliflere oy verirler.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4205,25 +4205,25 @@ bu sayede AEZORA sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my AZR unspendable?</source>
-        <translation>AZR'lerim neden harcanabilir değil?</translation>
+        <source>Why are my CORR unspendable?</source>
+        <translation>CORR'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received AEZORA requires 6 confirmations on the network
+                           Newly received CRYPTCORE requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your AEZORA wallet also needs to be completely synchronized
+                           Your CRYPTCORE wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Yeni alınmış AEZORA'lerin harcanabilr hale gelmesi için ağdan 6 onay
+                           Yeni alınmış CRYPTCORE'lerin harcanabilr hale gelmesi için ağdan 6 onay
                            alması gerekmektedir, bu işlem yaklaşık olarak 6 dakika sürer.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           AEZORA cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
+                           CRYPTCORE cüzdanınızın ağdaki bakiyesini görebilmesi ve harcayabilmesi
                            için tamamen senkronize olması gerekmektedir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4233,27 +4233,27 @@ bu sayede AEZORA sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>3</translation>
     </message>
     <message>
-        <source>AEZORA privacy? What is Zerocoin (zAZR)?</source>
-        <translation>AEZORA gizliliği? Zerocoin (zAZR) nedir?</translation>
+        <source>CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
+        <translation>CRYPTCORE gizliliği? Zerocoin (zCORR) nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR is an optional privacy-centric method of coin mixing on the
-                           AEZORA blockchain. Basically all your transactions cannot be tracked
+                           zCORR is an optional privacy-centric method of coin mixing on the
+                           CRYPTCORE blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt;
-                           "AEZORA Zerocoin (zAZR) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt;
+                           "CRYPTCORE Zerocoin (zCORR) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR AEZORA blockchaini üzerinde koinleri karıştırmak için kullanılan
+                           zCORR CRYPTCORE blockchaini üzerinde koinleri karıştırmak için kullanılan
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt;
-                           "AEZORA Zerocoin (zAZR) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt;
+                           "CRYPTCORE Zerocoin (zCORR) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4262,20 +4262,20 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zAZR unspendable?</source>
-        <translation>zAZR'lerim neden harcanabilir değil?</translation>
+        <source>Why are my zCORR unspendable?</source>
+        <translation>zCORR'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zAZR will require 20 confirmations as well as 1
+                           After minting, zCORR will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Mint işlemi sonrasında, zAZR'lerin harcanabilir duruma gelmesi
+                           Mint işlemi sonrasında, zCORR'lerin harcanabilir duruma gelmesi
  için 20 onay alması ve kendisiyle aynı
  bölüme sahip fazladan 1 mint'e ihtiyaç vardır.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4286,34 +4286,34 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zAZR automatically?</source>
-        <translation>Neden cüzdanım bakiyemi otomatik olarak zAZR'e dönüştürdü?</translation>
+        <source>Why did my wallet convert the balance into zCORR automatically?</source>
+        <translation>Neden cüzdanım bakiyemi otomatik olarak zCORR'e dönüştürdü?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the AEZORA wallet will convert 10% of your entire AZR
-                           balance to zAZR to assist the network. If you do not wish to
-                           stake zAZR or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your AEZORA wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zAZR Automint”.
-                           If you are not making use of the AEZORA-QT or GUI you can simply open
-                           your aezora.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the CRYPTCORE wallet will convert 10% of your entire CORR
+                           balance to zCORR to assist the network. If you do not wish to
+                           stake zCORR or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your CRYPTCORE wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zCORR Automint”.
+                           If you are not making use of the CRYPTCORE-QT or GUI you can simply open
+                           your cryptcore.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zAZR in the
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt; "AEZORA Zerocoin (zAZR) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zAZR, please read the "How do I stake"
+                           You can read more about zCORR in the
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt; "CRYPTCORE Zerocoin (zCORR) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zCORR, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA cüzdanınız ağa destek olmak için varsayılan olarak tüm AZR bakiyenizin 10% 'unu zAZR'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zAZR stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zAZR Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. AEZORAQT veya GUI kullanmıyorsanız, aezora.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
+                           CRYPTCORE cüzdanınız ağa destek olmak için varsayılan olarak tüm CORR bakiyenizin 10% 'unu zCORR'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zCORR stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zCORR Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. CRYPTCOREQT veya GUI kullanmıyorsanız, cryptcore.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt; "AEZORA Zerocoin (zAZR) Teknik Makalesi"&lt;/a&gt;.
-                           zAZR'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt; "CRYPTCORE Zerocoin (zCORR) Teknik Makalesi"&lt;/a&gt;.
+                           zCORR'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4323,25 +4323,25 @@ kısmını okuyunuz.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive AZR/zAZR?</source>
-        <translation>Nasıl AZR/zAZR alabilirim?</translation>
+        <source>How do I receive CORR/zCORR?</source>
+        <translation>Nasıl CORR/zCORR alabilirim?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR can be spent and sent to any AEZORA address. The receiver will
-                           receive standard AEZORA but the origin of the AEZORA is anonymized by the zAZR Protocol.
+                           zCORR can be spent and sent to any CRYPTCORE address. The receiver will
+                           receive standard CRYPTCORE but the origin of the CRYPTCORE is anonymized by the zCORR Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zAZR you will need to mint your balance in the “Privacy” tab.
+                           If you want more zCORR you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR herhangi bir AEZORA adresine gönderilerek harcanabilir.
-                           Alıcı standart AEZORA alacaktır fakat AEZORA kaynağı
-zAZR Protokolü ile anonimleştirilmiş olacaktır.
+                           zCORR herhangi bir CRYPTCORE adresine gönderilerek harcanabilir.
+                           Alıcı standart CRYPTCORE alacaktır fakat CRYPTCORE kaynağı
+zCORR Protokolü ile anonimleştirilmiş olacaktır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Daha fazla zAZR istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
+                           Daha fazla zCORR istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4350,32 +4350,32 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake AZR/zAZR?</source>
-        <translation>Nasıl AZR/zAZR staking yapabilirim?</translation>
+        <source>How do I stake CORR/zCORR?</source>
+        <translation>Nasıl CORR/zCORR staking yapabilirim?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake AEZORA:
+                           To Stake CRYPTCORE:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of AEZORA with a minimum of 101 confirmations.
+                           You must have a balance of CRYPTCORE with a minimum of 101 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (aezora-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (cryptcore-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zAZR:
+                           To Stake zCORR:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zAZR balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zCORR balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4384,26 +4384,26 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA Staking yapabilmek için:
+                           CRYPTCORE Staking yapabilmek için:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Cüzdanınızı tamamen senkronize olduğundan ve son versiyonu kullandığınızdan emin olun.
                            &lt;li&gt;
-                           En az 101 onay almış bir AEZORA bakiyeniz olmaldır.
+                           En az 101 onay almış bir CRYPTCORE bakiyeniz olmaldır.
                            &lt;li&gt;
                            Cüzdanınız online olmalı, stake ve anonimleştirme işlemleri için kilidini açılmış olmalıdır.
                            &lt;li&gt;
                            Bu adımlar tamamlanmışsa staking çalışıyor olmalıdır.
                            &lt;li&gt;
-                           Staking durumunu kontrol etmek için fare imlecini cüzdanın sol üst kısmındaki paket ikonu üzerinde tuttuğunuzda görebilirsiniz. Yaptığını göstermek için paket ikonunun ışığı yanacak ve "Staking aktif" yazacaktır. Komut satırı arayüzünden (aezora-cli);  &lt;i&gt;getstakingstatus&lt;/i&gt; komutunu çalıştırarak staking'in etkin olduğunu onaylayabilirsiniz.
+                           Staking durumunu kontrol etmek için fare imlecini cüzdanın sol üst kısmındaki paket ikonu üzerinde tuttuğunuzda görebilirsiniz. Yaptığını göstermek için paket ikonunun ışığı yanacak ve "Staking aktif" yazacaktır. Komut satırı arayüzünden (cryptcore-cli);  &lt;i&gt;getstakingstatus&lt;/i&gt; komutunu çalıştırarak staking'in etkin olduğunu onaylayabilirsiniz.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           zAZR Staking yapabilmek için:
+                           zCORR Staking yapabilmek için:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Cüzdanınızı tamamen senkronize olduğundan ve son versiyonu kullandığınızdan emin olun.
                            &lt;li&gt;
-                           En az 200 onay almış yeni oluşturulmuş veya eskiden bulunan zAEZORA bakiyeniz olmaldır.
+                           En az 200 onay almış yeni oluşturulmuş veya eskiden bulunan zCRYPTCORE bakiyeniz olmaldır.
                            &lt;li&gt;
                            Cüzdanınız online olmalı, stake ve anonimleştirme işlemleri için kilidini açılmış olmalıdır.
                            Bu adımlar tamamlanmışsa staking çalışıyor olmalıdır.
@@ -4423,20 +4423,20 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #6b3dca' href='https://Discord.AEZORA.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://Discord.CRYPTCORE.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #6b3dca' href='https://AEZORA.FreshDesk.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://CRYPTCORE.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            Resmi chat gruplarımızın çoğunun içinde destek kanalları bulunmaktadır, örneğin
-                           &lt;a style='color: #6b3dca' href='https://Discord.AEZORA.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://Discord.CRYPTCORE.com'&gt;
                            Discord içinnde #support &lt;/a&gt;.
                            Bir destek talebi açmak isterseniz,bunu
-                           &lt;a style='color: #6b3dca' href='https://AEZORA.FreshDesk.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://CRYPTCORE.FreshDesk.com'&gt;
                            Freshdesk destek sitesinden yapabilirsiniz&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4452,8 +4452,8 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node AEZORA core wallet with a
-                           requirement of 10,000 AZR secured collateral to provide extra services
+                           A masternode is a computer running a full node CRYPTCORE core wallet with a
+                           requirement of 10,000 CORR secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4475,17 +4475,17 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in AEZORA Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in CRYPTCORE Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the AEZORA network&lt;/li&gt;
+                           &lt;li&gt;Help secure the CRYPTCORE network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 AZR per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CORR per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4494,7 +4494,7 @@ zAZR Protokolü ile anonimleştirilmiş olacaktır.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Tam düğüm AEZORA core cüzdanını çalıştıran, gereken 10,000 AZR
+                           Tam düğüm CRYPTCORE core cüzdanını çalıştıran, gereken 10,000 CORR
                            teminat bakiyesini barındırarak ağa ekstra hizmetler sunan ve
                            karşılığında da her blok ödülünden düzenli olarak pay alan bir
                            bilgisayardır.Bu hizmetler aşağıdaki gibidir:
@@ -4517,17 +4517,17 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
                            Masternode Avantajları:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;AEZORA yönetimine katılın&lt;/li&gt;
+                           &lt;li&gt;CRYPTCORE yönetimine katılın&lt;/li&gt;
                            &lt;li&gt;Masternode Ödülleri kazanın&lt;/li&gt;
                            &lt;li&gt;İlerde satabileceğiniz bir varlık opsiyonu&lt;/li&gt;
-                           &lt;li&gt;AEZORA ağını güvenliğine destek olun&lt;/li&gt;
+                           &lt;li&gt;CRYPTCORE ağını güvenliğine destek olun&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Gereksinimler:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Her Masternod için ayrı 10,000 AZR
+                           &lt;li&gt;Her Masternod için ayrı 10,000 CORR
                            &lt;li&gt;Core cüzdan içinde saklanmalıdır.&lt;/li&gt;
                            &lt;li&gt;Atanmış IP adresi gerekmektedir. &lt;/li&gt;
                            &lt;li&gt;Masternode cüzdanının online olması&lt;/li&gt;
@@ -4544,8 +4544,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Masternode Kontrolörü nedir?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AZR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Kontrol cüzdanı Masternode Uzaktan-Kontrol kurulumu yapırken içinde 10,000 AZR teminatını bulundurur. Bu cüzdan uzak masternode cüzdan/larını etkinleştirebilir, ayrıca masternodlarınız online iken teminatınızı bağlantı dışında tutmanıza imkan sağlar. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CORR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Kontrol cüzdanı Masternode Uzaktan-Kontrol kurulumu yapırken içinde 10,000 CORR teminatını bulundurur. Bu cüzdan uzak masternode cüzdan/larını etkinleştirebilir, ayrıca masternodlarınız online iken teminatınızı bağlantı dışında tutmanıza imkan sağlar. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -4655,8 +4655,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Yedek klasörü açılamadı</translation>
     </message>
     <message>
-        <source>Unable to open aezora.conf with default application</source>
-        <translation>aezora.conf dosyası uygulama tarafından açılamadı</translation>
+        <source>Unable to open cryptcore.conf with default application</source>
+        <translation>cryptcore.conf dosyası uygulama tarafından açılamadı</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4714,8 +4714,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Komut onay parça sayısı</translation>
     </message>
     <message>
-        <source>Start AEZORA on system login</source>
-        <translation>Sistem açılışında AEZORA'i başlat</translation>
+        <source>Start CRYPTCORE on system login</source>
+        <translation>Sistem açılışında CRYPTCORE'i başlat</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4802,8 +4802,8 @@ Emin misiniz?
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AEZORA addresses after it matures.</source>
-        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer AEZORA adreslerine otomatik olarak göndermenizi sağlar. </translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRYPTCORE addresses after it matures.</source>
+        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer CRYPTCORE adreslerine otomatik olarak göndermenizi sağlar. </translation>
     </message>
     <message>
         <source>Active</source>
@@ -4913,8 +4913,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>Mesaj İmza/Onay</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address or contact label</source>
-        <translation>Bir AEZORA adresi veya bağlantı etiketi girin</translation>
+        <source>Enter a CRYPTCORE address or contact label</source>
+        <translation>Bir CRYPTCORE adresi veya bağlantı etiketi girin</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -5274,8 +5274,8 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>SSS</translation>
     </message>
     <message>
-        <source>About AEZORA</source>
-        <translation>AEZORA Hakkında</translation>
+        <source>About CRYPTCORE</source>
+        <translation>CRYPTCORE Hakkında</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5341,8 +5341,8 @@ Emin misiniz?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AEZORA Core is shutting down...</source>
-        <translation>AEZORA Core kapanıyor ...</translation>
+        <source>CRYPTCORE Core is shutting down...</source>
+        <translation>CRYPTCORE Core kapanıyor ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5371,15 +5371,15 @@ Emin misiniz?
         <translation>Yükleniyor...</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA CORE</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE CORE</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5394,8 +5394,8 @@ Emin misiniz?
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The AEZORA Core developers</source>
-        <translation>The AEZORA Core developers</translation>
+        <source>The CRYPTCORE Core developers</source>
+        <translation>The CRYPTCORE Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5432,12 +5432,12 @@ Emin misiniz?
         <translation>Form</translation>
     </message>
     <message>
-        <source>480.0685 AZR</source>
-        <translation>480.0685 AZR</translation>
+        <source>480.0685 CORR</source>
+        <translation>480.0685 CORR</translation>
     </message>
     <message>
-        <source>1,000 zAZR</source>
-        <translation>1,000 zAZR</translation>
+        <source>1,000 zCORR</source>
+        <translation>1,000 zCORR</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5448,24 +5448,24 @@ Emin misiniz?
         <translation>Beklemede</translation>
     </message>
     <message>
-        <source>6.943 AZR</source>
-        <translation>6.943 AZR</translation>
+        <source>6.943 CORR</source>
+        <translation>6.943 CORR</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>Olgunlaşmamış</translation>
     </message>
     <message>
-        <source>10 AZR</source>
-        <translation>10 AZR</translation>
+        <source>10 CORR</source>
+        <translation>10 CORR</translation>
     </message>
     <message>
-        <source>60 zAZR</source>
-        <translation>60 zAZR</translation>
+        <source>60 zCORR</source>
+        <translation>60 zCORR</translation>
     </message>
     <message>
-        <source>10 zAZR</source>
-        <translation>10 zAZR</translation>
+        <source>10 zCORR</source>
+        <translation>10 zCORR</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5497,7 +5497,7 @@ Emin misiniz?
     </message>
     <message numerus="yes">
         <source>%n active connection(s)</source>
-        <translation><numerusform>%n aktif bağlantı(lar) mevcut AEZORA ağına</numerusform><numerusform>%n aktif bağlantı(lar)</numerusform></translation>
+        <translation><numerusform>%n aktif bağlantı(lar) mevcut CRYPTCORE ağına</numerusform><numerusform>%n aktif bağlantı(lar)</numerusform></translation>
     </message>
     <message>
         <source>Synchronized</source>
@@ -5781,20 +5781,20 @@ Emin misiniz?
         <translation>Şaşırtma yoluyla Alınan</translation>
     </message>
     <message>
-        <source>AZR Stake</source>
-        <translation>AZR Stake</translation>
+        <source>CORR Stake</source>
+        <translation>CORR Stake</translation>
     </message>
     <message>
-        <source>zAZR Stake</source>
-        <translation>zAZR Stake</translation>
+        <source>zCORR Stake</source>
+        <translation>zCORR Stake</translation>
     </message>
     <message>
-        <source>AZR Cold Stake</source>
-        <translation>AZR Soğuk Stake</translation>
+        <source>CORR Cold Stake</source>
+        <translation>CORR Soğuk Stake</translation>
     </message>
     <message>
-        <source>AZR Stake in behalf of</source>
-        <translation>Yerine AZR stake </translation>
+        <source>CORR Stake in behalf of</source>
+        <translation>Yerine CORR stake </translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5817,24 +5817,24 @@ Emin misiniz?
         <translation>Obfuscation Oluşturma Adları</translation>
     </message>
     <message>
-        <source>Converted AZR to zAZR</source>
-        <translation>AZR'den zAZR'e dönüştürülen</translation>
+        <source>Converted CORR to zCORR</source>
+        <translation>CORR'den zCORR'e dönüştürülen</translation>
     </message>
     <message>
-        <source>Spent zAZR</source>
-        <translation>zAZR Harca</translation>
+        <source>Spent zCORR</source>
+        <translation>zCORR Harca</translation>
     </message>
     <message>
-        <source>Received AZR from zAZR</source>
-        <translation>zAZR'den AZR olarak alınan</translation>
+        <source>Received CORR from zCORR</source>
+        <translation>zCORR'den CORR olarak alınan</translation>
     </message>
     <message>
-        <source>Minted Change as zAZR from zAZR Spend</source>
-        <translation>zAZR harcamasından kaynaklanan zAZR mint farkı</translation>
+        <source>Minted Change as zCORR from zCORR Spend</source>
+        <translation>zCORR harcamasından kaynaklanan zCORR mint farkı</translation>
     </message>
     <message>
-        <source>Converted zAZR to AZR</source>
-        <translation>zAZR'den AZR' dönüştürülen</translation>
+        <source>Converted zCORR to CORR</source>
+        <translation>zCORR'den CORR' dönüştürülen</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5928,8 +5928,8 @@ Emin misiniz?
         <translation>Toplam Tutar:</translation>
     </message>
     <message>
-        <source>2 AZR</source>
-        <translation>2 AZR</translation>
+        <source>2 CORR</source>
+        <translation>2 CORR</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5952,8 +5952,8 @@ Emin misiniz?
         <translation>Ücret:</translation>
     </message>
     <message>
-        <source>0.0001 AZR</source>
-        <translation>0.0001 AZR</translation>
+        <source>0.0001 CORR</source>
+        <translation>0.0001 CORR</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -6039,8 +6039,8 @@ Emin misiniz?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 AZR</source>
-        <translation>+0.000585 AZR</translation>
+        <source>+0.000585 CORR</source>
+        <translation>+0.000585 CORR</translation>
     </message>
 </context>
 <context>
@@ -6050,8 +6050,8 @@ Emin misiniz?
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 AZR.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 AZR ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CORR.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 CORR ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -6125,25 +6125,25 @@ Emin misiniz?
     </message>
     <message>
         <source>Welcome to
-AEZORA Core Wallet</source>
-        <translation>AEZORA Core Cüzdanı'na
+CRYPTCORE Core Wallet</source>
+        <translation>CRYPTCORE Core Cüzdanı'na
 Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>AEZORA is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>AEZORA Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
+        <source>CRYPTCORE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>CRYPTCORE Proof of Stake tabanlı dünyadaki en yenilikçi blockchain teknolojisidir. Yüksek tecrübeye sahip yazılımcılar ve kriptograflardan oluşan bir ekip tarafından geliştirilmiştir.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - AEZORA believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - AEZORA özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRYPTCORE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Manifestomuzda yazdığı gibi: Gizlilik, pazarlık yapılamayacak temel bir insan hakkıdır; kullanıcılarına istedikleri zaman ve istedikleri kişiyle verilerini paylaşma özgürlüğü verir - CRYPTCORE özerkliğe inanır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is AEZORA's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan AEZORA blockchaini üzerindeki ikinci katmandır.</translation>
+        <source>The masternode network is CRYPTCORE's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Masternode ağı dağıtık yönetim ve hazine yönetimini sağlayan CRYPTCORE blockchaini üzerindeki ikinci katmandır.</translation>
     </message>
     <message>
-        <source>How AEZORA respects your privacy?</source>
-        <translation>AEZORA gizliliğinize nasıl saygı duyar?</translation>
+        <source>How CRYPTCORE respects your privacy?</source>
+        <translation>CRYPTCORE gizliliğinize nasıl saygı duyar?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6155,10 +6155,10 @@ Hoşgeldiniz</translation>
     </message>
 </context>
 <context>
-    <name>ZAzrControlDialog</name>
+    <name>ZCorrControlDialog</name>
     <message>
-        <source>Select zAZR to Spend</source>
-        <translation>Harcanacak zAZR'leri seçin</translation>
+        <source>Select zCORR to Spend</source>
+        <translation>Harcanacak zCORR'leri seçin</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6169,8 +6169,8 @@ Hoşgeldiniz</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>zAzr</source>
-        <translation>zAzr</translation>
+        <source>zCorr</source>
+        <translation>zCorr</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6193,12 +6193,12 @@ Hoşgeldiniz</translation>
         <translation>Seç/Çıkar Hepsini</translation>
     </message>
     <message>
-        <source>Select zAZR Denominations to Spend</source>
-        <translation>Harcanacak zAZR Bölümlerini Seçin</translation>
+        <source>Select zCORR Denominations to Spend</source>
+        <translation>Harcanacak zCORR Bölümlerini Seçin</translation>
     </message>
 </context>
 <context>
-    <name>aezora-core</name>
+    <name>cryptcore-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
@@ -6224,8 +6224,8 @@ Hoşgeldiniz</translation>
         <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. AEZORA Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. AEZORA Core muhtemelen zaten çalışıyor.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTCORE Core is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. CRYPTCORE Core muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6253,23 +6253,23 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
-        <translation>Belirli bir adresten otomatik zAZR minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>Belirli bir adresten otomatik zCORR minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</source>
-        <translation>Her zAZR mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</source>
+        <translation>Her zCORR mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Soğuk stakeleme fonksiyonunu etkinleştirin (0-1, varsayılan: %u). Staking=0 ise etkin değildir</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</source>
-        <translation>AZR girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</source>
+        <translation>CORR girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</source>
-        <translation>zAZR girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</source>
+        <translation>zCORR girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6304,12 +6304,12 @@ Hoşgeldiniz</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (AZR / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (CORR / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (AZR / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (CORR / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6424,20 +6424,20 @@ Hoşgeldiniz</translation>
         <translation>Ağ versiyon dizisi toplam uzunluğu(%i) maksimum uzunluğu aşıyor(%i). Yorumların büyüklüğünü veya sayısını azaltın.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. AEZORA Core is probably already running.</source>
-        <translation>Bu bilgisayarda %s 'e bağlanılamıyor. AEZORA Core muhtemelen zaten çalışıyor.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTCORE Core is probably already running.</source>
+        <translation>Bu bilgisayarda %s 'e bağlanılamıyor. CRYPTCORE Core muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Bu işlem için gereken yeterli bölünmüş gizleme fonu bulunamadı.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>10000 AZR'e eşit olmayan bu işlem için gereken yeterli bölünmemiş gizleme fonu bulunamadı.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>10000 CORR'e eşit olmayan bu işlem için gereken yeterli bölünmemiş gizleme fonu bulunamadı.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>10000 AZR'e eşit olmayan bu işlem için yeterli bakiye tespit edilemedi</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>10000 CORR'e eşit olmayan bu işlem için yeterli bakiye tespit edilemedi</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6452,12 +6452,12 @@ Hoşgeldiniz</translation>
         <translation>Uyarı: paytxfee değeri çok yüksek ayarlanmış! Bu para gönderirken ödeyeceğiniz transfer ücretidir.</translation>
     </message>
     <message>
-        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>Uyarı: Zaman farkı sebebiyle eşlerin bağlantısı koptı. Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise AEZORA Core düzgün çalışmayacaktır. </translation>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>Uyarı: Zaman farkı sebebiyle eşlerin bağlantısı koptı. Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise CRYPTCORE Core düzgün çalışmayacaktır. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>Uyarı: Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise AEZORA Core düzgün çalışmayacaktır. </translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>Uyarı: Bilgisayarınızın tarih ve saat ayarlarının doğruluğunu kontrol edin! Saatiniz yanlış ise CRYPTCORE Core düzgün çalışmayacaktır. </translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6596,8 +6596,8 @@ Hoşgeldiniz</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The AEZORA Core Developers</source>
-        <translation>Copyright (C) 2015-%i The AEZORA Core Developers</translation>
+        <source>Copyright (C) 2015-%i The CRYPTCORE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The CRYPTCORE Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6645,11 +6645,11 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>zAZR minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>zCORR minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zAZR spends and stakes (0-1, default %u)</source>
-        <translation>zAZR harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
+        <source>Enable precomputation of zCORR spends and stakes (0-1, default %u)</source>
+        <translation>zCORR harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6684,8 +6684,8 @@ Hoşgeldiniz</translation>
         <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan dosyası bozuk</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of AEZORA Core</source>
-        <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan daha yeni bir AEZORA Core versiyonuna ihtiyaç duyuyor</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CRYPTCORE Core</source>
+        <translation>Wallet.dat yüklenirken hata oluştu: Cüzdan daha yeni bir CRYPTCORE Core versiyonuna ihtiyaç duyuyor</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6736,8 +6736,8 @@ Hoşgeldiniz</translation>
         <translation>Blok okuma hatası</translation>
     </message>
     <message>
-        <source>Fee (in AZR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gönderdiğiniz transfere (AZR/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
+        <source>Fee (in CORR/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gönderdiğiniz transfere (CORR/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6776,8 +6776,8 @@ Hoşgeldiniz</translation>
         <translation>bilgi</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. AEZORA Core is shutting down.</source>
-        <translation>Sağlama kontrolü başlatımı başarısız. AEZORA Core kapatılıyor.</translation>
+        <source>Initialization sanity check failed. CRYPTCORE Core is shutting down.</source>
+        <translation>Sağlama kontrolü başlatımı başarısız. CRYPTCORE Core kapatılıyor.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6836,20 +6836,20 @@ Hoşgeldiniz</translation>
         <translation>Otomatik olarak mint edilen Zerocoin yüzdesi (1-100, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Recalculating AZR supply...</source>
-        <translation>AZR tedariği tekrar hesaplanıyor...</translation>
+        <source>Recalculating CORR supply...</source>
+        <translation>CORR tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Recalculating minted ZAZR...</source>
-        <translation>Mint edilmiş zAZR'ler tekrar hesaplanıyor...</translation>
+        <source>Recalculating minted ZCORR...</source>
+        <translation>Mint edilmiş zCORR'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Recalculating spent ZAZR...</source>
-        <translation>Harcanmış zAZR'ler tekrar hesaplanıyor...</translation>
+        <source>Recalculating spent ZCORR...</source>
+        <translation>Harcanmış zCORR'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindex the AZR and zAZR money supply statistics</source>
-        <translation>AZR ve zAZR para tedarik istatistiklerini tekrar endeksle</translation>
+        <source>Reindex the CORR and zCORR money supply statistics</source>
+        <translation>CORR ve zCORR para tedarik istatistiklerini tekrar endeksle</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6892,8 +6892,8 @@ Hoşgeldiniz</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all AEZORA specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>AEZORA spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, varsayılan: %u)</translation>
+        <source>Disable all CRYPTCORE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>CRYPTCORE spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6928,8 +6928,8 @@ Hoşgeldiniz</translation>
         <translation>Otomatik mint edilmiş Zerocoin için tercih edilen bölümler (1/5/10/50/100/500/1000/5000), tercih yoksa 0. varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Otomatik bir zAZR yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Otomatik bir zCORR yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7364,8 +7364,8 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zAZR wallet...</source>
-        <translation>zAZR cüzdanı eşzamanlanıyor..</translation>
+        <source>Syncing zCORR wallet...</source>
+        <translation>zCORR cüzdanı eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7480,8 +7480,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zAZR</source>
-        <translation>Aşağıdaki değer zAZR'in mümkün olan en küçük bölüm değeridir (=1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCORR</source>
+        <translation>Aşağıdaki değer zCORR'in mümkün olan en küçük bölüm değeridir (=1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -7496,8 +7496,8 @@ Hoşgeldiniz</translation>
         <translation>Cüzdan %s bilgi dizini %s dışında bulunuyor</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart AEZORA Core to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekiyor: tamamlamak için AEZORA Core uygulamasını tekrar başlatın.</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTCORE Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekiyor: tamamlamak için CRYPTCORE Core uygulamasını tekrar başlatın.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

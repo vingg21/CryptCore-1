@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "blocksignature.h"
 #include "main.h"
-#include "zazrchain.h"
+#include "zcorrchain.h"
 
 bool SignBlockWithKey(CBlock& block, const CKey& key)
 {
@@ -48,13 +48,13 @@ bool CheckBlockSignature(const CBlock& block)
     if (block.vchBlockSig.empty())
         return error("%s: vchBlockSig is empty!", __func__);
 
-    /** Each block is signed by the private key of the input that is staked. This can be either zAZR or normal UTXO
-     *  zAZR: Each zAZR has a keypair associated with it. The serial number is a hash of the public key.
+    /** Each block is signed by the private key of the input that is staked. This can be either zCORR or normal UTXO
+     *  zCORR: Each zCORR has a keypair associated with it. The serial number is a hash of the public key.
      *  UTXO: The public key that signs must match the public key associated with the first utxo of the coinstake tx.
      */
     CPubKey pubkey;
-    bool fzAZRStake = block.vtx[1].vin[0].IsZerocoinSpend();
-    if (fzAZRStake) {
+    bool fzCORRStake = block.vtx[1].vin[0].IsZerocoinSpend();
+    if (fzCORRStake) {
         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(block.vtx[1].vin[0]);
         pubkey = spend.getPubKey();
     } else {

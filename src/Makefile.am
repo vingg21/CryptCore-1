@@ -68,15 +68,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += aezorad
+  bin_PROGRAMS += cryptcored
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += aezora-cli aezora-tx
+  bin_PROGRAMS += cryptcore-cli cryptcore-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# aezora core #
+# cryptcore core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -201,14 +201,14 @@ BITCOIN_CORE_H = \
   wallet/wallet.h \
   wallet/wallet_ismine.h \
   wallet/walletdb.h \
-  zazrchain.h \
-  zazr/deterministicmint.h \
-  zazr/mintpool.h \
-  zazr/zerocoin.h \
-  zazr/zazrtracker.h \
-  zazr/zazrwallet.h \
-  zazr/zazrmodule.h \
-  zazr/zpos.h \
+  zcorrchain.h \
+  zcorr/deterministicmint.h \
+  zcorr/mintpool.h \
+  zcorr/zerocoin.h \
+  zcorr/zcorrtracker.h \
+  zcorr/zcorrwallet.h \
+  zcorr/zcorrmodule.h \
+  zcorr/zpos.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -220,7 +220,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between aezorad and aezora-qt
+# server: shared between cryptcored and cryptcore-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -258,7 +258,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zazrchain.cpp \
+  zcorrchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -270,7 +270,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between aezorad and aezora-qt, but only linked
+# wallet: shared between cryptcored and cryptcore-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -300,14 +300,14 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/wallet_ismine.cpp \
   wallet/wallet_zerocoin.cpp \
   wallet/walletdb.cpp \
-  zazr/deterministicmint.cpp \
-  zazr/zerocoin.cpp \
-  zazr/mintpool.cpp \
-  zazr/zazrwallet.cpp \
-  zazr/zazrtracker.cpp \
+  zcorr/deterministicmint.cpp \
+  zcorr/zerocoin.cpp \
+  zcorr/mintpool.cpp \
+  zcorr/zcorrwallet.cpp \
+  zcorr/zcorrtracker.cpp \
   stakeinput.cpp \
-  zazr/zazrmodule.cpp \
-  zazr/zpos.cpp \
+  zcorr/zcorrmodule.cpp \
+  zcorr/zpos.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -380,7 +380,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between aezorad, and aezora-qt and non-server tools
+# common: shared between cryptcored, and cryptcore-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -393,9 +393,9 @@ libbitcoin_common_a_SOURCES = \
   compressor.cpp \
   consensus/merkle.cpp \
   primitives/block.cpp \
-  zazr/deterministicmint.cpp \
+  zcorr/deterministicmint.cpp \
   primitives/transaction.cpp \
-  zazr/zerocoin.cpp \
+  zcorr/zerocoin.cpp \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
@@ -449,7 +449,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between aezora-cli and aezora-qt
+# cli: shared between cryptcore-cli and cryptcore-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -459,16 +459,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# aezorad binary #
-aezorad_SOURCES = aezorad.cpp
-aezorad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-aezorad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-aezorad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptcored binary #
+cryptcored_SOURCES = cryptcored.cpp
+cryptcored_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cryptcored_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptcored_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-aezorad_SOURCES += aezorad-res.rc
+cryptcored_SOURCES += cryptcored-res.rc
 endif
-aezorad_LDADD = \
+cryptcored_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -482,38 +482,38 @@ aezorad_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-aezorad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+cryptcored_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# aezora-cli binary #
-aezora_cli_SOURCES = aezora-cli.cpp
-aezora_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-aezora_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-aezora_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptcore-cli binary #
+cryptcore_cli_SOURCES = cryptcore-cli.cpp
+cryptcore_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+cryptcore_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptcore_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-aezora_cli_SOURCES += aezora-cli-res.rc
+cryptcore_cli_SOURCES += cryptcore-cli-res.rc
 endif
 
-aezora_cli_LDADD = \
+cryptcore_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-aezora_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+cryptcore_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# aezora-tx binary #
-aezora_tx_SOURCES = aezora-tx.cpp
-aezora_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-aezora_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-aezora_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# cryptcore-tx binary #
+cryptcore_tx_SOURCES = cryptcore-tx.cpp
+cryptcore_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cryptcore_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cryptcore_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-aezora_tx_SOURCES += aezora-tx-res.rc
+cryptcore_tx_SOURCES += cryptcore-tx-res.rc
 endif
 
-aezora_tx_LDADD = \
+cryptcore_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -521,7 +521,7 @@ aezora_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-aezora_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+cryptcore_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
@@ -573,7 +573,7 @@ CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
-CLEANFILES += zazr/*.gcda zazr/*.gcno
+CLEANFILES += zcorr/*.gcda zcorr/*.gcno
 CLEANFILES += obj/build.h
 
 CTAES_DIST =  crypto/ctaes/bench.c
@@ -585,12 +585,12 @@ CTAES_DIST += crypto/ctaes/test.c
 EXTRA_DIST = $(CTAES_DIST)
 
 
-config/aezora-config.h: config/stamp-h1
+config/cryptcore-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/aezora-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/cryptcore-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/aezora-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/aezora-config.h.in
+$(top_srcdir)/$(subdir)/config/cryptcore-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/cryptcore-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

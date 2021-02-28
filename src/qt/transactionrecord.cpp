@@ -10,7 +10,7 @@
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet/wallet.h"
-#include "zazrchain.h"
+#include "zcorrchain.h"
 #include "main.h"
 
 #include <algorithm>
@@ -31,7 +31,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     bool fZSpendFromMe = false;
 
     if (wtx.HasZerocoinSpendInputs()) {
-        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZAZRModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
+        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZCORRModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
         fZSpendFromMe = wallet->IsMyZerocoinSpend(zcspend.getCoinSerialNumber());
     }
 
@@ -42,10 +42,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         if (!wtx.HasZerocoinSpendInputs() && !ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return parts;
 
-        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zazrTracker->HasMintTx(hash))) {
-            //zAZR stake reward
+        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zcorrTracker->HasMintTx(hash))) {
+            //zCORR stake reward
             sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZAZR;
+            sub.type = TransactionRecord::StakeZCORR;
             sub.address = mapValue["zerocoinmint"];
             sub.credit = 0;
             for (const CTxOut& out : wtx.vout) {
@@ -63,7 +63,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 parts.append(sub);
                 return parts;
             } else {
-                // AZR stake reward
+                // CORR stake reward
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::StakeMint;
                 sub.address = EncodeDestination(address);
@@ -97,7 +97,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 isminetype mine = wallet->IsMine(txout);
                 TransactionRecord sub(hash, nTime, wtx.GetTotalSize());
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                sub.type = TransactionRecord::ZerocoinSpend_Change_zAzr;
+                sub.type = TransactionRecord::ZerocoinSpend_Change_zCorr;
                 sub.address = mapValue["zerocoinmint"];
                 if (!fFeeAssigned) {
                     sub.debit -= (wtx.GetZerocoinSpent() - wtx.GetValueOut());
@@ -175,7 +175,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.credit = txout.nValue;
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                    // Received by AEZORA Address
+                    // Received by CRYPTCORE Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = EncodeDestination(address);
                 } else {
@@ -261,7 +261,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     //private keys that the change was sent to. Do not display a "sent to" here.
                     if (wtx.HasZerocoinMintOutputs())
                         continue;
-                    // Sent to AEZORA Address
+                    // Sent to CRYPTCORE Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = EncodeDestination(address);
                 } else if (txout.IsZerocoinMint()){
@@ -393,14 +393,14 @@ bool TransactionRecord::ExtractAddress(const CScript& scriptPubKey, bool fColdSt
     }
 }
 
-bool IsZAZRType(TransactionRecord::Type type)
+bool IsZCORRType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeZAZR:
+        case TransactionRecord::StakeZCORR:
         case TransactionRecord::ZerocoinMint:
         case TransactionRecord::ZerocoinSpend:
         case TransactionRecord::RecvFromZerocoinSpend:
-        case TransactionRecord::ZerocoinSpend_Change_zAzr:
+        case TransactionRecord::ZerocoinSpend_Change_zCorr:
         case TransactionRecord::ZerocoinSpend_FromMe:
             return true;
         default:
@@ -455,7 +455,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     // For generated transactions, determine maturity
     else if (type == TransactionRecord::Generated ||
             type == TransactionRecord::StakeMint ||
-            type == TransactionRecord::StakeZAZR ||
+            type == TransactionRecord::StakeZCORR ||
             type == TransactionRecord::MNReward ||
             type == TransactionRecord::StakeDelegated ||
             type == TransactionRecord::StakeHot) {
@@ -508,7 +508,7 @@ int TransactionRecord::getOutputIndex() const
 
 bool TransactionRecord::isCoinStake() const
 {
-    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZAZR);
+    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZCORR);
 }
 
 bool TransactionRecord::isAnyColdStakingType() const

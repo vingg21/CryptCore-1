@@ -7,12 +7,12 @@
 #define BITCOIN_QT_ASKPASSPHRASEDIALOG_H
 
 #include <QDialog>
-#include "qt/aezora/prunnable.h"
+#include "qt/cryptcore/prunnable.h"
 #include "allocators.h"
 #include <QCheckBox>
 
 class WalletModel;
-class AEZORAGUI;
+class CRYPTCOREGUI;
 
 namespace Ui
 {
@@ -43,9 +43,9 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_AZR,       /** Send AZR */
-        Send_zAZR,      /** Send zAZR */
-        Mint_zAZR,      /** Mint zAZR */
+        Send_CORR,       /** Send CORR */
+        Send_zCORR,      /** Send zCORR */
+        Mint_zCORR,      /** Mint zCORR */
         BIP_38,         /** BIP38 menu */
         Multi_Sig,      /** Multi-Signature dialog */
         Sign_Message,   /** Sign/verify message dialog */

@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_SERIALIZE_H
-#define AEZORA_SERIALIZE_H
+#ifndef CRYPTCORE_SERIALIZE_H
+#define CRYPTCORE_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -906,4 +906,4 @@ size_t GetSerializeSize(const S& s, const T& t)
     return (CSizeComputer(s.GetType(), s.GetVersion()) << t).size();
 }
 
-#endif // AEZORA_SERIALIZE_H
+#endif // CRYPTCORE_SERIALIZE_H

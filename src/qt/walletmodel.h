@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_QT_WALLETMODEL_H
-#define AEZORA_QT_WALLETMODEL_H
+#ifndef CRYPTCORE_QT_WALLETMODEL_H
+#define CRYPTCORE_QT_WALLETMODEL_H
 
 #include "askpassphrasedialog.h"
 #include "paymentrequestplus.h"
@@ -104,7 +104,7 @@ public:
     }
 };
 
-/** Interface to AEZORA wallet from Qt view code. */
+/** Interface to CRYPTCORE wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
@@ -177,7 +177,7 @@ public:
     void decryptKey(const std::vector<unsigned char>& crypted, const std::string& slt, const std::string& pwd, CKey& key);
     void emitBalanceChanged(); // Force update of UI-elements even when no values have changed
 
-    // return minted zAZR
+    // return minted zCORR
     bool getMint(const uint256& hashSerial, CZerocoinMint& mint);
 
     // Check address for validity
@@ -203,10 +203,10 @@ public:
 
     // Send coins to a list of recipients
     SendCoinsReturn sendCoins(WalletModelTransaction& transaction);
-    // Mint zAZR
+    // Mint zCORR
     bool mintCoins(CAmount value, CCoinControl* coinControl, std::string &strError);
 
-    bool createZazrSpend(
+    bool createZcorrSpend(
             CWalletTx &wtxNew,
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
@@ -214,14 +214,14 @@ public:
             std::string changeAddress = ""
     );
 
-    bool sendZazr(
+    bool sendZcorr(
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
             std::list<std::pair<CTxDestination, CAmount>> outputs,
             std::string changeAddress = ""
     );
 
-    bool convertBackZazr(
+    bool convertBackZcorr(
             CAmount value,
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt
@@ -395,4 +395,4 @@ public Q_SLOTS:
     bool updateAddressBookLabels(const CTxDestination& address, const std::string& strName, const std::string& strPurpose);
 };
 
-#endif // AEZORA_QT_WALLETMODEL_H
+#endif // CRYPTCORE_QT_WALLETMODEL_H

@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_KEY_H
-#define AEZORA_KEY_H
+#ifndef CRYPTCORE_KEY_H
+#define CRYPTCORE_KEY_H
 
 #include "allocators.h"
 #include "serialize.h"
@@ -182,4 +182,4 @@ void ECC_Stop(void);
 /** Check that required EC support is available at runtime. */
 bool ECC_InitSanityCheck(void);
 
-#endif // AEZORA_KEY_H
+#endif // CRYPTCORE_KEY_H

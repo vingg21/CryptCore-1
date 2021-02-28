@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
 #include "util.h"
@@ -84,7 +84,7 @@
 #include <openssl/rand.h>
 
 
-// AEZORA only features
+// CRYPTCORE only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -264,7 +264,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "aezora";
+    const char* pszModule = "cryptcore";
 #endif
     if (pex)
         return strprintf(
@@ -284,13 +284,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\AEZORA
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\AEZORA
-// Mac: ~/Library/Application Support/AEZORA
-// Unix: ~/.aezora
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\CRYPTCORE
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\CRYPTCORE
+// Mac: ~/Library/Application Support/CRYPTCORE
+// Unix: ~/.cryptcore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "AEZORA";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CRYPTCORE";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -302,10 +302,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "AEZORA";
+    return pathRet / "CRYPTCORE";
 #else
     // Unix
-    return pathRet / ".aezora";
+    return pathRet / ".cryptcore";
 #endif
 #endif
 }
@@ -350,7 +350,7 @@ void ClearDatadirCache()
 
 fs::path GetConfigFile()
 {
-    fs::path pathConfigFile(GetArg("-conf", "aezora.conf"));
+    fs::path pathConfigFile(GetArg("-conf", "cryptcore.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -369,7 +369,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     fs::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty aezora.conf if it does not exist
+        // Create empty cryptcore.conf if it does not exist
         FILE* configFile = fsbridge::fopen(GetConfigFile(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -380,7 +380,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override aezora.conf
+        // Don't overwrite existing settings so command line settings override cryptcore.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -403,7 +403,7 @@ fs::path AbsPathForConfigVal(const fs::path& path, bool net_specific)
 #ifndef WIN32
 fs::path GetPidFile()
 {
-    fs::path pathPidFile(GetArg("-pid", "aezorad.pid"));
+    fs::path pathPidFile(GetArg("-pid", "cryptcored.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

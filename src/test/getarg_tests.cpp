@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "util.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <string>
 #include <vector>

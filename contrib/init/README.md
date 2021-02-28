@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: aezorad.service
-Upstart: aezorad.conf
-OpenRC:  aezorad.openrc
-         aezorad.openrcconf
-CentOS:  aezorad.init
-macOS:    org.aezora.aezorad.plist
+SystemD: cryptcored.service
+Upstart: cryptcored.conf
+OpenRC:  cryptcored.openrc
+         cryptcored.openrcconf
+CentOS:  cryptcored.init
+macOS:    org.cryptcore.cryptcored.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

@@ -13,7 +13,7 @@
 #include "crypto/hmac_sha512.h"
 #include "random.h"
 #include "utilstrencodings.h"
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <vector>
 

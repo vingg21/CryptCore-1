@@ -10,7 +10,7 @@
 #include "checkpoints.h"
 
 #include "uint256.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #include <boost/test/unit_test.hpp>
 

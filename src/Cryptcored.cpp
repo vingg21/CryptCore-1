@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,8 +29,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called AEZORA (http://www.aezora.com),
- * which enables instant payments to anyone, anywhere in the world. AEZORA uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called CRYPTCORE (http://www.cryptcore.com),
+ * which enables instant payments to anyone, anywhere in the world. CRYPTCORE uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -63,18 +63,18 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/aezora.conf are parsed in qt/aezora.cpp's main()
+    // If Qt is used, parameters/cryptcore.conf are parsed in qt/cryptcore.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Aezora Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Cryptcore Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  aezorad [options]                     " + _("Start Aezora Core Daemon") + "\n";
+                        "  cryptcored [options]                     " + _("Start Cryptcore Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -110,17 +110,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "aezora:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "cryptcore:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in aezorad anymore. Use the aezora-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in cryptcored anymore. Use the cryptcore-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "AEZORA server starting\n");
+            fprintf(stdout, "CRYPTCORE server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -165,7 +165,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect aezorad signal handlers
+    // Connect cryptcored signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

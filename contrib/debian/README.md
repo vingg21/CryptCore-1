@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package aezorad/aezora-qt
-for Debian-based Linux systems. If you compile aezorad/aezora-qt yourself, there are some useful files here.
+This directory contains files used to package cryptcored/cryptcore-qt
+for Debian-based Linux systems. If you compile cryptcored/cryptcore-qt yourself, there are some useful files here.
 
-## aezora: URI support ##
+## cryptcore: URI support ##
 
 
-aezora-qt.desktop  (Gnome / Open Desktop)
+cryptcore-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install aezora-qt.desktop
+	sudo desktop-file-install cryptcore-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your aezora-qt binary to `/usr/bin`
-and the `../../share/pixmaps/aezora128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your cryptcore-qt binary to `/usr/bin`
+and the `../../share/pixmaps/cryptcore128.png` to `/usr/share/pixmaps`
 
-aezora-qt.protocol (KDE)
+cryptcore-qt.protocol (KDE)
 

@@ -7,7 +7,7 @@
 
 #include "guiutil.h"
 #include "walletmodel.h"
-#include "qt/aezora/qtutils.h"
+#include "qt/cryptcore/qtutils.h"
 
 #include <QUrl>
 #include <QFile>
@@ -17,7 +17,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
 {
     ui->setupUi(this);
     this->setStyleSheet(parent->styleSheet());
-    ui->uriEdit->setPlaceholderText("aezora:");
+    ui->uriEdit->setPlaceholderText("cryptcore:");
 
     ui->labelSubtitle->setText("URI");
     setCssProperty(ui->labelSubtitle, "text-title2-dialog");
@@ -79,8 +79,8 @@ void OpenURIDialog::on_selectFileButton_clicked()
         }
 
         QString str = QString::fromStdString(std::string(r.constData(), r.length()));
-        if (!str.startsWith("aezora")) {
-            inform(tr("Invalid URI, not starting with \"aezora\" prefix"));
+        if (!str.startsWith("cryptcore")) {
+            inform(tr("Invalid URI, not starting with \"cryptcore\" prefix"));
         }
         ui->uriEdit->setText(str);
     }

@@ -10,7 +10,7 @@
 #include "uint256.h"
 #include "util.h"
 #include "utilstrencodings.h"
-#include "test_aezora.h"
+#include "test_cryptcore.h"
 
 #include <string>
 #include <vector>

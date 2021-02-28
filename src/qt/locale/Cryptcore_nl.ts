@@ -130,12 +130,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw AEZORA adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <source>These are your CRYPTCORE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw CRYPTCORE adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
-        <source>These are your AEZORA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw AEZORA adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your CRYPTCORE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw CRYPTCORE adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -247,8 +247,8 @@
         <translation>bv. Jan Jansen</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>Voeg een AEZORA adres toe</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>Voeg een CRYPTCORE adres toe</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -376,16 +376,16 @@ voor bewijs van Inzet</translation>
         <translation>Annuleren</translation>
     </message>
     <message>
-        <source>AEZORA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AZRs from being stolen by malware infecting your computer.</source>
-        <translation>AEZORA zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw AZR's kunnen stelen.</translation>
+        <source>CRYPTCORE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORRs from being stolen by malware infecting your computer.</source>
+        <translation>CRYPTCORE zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw CORR's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AZR&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW AZR VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORR&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW CORR VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -470,8 +470,8 @@ voor bewijs van Inzet</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aezora.conf).</source>
-        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (aezora.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptcore.conf).</source>
+        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (cryptcore.conf).</translation>
     </message>
 </context>
 <context>
@@ -485,8 +485,8 @@ voor bewijs van Inzet</translation>
         <translation>Besparingen</translation>
     </message>
     <message>
-        <source>0,00 AZR</source>
-        <translation>0,00 AZR</translation>
+        <source>0,00 CORR</source>
+        <translation>0,00 CORR</translation>
     </message>
     <message>
         <source>address</source>
@@ -563,8 +563,8 @@ voor bewijs van Inzet</translation>
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>0.00 AZR</source>
-        <translation>0.00 AZR</translation>
+        <source>0.00 CORR</source>
+        <translation>0.00 CORR</translation>
     </message>
     <message>
         <source>0</source>
@@ -743,8 +743,8 @@ voor bewijs van Inzet</translation>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uazr per input.</source>
-        <translation>Kan +/-%1 uazr per invoer variëren.</translation>
+        <source>Can vary +/- %1 ucorr per input.</source>
+        <translation>Kan +/-%1 ucorr per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -760,7 +760,7 @@ voor bewijs van Inzet</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlAzrWidget</name>
+    <name>CoinControlCorrWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialoog</translation>
@@ -774,8 +774,8 @@ voor bewijs van Inzet</translation>
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>AZR:</source>
-        <translation>AZR:</translation>
+        <source>CORR:</source>
+        <translation>CORR:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -893,9 +893,9 @@ voor bewijs van Inzet</translation>
         <translation>Delegatie</translation>
     </message>
     <message>
-        <source>You can delegate your AZRs and let a hot node (24/7 online node)
+        <source>You can delegate your CORRs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
-        <translation>Je kan jouw AZRs delegeren en een hot node (24/7 online node)
+        <translation>Je kan jouw CORRs delegeren en een hot node (24/7 online node)
 laten staken in jouw naam, waardoor de sleutels in een veilige offline opslag bewaard worden.</translation>
     </message>
     <message>
@@ -903,8 +903,8 @@ laten staken in jouw naam, waardoor de sleutels in een veilige offline opslag be
         <translation>Eigenaarsadres toevoegen</translation>
     </message>
     <message>
-        <source>Delegate or Accept AZR delegation</source>
-        <translation>Delegeer of Accepteer AZR delegatie</translation>
+        <source>Delegate or Accept CORR delegation</source>
+        <translation>Delegeer of Accepteer CORR delegatie</translation>
     </message>
     <message>
         <source>Delegate</source>
@@ -947,8 +947,8 @@ laten staken in jouw naam, waardoor de sleutels in een veilige offline opslag be
         <translation>Ongeldige invoer</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is 10 AZR</source>
-        <translation>Ongeldige invoer, de minimum gedelegeerde hoeveelheid is 10 AZR</translation>
+        <source>Invalid entry, minimum delegable amount is 10 CORR</source>
+        <translation>Ongeldige invoer, de minimum gedelegeerde hoeveelheid is 10 CORR</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -987,8 +987,8 @@ Wil je verdergaan?</translation>
         <translation>Gedelegeerde Munten</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Je hebt geen AZR om te selecteren</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Je hebt geen CORR om te selecteren</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1118,12 +1118,12 @@ address</source>
         <translation>Staking statistieken</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
-        <source>zAZR</source>
-        <translation>zAZR</translation>
+        <source>zCORR</source>
+        <translation>zCORR</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1154,8 +1154,8 @@ address</source>
         <translation>U kunt de geschiedenis van uw account bekijken</translation>
     </message>
     <message>
-        <source>Amount of AZR staked.</source>
-        <translation>Hoeveelheid aan gestaked AZR .</translation>
+        <source>Amount of CORR staked.</source>
+        <translation>Hoeveelheid aan gestaked CORR .</translation>
     </message>
     <message>
         <source>All</source>
@@ -1210,8 +1210,8 @@ address</source>
         <translation>Nog geen transacties</translation>
     </message>
     <message>
-        <source>How to get AZR</source>
-        <translation>Hoe AZR verkrijgen</translation>
+        <source>How to get CORR</source>
+        <translation>Hoe CORR verkrijgen</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1369,8 +1369,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AEZORA address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig AEZORA adres.</translation>
+        <source>The entered address "%1" is not a valid CRYPTCORE address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig CRYPTCORE adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1465,16 +1465,16 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>versie</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AEZORA Core</source>
-        <translation>Over AEZORA Core</translation>
+        <source>About CRYPTCORE Core</source>
+        <translation>Over CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1524,16 +1524,16 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to AEZORA Core.</source>
-        <translation>Welkom bij AEZORA Core.</translation>
+        <source>Welcome to CRYPTCORE Core.</source>
+        <translation>Welkom bij CRYPTCORE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AEZORA Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar AEZORA Core zijn data opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where CRYPTCORE Core will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar CRYPTCORE Core zijn data opslaat.</translation>
     </message>
     <message>
-        <source>AEZORA Core will download and store a copy of the AEZORA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AEZORA Core zal een kopie van de AEZORA blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>CRYPTCORE Core will download and store a copy of the CRYPTCORE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CRYPTCORE Core zal een kopie van de CRYPTCORE blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1552,8 +1552,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Akkoord</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1664,8 +1664,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Creëer een Nieuwe Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a AEZORA Masternode you must dedicate 10.000 AZR (the unit of AEZORA) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een AEZORA Masternode te maken moet u 10.000 AZR (de eenheid van AEZORA) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRYPTCORE Masternode you must dedicate 10.000 CORR (the unit of CRYPTCORE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een CRYPTCORE Masternode te maken moet u 10.000 CORR (de eenheid van CRYPTCORE) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1676,8 +1676,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Masternode's Naam instellen</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AZR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 AZR zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CORR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 CORR zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1865,7 +1865,7 @@ Gelieve nog enkele minuten te wachten.</translation>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the aezora.conf file
+You will only have to paste the data in the cryptcore.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1873,7 +1873,7 @@ this controller wallet (select the Masternode in the list and press "start").
 op een externe server aan uw klembord.
 
 
-U hoeft alleen de gegevens in het aezora.conf bestand te plakken
+U hoeft alleen de gegevens in het cryptcore.conf bestand te plakken
 van uw externe server en start deze vervolgens de Masternode met
 deze controller portemonnee (selecteer de Masternode in de lijst en druk op "start").</translation>
     </message>
@@ -2040,8 +2040,8 @@ Weet je het zeker?</translation>
         <translation>Ingelezen data te groot</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "aezora" prefix</source>
-        <translation>Ongeldige URI, begint niet met de "aezora" prefix</translation>
+        <source>Invalid URI, not starting with "cryptcore" prefix</source>
+        <translation>Ongeldige URI, begint niet met de "cryptcore" prefix</translation>
     </message>
 </context>
 <context>
@@ -2090,8 +2090,8 @@ Weet je het zeker?</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the AEZORA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de AEZORA client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the CRYPTCORE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de CRYPTCORE client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -2110,12 +2110,12 @@ Weet je het zeker?</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start AEZORA after logging in to the system.</source>
-        <translation>AEZORA automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start CRYPTCORE after logging in to the system.</source>
+        <translation>CRYPTCORE automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start AEZORA on system login</source>
-        <translation>&amp;AEZORA starten bij systeemlogin</translation>
+        <source>&amp;Start CRYPTCORE on system login</source>
+        <translation>&amp;CRYPTCORE starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2142,58 +2142,58 @@ Weet je het zeker?</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AEZORA.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van AEZORA.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTCORE.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van CRYPTCORE.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Aezora/Aezora-translations</source>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</source>
         <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-https://www.transifex.com/Aezora/Aezora-translations</translation>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of AZR units to zAZR</source>
-        <translation>Schakel automatisch slaan van AZR-eenheden in op zAZR</translation>
+        <source>Enable automatic minting of CORR units to zCORR</source>
+        <translation>Schakel automatisch slaan van CORR-eenheden in op zCORR</translation>
     </message>
     <message>
-        <source>Enable zAZR Automint</source>
-        <translation>Schakel zAZR Automint in</translation>
+        <source>Enable zCORR Automint</source>
+        <translation>Schakel zCORR Automint in</translation>
     </message>
     <message>
-        <source>Enable automatic zAZR minting from specific addresses</source>
-        <translation>Automatische zAZR munting inschakelen vanuit specifiek adres</translation>
+        <source>Enable automatic zCORR minting from specific addresses</source>
+        <translation>Automatische zCORR munting inschakelen vanuit specifiek adres</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming AZR which get automatically converted to zAZR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende AZR die automatisch wordt omgezet naar zAZR via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming CORR which get automatically converted to zCORR via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende CORR die automatisch wordt omgezet naar zCORR via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zAZR</source>
-        <translation>Percentage autominted zAZR</translation>
+        <source>Percentage of autominted zCORR</source>
+        <translation>Percentage autominted zCORR</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough AZR for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg AZR voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CORR for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg CORR voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zAZR Denomination</source>
-        <translation>Gewenste Automint zAZR denominatie</translation>
+        <source>Preferred Automint zCORR Denomination</source>
+        <translation>Gewenste Automint zCORR denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the AEZORA network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het AEZORA netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the CRYPTCORE network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het CRYPTCORE netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2337,10 +2337,10 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
     </message>
 </context>
 <context>
-    <name>AEZORAGUI</name>
+    <name>CRYPTCOREGUI</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2367,8 +2367,8 @@ https://www.transifex.com/Aezora/Aezora-translations</translation>
         <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>AEZORA Core client</source>
-        <translation>AEZORA Core client</translation>
+        <source>CRYPTCORE Core client</source>
+        <translation>CRYPTCORE Core client</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2411,8 +2411,8 @@ Adres: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. AEZORA can no longer continue safely and will quit.</source>
-        <translation>Een kritieke fout is opgelopen. AEZORA kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
+        <source>A fatal error occurred. CRYPTCORE can no longer continue safely and will quit.</source>
+        <translation>Een kritieke fout is opgelopen. CRYPTCORE kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
     </message>
 </context>
 <context>
@@ -2445,12 +2445,12 @@ Adres: %4
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start aezora: click-to-pay handler</source>
-        <translation>Kan aezora niet starten: click-to-pay handler</translation>
+        <source>Cannot start cryptcore: click-to-pay handler</source>
+        <translation>Kan cryptcore niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AEZORA address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig AEZORA adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CRYPTCORE address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig CRYPTCORE adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2563,14 +2563,14 @@ Adres: %4
         <translation>Munt</translation>
     </message>
     <message>
-        <source>Minting zAZR anonymizes your AZR by removing any
+        <source>Minting zCORR anonymizes your CORR by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Munten van zAZR anonimiseert uw AZR door het verwijderen van eender welke
+        <translation>Munten van zCORR anonimiseert uw CORR door het verwijderen van eender welke
 transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</translation>
     </message>
     <message>
-        <source>Mint new zAZR or convert back to AZR</source>
-        <translation>Munt nieuwe zAZR of converteer deze terug in AZR</translation>
+        <source>Mint new zCORR or convert back to CORR</source>
+        <translation>Munt nieuwe zCORR of converteer deze terug in CORR</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2581,32 +2581,32 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Nog geen transacties</translation>
     </message>
     <message>
-        <source>Mint zAZR</source>
-        <translation>Munt zAZR</translation>
+        <source>Mint zCORR</source>
+        <translation>Munt zCORR</translation>
     </message>
     <message>
-        <source>Enter amount of AZR to mint into zAZR</source>
-        <translation>Vul de hoeveelheid AZR in die u omslaan in zAZR</translation>
+        <source>Enter amount of CORR to mint into zCORR</source>
+        <translation>Vul de hoeveelheid CORR in die u omslaan in zCORR</translation>
     </message>
     <message>
-        <source>Convert back to AZR</source>
-        <translation>Converteer terug naar AZR</translation>
+        <source>Convert back to CORR</source>
+        <translation>Converteer terug naar CORR</translation>
     </message>
     <message>
-        <source>Enter amount of zAZR to convert back into AZR</source>
-        <translation>Voer de hoeveelheed zAZR in om terug te converteren naar AZR</translation>
+        <source>Enter amount of zCORR to convert back into CORR</source>
+        <translation>Voer de hoeveelheed zCORR in om terug te converteren naar CORR</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance</source>
-        <translation>zAZR ondergaat momenteel onderhoud</translation>
+        <source>zCORR is currently undergoing maintenance</source>
+        <translation>zCORR ondergaat momenteel onderhoud</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zAZR</source>
-        <translation>Je moet de portemonnee ontgrendelen om in staat zijn om %1 zAZR</translation>
+        <source>You need to unlock the wallet to be able to %1 zCORR</source>
+        <translation>Je moet de portemonnee ontgrendelen om in staat zijn om %1 zCORR</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2621,16 +2621,16 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Ongeldige waarde</translation>
     </message>
     <message>
-        <source>zAZR minted successfully</source>
-        <translation>zAZR munting succesvol</translation>
+        <source>zCORR minted successfully</source>
+        <translation>zCORR munting succesvol</translation>
     </message>
     <message>
-        <source>zAZR converted back to AZR</source>
-        <translation>zAZR terug geconverteerd naar AZR</translation>
+        <source>zCORR converted back to CORR</source>
+        <translation>zCORR terug geconverteerd naar CORR</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Je hebt geen AZR om te selecteren</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Je hebt geen CORR om te selecteren</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2729,8 +2729,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address (e.g. %1)</source>
-        <translation>Voer een AEZORA adres in (b.v. %1)</translation>
+        <source>Enter a CRYPTCORE address (e.g. %1)</source>
+        <translation>Voer een CRYPTCORE adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2777,8 +2777,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2797,8 +2797,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
     </message>
     <message>
-        <source>AEZORA Core didn't yet exit safely...</source>
-        <translation>AEZORA Core is nog niet veilig afgesloten...</translation>
+        <source>CRYPTCORE Core didn't yet exit safely...</source>
+        <translation>CRYPTCORE Core is nog niet veilig afgesloten...</translation>
     </message>
 </context>
 <context>
@@ -2872,8 +2872,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the AEZORA debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het AEZORA debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the CRYPTCORE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het CRYPTCORE debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3016,8 +3016,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zAZR Backup Path:</source>
-        <translation>Aangepast zAZR back-up pad:</translation>
+        <source>Custom zCORR Backup Path:</source>
+        <translation>Aangepast zCORR back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3096,8 +3096,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>Welkom bij de AEZORA RPC console.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>Welkom bij de CRYPTCORE RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3266,8 +3266,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Ontvangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive AZR.</source>
-        <translation>Scan de QR code of kopieer het adres om AZR te ontvangen.</translation>
+        <source>Scan the QR code or copy the address to receive CORR.</source>
+        <translation>Scan de QR code of kopieer het adres om CORR te ontvangen.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3368,8 +3368,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>AZR</source>
-        <translation>AZR</translation>
+        <source>CORR</source>
+        <translation>CORR</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3396,8 +3396,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>VERZOEK</translation>
     </message>
     <message>
-        <source>Instead of only sharing a AEZORA address, you can create a Payment Request message which bundles up more information than is contained in just a AEZORA address.</source>
-        <translation>In plaats van een AEZORA-adres te delen, kunt u een bericht voor een betalingsverzoek maken dat meer informatie bundelt dan alleen in een AEZORA-adres.</translation>
+        <source>Instead of only sharing a CRYPTCORE address, you can create a Payment Request message which bundles up more information than is contained in just a CRYPTCORE address.</source>
+        <translation>In plaats van een CRYPTCORE-adres te delen, kunt u een bericht voor een betalingsverzoek maken dat meer informatie bundelt dan alleen in een CRYPTCORE-adres.</translation>
     </message>
     <message>
         <source>Label</source>
@@ -3463,8 +3463,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Aangepast wijzigingsadres</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" AEZORA address</source>
-        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" AEZORA-adres</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" CRYPTCORE address</source>
+        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" CRYPTCORE-adres</translation>
     </message>
 </context>
 <context>
@@ -3556,16 +3556,16 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Zenden</translation>
     </message>
     <message>
-        <source>You can transfer public coins (AZR)</source>
-        <translation>Je kan publieke munten (AZR)</translation>
+        <source>You can transfer public coins (CORR)</source>
+        <translation>Je kan publieke munten (CORR)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>Selecteer munttype om te spenderen</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address or contact label</source>
-        <translation>Voer een AEZORA-adres of contactlabel in</translation>
+        <source>Enter a CRYPTCORE address or contact label</source>
+        <translation>Voer een CRYPTCORE-adres of contactlabel in</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3592,12 +3592,12 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Totaal te versturen</translation>
     </message>
     <message>
-        <source>Send AZR</source>
-        <translation>AZR Versturen</translation>
+        <source>Send CORR</source>
+        <translation>CORR Versturen</translation>
     </message>
     <message>
-        <source>Send zAZR</source>
-        <translation>zAZR Versturen</translation>
+        <source>Send zCORR</source>
+        <translation>zCORR Versturen</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3652,8 +3652,8 @@ Deze munten zullen niet langer cold-staked zijn.</translation>
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>zAZR is currently undergoing maintenance.</source>
-        <translation>zAZR wordt momenteel onderhouden.</translation>
+        <source>zCORR is currently undergoing maintenance.</source>
+        <translation>zCORR wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3672,12 +3672,12 @@ Deze munten zullen niet langer cold-staked zijn.</translation>
 %2</translation>
     </message>
     <message>
-        <source>zAZR transaction sent!</source>
-        <translation>zAZR transactie verzonden!</translation>
+        <source>zCORR transaction sent!</source>
+        <translation>zCORR transactie verzonden!</translation>
     </message>
     <message>
-        <source>Version 1 zAZR require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zAZR vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+        <source>Version 1 zCORR require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zCORR vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3716,12 +3716,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Aangepaste Kost %1</translation>
     </message>
     <message>
-        <source>You don't have any AZR to select.</source>
-        <translation>Je hebt geen AZR om te selecteren</translation>
+        <source>You don't have any CORR to select.</source>
+        <translation>Je hebt geen CORR om te selecteren</translation>
     </message>
     <message>
-        <source>You don't have any zAZR in your balance to select.</source>
-        <translation>Je hebt geen zAZR in je balans om te selecteren.</translation>
+        <source>You don't have any zCORR in your balance to select.</source>
+        <translation>Je hebt geen zCORR in je balans om te selecteren.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3898,8 +3898,8 @@ Vergeet deze niet op te schrijven en veilig te bewaren, anders verlies je mogeli
         <translation>DECRYPTEER SLEUTEL</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address</source>
-        <translation>Voeg een AEZORA adres toe</translation>
+        <source>Enter a CRYPTCORE address</source>
+        <translation>Voeg een CRYPTCORE adres toe</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -3990,7 +3990,7 @@ Vergeet deze niet op te schrijven en veilig te bewaren, anders verlies je mogeli
         <translation>Fout bij toevoegen van sleutel aan de portemonnee</translation>
     </message>
     <message>
-        <source>Successfully added azrate key to the wallet</source>
+        <source>Successfully added corrate key to the wallet</source>
         <translation>Geheime sleutel succesvol toegevoegd aan de portemonnee</translation>
     </message>
 </context>
@@ -4027,8 +4027,8 @@ Verify that you have installed a predetermined text editor.</source>
 Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translation>
     </message>
     <message>
-        <source>Welcome to the AEZORA RPC console.</source>
-        <translation>Welkom bij de AEZORA RPC console.</translation>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
+        <translation>Welkom bij de CRYPTCORE RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -4121,34 +4121,34 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>1) What is AEZORA?</source>
-        <translation>1) Wat is AEZORA?</translation>
+        <source>1) What is CRYPTCORE?</source>
+        <translation>1) Wat is CRYPTCORE?</translation>
     </message>
     <message>
-        <source>2) Why are my AZR unspendable?</source>
-        <translation>2) Waarom is mijn AZR niet besteedbaar?</translation>
+        <source>2) Why are my CORR unspendable?</source>
+        <translation>2) Waarom is mijn CORR niet besteedbaar?</translation>
     </message>
     <message>
-        <source>3) AEZORA privacy? What is Zerocoin (zAZR)?</source>
-        <translation>3) AEZORA privacy? Wat is Zerocoin (zAZR)?</translation>
+        <source>3) CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
+        <translation>3) CRYPTCORE privacy? Wat is Zerocoin (zCORR)?</translation>
     </message>
     <message>
-        <source>4) Why are my zAZR unspendable?</source>
-        <translation>4) Waarom is mijn zAZR niet besteedbaar?</translation>
+        <source>4) Why are my zCORR unspendable?</source>
+        <translation>4) Waarom is mijn zCORR niet besteedbaar?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zAZR automatically?</source>
+    into zCORR automatically?</source>
         <translation>5) Waarom heeft mijn portemonnee mijn balans
-    automatisch naar zAZR geconverteerd?</translation>
+    automatisch naar zCORR geconverteerd?</translation>
     </message>
     <message>
-        <source>6) How do I receive AZR/zAZR?</source>
-        <translation>6) Hoe ontvang ik AZR/zAZR?</translation>
+        <source>6) How do I receive CORR/zCORR?</source>
+        <translation>6) Hoe ontvang ik CORR/zCORR?</translation>
     </message>
     <message>
-        <source>7) How do I stake AZR/zAZR?</source>
-        <translation>7) Hoe stake ik AZR/zAZR?</translation>
+        <source>7) How do I stake CORR/zCORR?</source>
+        <translation>7) Hoe stake ik CORR/zCORR?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4167,34 +4167,34 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>1</translation>
     </message>
     <message>
-        <source>What is AEZORA?</source>
-        <translation>Wat is AEZORA?</translation>
+        <source>What is CRYPTCORE?</source>
+        <translation>Wat is CRYPTCORE?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA is a form of digital online money using blockchain technology
+                           CRYPTCORE is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  AEZORA incorporates market leading security &amp;
+                           zero fees.  CRYPTCORE incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zAZR) and Zerocoin staking.
+                           to implement ZeroCoin(zCORR) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           AEZORA utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of AEZORA to participate in earning block rewards
+                           CRYPTCORE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of CRYPTCORE to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           AEZORA is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
+                           CRYPTCORE is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
                            die gemakkelijk wereldwijd kan worden overgebracht, onmiddellijk en met bijna
-                           geen kosten.  AEZORA omvat marktleidende beveiliging &amp;
+                           geen kosten.  CRYPTCORE omvat marktleidende beveiliging &amp;
                            privacy en is ook de eerste PoS (Proof of Stake) Cryptovaluta
-                           om ZeroCoin (zAZR) en Zerocoin staking te implementeren.
+                           om ZeroCoin (zCORR) en Zerocoin staking te implementeren.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           AEZORA gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
-                           waardoor alle eigenaren van AEZORA kunnen deelnemen aan het verdienen van blokbeloningen
+                           CRYPTCORE gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
+                           waardoor alle eigenaren van CRYPTCORE kunnen deelnemen aan het verdienen van blokbeloningen
                            en tegelijkertijd het netwerk te beveiligen met volledige node portemonnees, en ook om
                            Masternodes uit te voeren en om voorstellen op te stellen en daarover te stemmen.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4205,25 +4205,25 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my AZR unspendable?</source>
-        <translation>Waarom is mijn AZR niet besteedbaar?</translation>
+        <source>Why are my CORR unspendable?</source>
+        <translation>Waarom is mijn CORR niet besteedbaar?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received AEZORA requires 6 confirmations on the network
+                           Newly received CRYPTCORE requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your AEZORA wallet also needs to be completely synchronized
+                           Your CRYPTCORE wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Nieuw ontvangen AEZORA vereist 6 bevestigingen op het netwerk
+                           Nieuw ontvangen CRYPTCORE vereist 6 bevestigingen op het netwerk
                            om in aanmerking te komen voor uitgaven die ongeveer 6 minuten in beslag kunnen nemen.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Uw AEZORA portemonnee moet ook volledig gesynchroniseerd zijn
+                           Uw CRYPTCORE portemonnee moet ook volledig gesynchroniseerd zijn
                            om de balans te zien en uit te geven op het netwerk.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4233,26 +4233,26 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>3</translation>
     </message>
     <message>
-        <source>AEZORA privacy? What is Zerocoin (zAZR)?</source>
-        <translation>AEZORA privacy? Wat is Zerocoin (zAZR)?</translation>
+        <source>CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
+        <translation>CRYPTCORE privacy? Wat is Zerocoin (zCORR)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR is an optional privacy-centric method of coin mixing on the
-                           AEZORA blockchain. Basically all your transactions cannot be tracked
+                           zCORR is an optional privacy-centric method of coin mixing on the
+                           CRYPTCORE blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt;
-                           "AEZORA Zerocoin (zAZR) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt;
+                           "CRYPTCORE Zerocoin (zCORR) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR is een optionele privacy-gerichte methode om munten te mengen op de
-                           AEZORA blockchain. In principe kunnen al uw transacties niet worden gevolgd
+                           zCORR is een optionele privacy-gerichte methode om munten te mengen op de
+                           CRYPTCORE blockchain. In principe kunnen al uw transacties niet worden gevolgd
                            op enige block explorer. U kunt meer lezen over de technische gegevens in de
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt;
-                           "AEZORA Zerocoin (zAZR) Technische Paper"&lt;/a&gt;.
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt;
+                           "CRYPTCORE Zerocoin (zCORR) Technische Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4261,20 +4261,20 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zAZR unspendable?</source>
-        <translation>Waarom is mijn zAZR niet besteedbaar?</translation>
+        <source>Why are my zCORR unspendable?</source>
+        <translation>Waarom is mijn zCORR niet besteedbaar?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zAZR will require 20 confirmations as well as 1
+                           After minting, zCORR will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Na het muntenheeft zAZR 20 bevestigingen nodig, evenals 1
+                           Na het muntenheeft zCORR 20 bevestigingen nodig, evenals 1
                           extra munt van dezelfde denominatie op het netwerk om
                            in aanmerking komen voor uitgaven.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4285,41 +4285,41 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zAZR automatically?</source>
-        <translation>Waarom heeft mijn portemonnee mijn balans automatisch naar zAZR geconverteerd?</translation>
+        <source>Why did my wallet convert the balance into zCORR automatically?</source>
+        <translation>Waarom heeft mijn portemonnee mijn balans automatisch naar zCORR geconverteerd?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the AEZORA wallet will convert 10% of your entire AZR
-                           balance to zAZR to assist the network. If you do not wish to
-                           stake zAZR or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your AEZORA wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zAZR Automint”.
-                           If you are not making use of the AEZORA-QT or GUI you can simply open
-                           your aezora.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the CRYPTCORE wallet will convert 10% of your entire CORR
+                           balance to zCORR to assist the network. If you do not wish to
+                           stake zCORR or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your CRYPTCORE wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zCORR Automint”.
+                           If you are not making use of the CRYPTCORE-QT or GUI you can simply open
+                           your cryptcore.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zAZR in the
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt; "AEZORA Zerocoin (zAZR) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zAZR, please read the "How do I stake"
+                           You can read more about zCORR in the
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt; "CRYPTCORE Zerocoin (zCORR) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zCORR, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Standaard zal de AEZORA portemonnee 10% van uw gehele AZR-balans omzetten
-                          naar zAZR om het netwerk te helpen. Als u niet wenst om
-                           zAZR te staken of voordeel te halen uit het privacyvoordeel dat dit oplevert,
-                           kan je deze automatische omzetting uitschakelen in je AEZORA portemonnee door
-                           naar Instellingen &gt; Opties te gaan en dan “Schakel zAZR Automuntering in” te deselecteren.
-                           Als je geen gebruik maakt van de AEZORA-QT of GUI kan je simpelweg
-                           je aezora.conf bestand openen en er &lt;i&gt;"enablezeromint=0" aan toevoegen&lt;/i&gt; Zonder de aanhaling
+                           Standaard zal de CRYPTCORE portemonnee 10% van uw gehele CORR-balans omzetten
+                          naar zCORR om het netwerk te helpen. Als u niet wenst om
+                           zCORR te staken of voordeel te halen uit het privacyvoordeel dat dit oplevert,
+                           kan je deze automatische omzetting uitschakelen in je CRYPTCORE portemonnee door
+                           naar Instellingen &gt; Opties te gaan en dan “Schakel zCORR Automuntering in” te deselecteren.
+                           Als je geen gebruik maakt van de CRYPTCORE-QT of GUI kan je simpelweg
+                           je cryptcore.conf bestand openen en er &lt;i&gt;"enablezeromint=0" aan toevoegen&lt;/i&gt; Zonder de aanhaling
                            en je portemonnee herstarten om automuntering uit te schakelen.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Je kan meer lezen over zAZR in de
-                           &lt;a style='color: #6b3dca' href='https://aezora.com/zazr/'&gt; "AEZORA Zerocoin (zAZR) Technische Paper"&lt;/a&gt;.
-                           Als u uw zAZR wilt behouden en staken, lees dan de "Hoe stake ik"
+                           Je kan meer lezen over zCORR in de
+                           &lt;a style='color: #6b3dca' href='https://cryptcore.com/zcorr/'&gt; "CRYPTCORE Zerocoin (zCORR) Technische Paper"&lt;/a&gt;.
+                           Als u uw zCORR wilt behouden en staken, lees dan de "Hoe stake ik"
                            sectie in onderstaande FAQ.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4329,24 +4329,24 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive AZR/zAZR?</source>
-        <translation>Hoe ontvang ik AZR/zAZR?</translation>
+        <source>How do I receive CORR/zCORR?</source>
+        <translation>Hoe ontvang ik CORR/zCORR?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR can be spent and sent to any AEZORA address. The receiver will
-                           receive standard AEZORA but the origin of the AEZORA is anonymized by the zAZR Protocol.
+                           zCORR can be spent and sent to any CRYPTCORE address. The receiver will
+                           receive standard CRYPTCORE but the origin of the CRYPTCORE is anonymized by the zCORR Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zAZR you will need to mint your balance in the “Privacy” tab.
+                           If you want more zCORR you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zAZR kan worden uitgegeven en verzonden naar elk AEZORA-adres. De ontvanger zal
-                           gewone AEZORA ontvangen, maar de oorsprong van de AEZORA is geanonimiseerd door het zAZR-protocol
+                           zCORR kan worden uitgegeven en verzonden naar elk CRYPTCORE-adres. De ontvanger zal
+                           gewone CRYPTCORE ontvangen, maar de oorsprong van de CRYPTCORE is geanonimiseerd door het zCORR-protocol
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Als u meer zAZR wilt, moet u uw balans op mint zetten in de "Privacy" tab.
+                           Als u meer zCORR wilt, moet u uw balans op mint zetten in de "Privacy" tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4355,32 +4355,32 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake AZR/zAZR?</source>
-        <translation>Hoe stakz ik AZR/zAZR?</translation>
+        <source>How do I stake CORR/zCORR?</source>
+        <translation>Hoe stakz ik CORR/zCORR?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake AEZORA:
+                           To Stake CRYPTCORE:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of AEZORA with a minimum of 101 confirmations.
+                           You must have a balance of CRYPTCORE with a minimum of 101 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (aezora-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (cryptcore-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zAZR:
+                           To Stake zCORR:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zAZR balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zCORR balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4389,26 +4389,26 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Om AEZORA te Staken:
+                           Om CRYPTCORE te Staken:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en dat u de laatste versie gebruikt.
                            &lt;li&gt;
-                           U moet een saldo van AEZORA hebben met een minimum van 101 bevestigingen.
+                           U moet een saldo van CRYPTCORE hebben met een minimum van 101 bevestigingen.
                            &lt;li&gt;
                            Uw portemonnee moet online blijven en worden ontgrendeld voor anonimisering en staking-doeleinden.
                            &lt;li&gt;
                            Zodra al deze stappen zijn gevolgd, zal het staken worden ingeschakeld.
                            &lt;li&gt;
-                           U kunt de status van de staking in de portemonnee zien door op het pictogram in de rij linksboven in de portemonnee-interface te bewegen. Het pakket zal oplichten en zal "Staking Ingeschakeld" aangeven om aan te geven dat het pakket in de portemonnee is geplaatst. Met behulp van de opdrachtregel-interface (aezora-cli); het commando &lt;i&gt;getstakingstatus&lt;/i&gt; zal bevestigen dat de staking actief is.
+                           U kunt de status van de staking in de portemonnee zien door op het pictogram in de rij linksboven in de portemonnee-interface te bewegen. Het pakket zal oplichten en zal "Staking Ingeschakeld" aangeven om aan te geven dat het pakket in de portemonnee is geplaatst. Met behulp van de opdrachtregel-interface (cryptcore-cli); het commando &lt;i&gt;getstakingstatus&lt;/i&gt; zal bevestigen dat de staking actief is.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Om zAZR te Staken:
+                           Om zCORR te Staken:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                             Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en dat u de laatste versie gebruikt.
                            &lt;li&gt;
-                           Uw nieuw gemunte of bestaande zAZR balans moet minimaal 200 bevestigingen hebben.
+                           Uw nieuw gemunte of bestaande zCORR balans moet minimaal 200 bevestigingen hebben.
                            &lt;li&gt;
                            Uw portemonnee moet online blijven en worden ontgrendeld voor anonimisering en staking-doeleinden.
                            Het Staken zou nu ingeschakeld moeten zijn
@@ -4428,20 +4428,20 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #6b3dca' href='https://Discord.AEZORA.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://Discord.CRYPTCORE.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #6b3dca' href='https://AEZORA.FreshDesk.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://CRYPTCORE.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We hebben ondersteuningskanalen in de meeste van onze officiële chatgroepen, bijvoorbeeld
-                           &lt;a style='color: #6b3dca' href='https://Discord.AEZORA.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://Discord.CRYPTCORE.com'&gt;
                            #support in onze Discord&lt;/a&gt;.
                            Als u liever een ticket indient, kan men dat
-                           &lt;a style='color: #6b3dca' href='https://AEZORA.FreshDesk.com'&gt;
+                           &lt;a style='color: #6b3dca' href='https://CRYPTCORE.FreshDesk.com'&gt;
                            op onze Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4457,8 +4457,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node AEZORA core wallet with a
-                           requirement of 10,000 AZR secured collateral to provide extra services
+                           A masternode is a computer running a full node CRYPTCORE core wallet with a
+                           requirement of 10,000 CORR secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4480,17 +4480,17 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in AEZORA Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in CRYPTCORE Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the AEZORA network&lt;/li&gt;
+                           &lt;li&gt;Help secure the CRYPTCORE network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 AZR per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CORR per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4499,8 +4499,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Een masternode is een computer met een volledige node AEZORA core portemonnee met een
-                           vereiste van 10.000 AZR onderpand om extra diensten te kunnen verlenen
+                           Een masternode is een computer met een volledige node CRYPTCORE core portemonnee met een
+                           vereiste van 10.000 CORR onderpand om extra diensten te kunnen verlenen
                            aan het netwerk en in ruil daarvoor ontvangt u regelmatig een deel van de blokbeloning.
                            Deze diensten omvatten::
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4522,17 +4522,17 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
                            Masternode Voordelen:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Deelnemen in het AEZORA Bestuur&lt;/li&gt;
+                           &lt;li&gt;Deelnemen in het CRYPTCORE Bestuur&lt;/li&gt;
                            &lt;li&gt;Verdien Masternode Beloningen&lt;/li&gt;
                            &lt;li&gt;Commodity-optie voor toekomstige verkoop&lt;/li&gt;
-                           &lt;li&gt;Helpt bij het beveiligen van het AEZORA netwerk&lt;/li&gt;
+                           &lt;li&gt;Helpt bij het beveiligen van het CRYPTCORE netwerk&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Vereisten:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 AZR per Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CORR per Masternode instance&lt;/li&gt;
                            &lt;li&gt;Moet in een kernportemonnee worden opgeborgen&lt;/li&gt;
                            &lt;li&gt;Vereist een vast IP-adres
                            &lt;li&gt;Masternode portemonnee moet online blijven&lt;/li&gt;
@@ -4549,8 +4549,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>Wat is een Masternode Controller?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 AZR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 AZR onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CORR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 CORR onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -4660,8 +4660,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>Kan de back-upmap niet openen</translation>
     </message>
     <message>
-        <source>Unable to open aezora.conf with default application</source>
-        <translation>Kan aezora.conf niet openen met de standaard applicatie</translation>
+        <source>Unable to open cryptcore.conf with default application</source>
+        <translation>Kan cryptcore.conf niet openen met de standaard applicatie</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4719,8 +4719,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>Aantal van script verificatiethreads</translation>
     </message>
     <message>
-        <source>Start AEZORA on system login</source>
-        <translation>Start AEZORA bij systeemlogin</translation>
+        <source>Start CRYPTCORE on system login</source>
+        <translation>Start CRYPTCORE bij systeemlogin</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4807,8 +4807,8 @@ Weet u het zeker?
         <translation>Selectievakje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AEZORA addresses after it matures.</source>
-        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere AEZORA-adressen sturen nadat deze volwaardig zijn geworden.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRYPTCORE addresses after it matures.</source>
+        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere CRYPTCORE-adressen sturen nadat deze volwaardig zijn geworden.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4918,8 +4918,8 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Onderteken/Verifiëer Bericht</translation>
     </message>
     <message>
-        <source>Enter a AEZORA address or contact label</source>
-        <translation>Voer een AEZORA-adres of contactlabel in</translation>
+        <source>Enter a CRYPTCORE address or contact label</source>
+        <translation>Voer een CRYPTCORE-adres of contactlabel in</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -5279,8 +5279,8 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Veelgestelde vragen</translation>
     </message>
     <message>
-        <source>About AEZORA</source>
-        <translation>Over AEZORA</translation>
+        <source>About CRYPTCORE</source>
+        <translation>Over CRYPTCORE</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5346,8 +5346,8 @@ Weet je zeker dat?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AEZORA Core is shutting down...</source>
-        <translation>AEZORA Core is aan het afsluiten...</translation>
+        <source>CRYPTCORE Core is shutting down...</source>
+        <translation>CRYPTCORE Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5376,15 +5376,15 @@ Weet je zeker dat?
         <translation>Laden...</translation>
     </message>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AEZORA Core</source>
-        <translation>AEZORA Core</translation>
+        <source>CRYPTCORE Core</source>
+        <translation>CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5399,8 +5399,8 @@ Weet je zeker dat?
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The AEZORA Core developers</source>
-        <translation>De AEZORA Kernontwikkelaars</translation>
+        <source>The CRYPTCORE Core developers</source>
+        <translation>De CRYPTCORE Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5437,12 +5437,12 @@ Weet je zeker dat?
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>480.0685 AZR</source>
-        <translation>480.0685 AZR</translation>
+        <source>480.0685 CORR</source>
+        <translation>480.0685 CORR</translation>
     </message>
     <message>
-        <source>1,000 zAZR</source>
-        <translation>1,000 zAZR</translation>
+        <source>1,000 zCORR</source>
+        <translation>1,000 zCORR</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5453,24 +5453,24 @@ Weet je zeker dat?
         <translation>In afwachting</translation>
     </message>
     <message>
-        <source>6.943 AZR</source>
-        <translation>6.943 AZR</translation>
+        <source>6.943 CORR</source>
+        <translation>6.943 CORR</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>Onverwerkt</translation>
     </message>
     <message>
-        <source>10 AZR</source>
-        <translation>10 AZR</translation>
+        <source>10 CORR</source>
+        <translation>10 CORR</translation>
     </message>
     <message>
-        <source>60 zAZR</source>
-        <translation>60 zAZR</translation>
+        <source>60 zCORR</source>
+        <translation>60 zCORR</translation>
     </message>
     <message>
-        <source>10 zAZR</source>
-        <translation>10 zAZR</translation>
+        <source>10 zCORR</source>
+        <translation>10 zCORR</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5786,20 +5786,20 @@ Weet je zeker dat?
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>AZR Stake</source>
-        <translation>AZR Stake</translation>
+        <source>CORR Stake</source>
+        <translation>CORR Stake</translation>
     </message>
     <message>
-        <source>zAZR Stake</source>
-        <translation>zAZR Stake</translation>
+        <source>zCORR Stake</source>
+        <translation>zCORR Stake</translation>
     </message>
     <message>
-        <source>AZR Cold Stake</source>
-        <translation>AZR Cold Stake</translation>
+        <source>CORR Cold Stake</source>
+        <translation>CORR Cold Stake</translation>
     </message>
     <message>
-        <source>AZR Stake in behalf of</source>
-        <translation>AZR Stake in naam van</translation>
+        <source>CORR Stake in behalf of</source>
+        <translation>CORR Stake in naam van</translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5822,24 +5822,24 @@ Weet je zeker dat?
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted AZR to zAZR</source>
-        <translation>Geconverteerde AZR naar zAZR</translation>
+        <source>Converted CORR to zCORR</source>
+        <translation>Geconverteerde CORR naar zCORR</translation>
     </message>
     <message>
-        <source>Spent zAZR</source>
-        <translation>Bestede zAZR</translation>
+        <source>Spent zCORR</source>
+        <translation>Bestede zCORR</translation>
     </message>
     <message>
-        <source>Received AZR from zAZR</source>
-        <translation>Ontvangen AZR van zAZR</translation>
+        <source>Received CORR from zCORR</source>
+        <translation>Ontvangen CORR van zCORR</translation>
     </message>
     <message>
-        <source>Minted Change as zAZR from zAZR Spend</source>
-        <translation>Gemint wisselgeld als zAZR van bestede zAZR</translation>
+        <source>Minted Change as zCORR from zCORR Spend</source>
+        <translation>Gemint wisselgeld als zCORR van bestede zCORR</translation>
     </message>
     <message>
-        <source>Converted zAZR to AZR</source>
-        <translation>Geconverteerde zAZR naar AZR</translation>
+        <source>Converted zCORR to CORR</source>
+        <translation>Geconverteerde zCORR naar CORR</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5933,8 +5933,8 @@ Weet je zeker dat?
         <translation>Totale hoeveelheid</translation>
     </message>
     <message>
-        <source>2 AZR</source>
-        <translation>2 AZR</translation>
+        <source>2 CORR</source>
+        <translation>2 CORR</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5957,8 +5957,8 @@ Weet je zeker dat?
         <translation>Fee:</translation>
     </message>
     <message>
-        <source>0.0001 AZR</source>
-        <translation>0.0001 AZR</translation>
+        <source>0.0001 CORR</source>
+        <translation>0.0001 CORR</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -6044,8 +6044,8 @@ Weet je zeker dat?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 AZR</source>
-        <translation>+0.000585 AZR</translation>
+        <source>+0.000585 CORR</source>
+        <translation>+0.000585 CORR</translation>
     </message>
 </context>
 <context>
@@ -6055,8 +6055,8 @@ Weet je zeker dat?
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 AZR.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 AZR.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CORR.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 CORR.</translation>
     </message>
 </context>
 <context>
@@ -6130,25 +6130,25 @@ Weet je zeker dat?
     </message>
     <message>
         <source>Welcome to
-AEZORA Core Wallet</source>
+CRYPTCORE Core Wallet</source>
         <translation>Welkom bij
-AEZORA Core Portemonnee</translation>
+CRYPTCORE Core Portemonnee</translation>
     </message>
     <message>
-        <source>AEZORA is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>AEZORA is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
+        <source>CRYPTCORE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>CRYPTCORE is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - AEZORA believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - AEZORA gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRYPTCORE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - CRYPTCORE gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is AEZORA's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Het masternode netwerk is AEZORA's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
+        <source>The masternode network is CRYPTCORE's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Het masternode netwerk is CRYPTCORE's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
     </message>
     <message>
-        <source>How AEZORA respects your privacy?</source>
-        <translation>Hoe respecteert AEZORA uw privacy?</translation>
+        <source>How CRYPTCORE respects your privacy?</source>
+        <translation>Hoe respecteert CRYPTCORE uw privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6160,10 +6160,10 @@ AEZORA Core Portemonnee</translation>
     </message>
 </context>
 <context>
-    <name>ZAzrControlDialog</name>
+    <name>ZCorrControlDialog</name>
     <message>
-        <source>Select zAZR to Spend</source>
-        <translation>Selecteer zAZR om te besteden</translation>
+        <source>Select zCORR to Spend</source>
+        <translation>Selecteer zCORR om te besteden</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6174,8 +6174,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>zAzr</source>
-        <translation>zAzr</translation>
+        <source>zCorr</source>
+        <translation>zCorr</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6198,12 +6198,12 @@ AEZORA Core Portemonnee</translation>
         <translation>Selecteer/Deselecteer Alles</translation>
     </message>
     <message>
-        <source>Select zAZR Denominations to Spend</source>
-        <translation>Selecteer zAZR Denominaties om te Besteden</translation>
+        <source>Select zCORR Denominations to Spend</source>
+        <translation>Selecteer zCORR Denominaties om te Besteden</translation>
     </message>
 </context>
 <context>
-    <name>aezora-core</name>
+    <name>cryptcore-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -6229,8 +6229,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. AEZORA Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. AEZORA Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. CRYPTCORE Core is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. CRYPTCORE Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6261,20 +6261,20 @@ AEZORA Core Portemonnee</translation>
         <translation>Schakel automatische Zerocoin munting vanuit specifieke adressen in (0-1, standaard %u) </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zAZR (0-1, standaard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zCORR (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Activeer cold staking functionaliteit (0-1, standaard: %u). Uitgeschakeld als staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor AZR inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor CORR inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zAZR inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zCORR inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6309,12 +6309,12 @@ AEZORA Core Portemonnee</translation>
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in AZR/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in CORR/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in AZR/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in CORR/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6429,20 +6429,20 @@ AEZORA Core Portemonnee</translation>
         <translation>De totale lengte van de netwerkversie (%i) overschrijdt de maximale lengte (%i). Verminder het aantal of de grootte van uacommentaren.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. AEZORA Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. AEZORA Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. CRYPTCORE Core is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. CRYPTCORE Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 AZR.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 CORR.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 AZR.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 AZR.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORR.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 CORR.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6457,12 +6457,12 @@ AEZORA Core Portemonnee</translation>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>Waarschuwing: Peers zijn afgesloten als gevolg van tijdsverschillen. Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt AEZORA Core niet goed.</translation>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>Waarschuwing: Peers zijn afgesloten als gevolg van tijdsverschillen. Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt CRYPTCORE Core niet goed.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt AEZORA Core niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt CRYPTCORE Core niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6601,8 +6601,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The AEZORA Core Developers</source>
-        <translation>Copyright (C) 2015-%i The AEZORA Kernontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The CRYPTCORE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The CRYPTCORE Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6653,8 +6653,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Zet automatische Zerocoin minting aan (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zAZR spends and stakes (0-1, default %u)</source>
-        <translation>Schakel de precomputatie van zAZR-uitgaven en stakes in (0-1, standaard %u) </translation>
+        <source>Enable precomputation of zCORR spends and stakes (0-1, default %u)</source>
+        <translation>Schakel de precomputatie van zCORR-uitgaven en stakes in (0-1, standaard %u) </translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6689,8 +6689,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of AEZORA Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van AEZORA Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CRYPTCORE Core</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van CRYPTCORE Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6741,8 +6741,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in AZR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in AZR/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in CORR/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in CORR/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6781,8 +6781,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. AEZORA Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. AEZORA Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. CRYPTCORE Core is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. CRYPTCORE Core wordt afgesloten.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6841,20 +6841,20 @@ AEZORA Core Portemonnee</translation>
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Recalculating AZR supply...</source>
-        <translation>Hercalculatie van AZR aanbod...</translation>
+        <source>Recalculating CORR supply...</source>
+        <translation>Hercalculatie van CORR aanbod...</translation>
     </message>
     <message>
-        <source>Recalculating minted ZAZR...</source>
-        <translation>Herberekenen van gemunte ZAZR....</translation>
+        <source>Recalculating minted ZCORR...</source>
+        <translation>Herberekenen van gemunte ZCORR....</translation>
     </message>
     <message>
-        <source>Recalculating spent ZAZR...</source>
-        <translation>Herberekenen van bestede ZAZR....</translation>
+        <source>Recalculating spent ZCORR...</source>
+        <translation>Herberekenen van bestede ZCORR....</translation>
     </message>
     <message>
-        <source>Reindex the AZR and zAZR money supply statistics</source>
-        <translation>Indexeer de AZR- en zAZR-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the CORR and zCORR money supply statistics</source>
+        <translation>Indexeer de CORR- en zCORR-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6897,8 +6897,8 @@ AEZORA Core Portemonnee</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all AEZORA specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke AEZORA functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all CRYPTCORE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke CRYPTCORE functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6933,8 +6933,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zAZR back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zCORR back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7369,8 +7369,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zAZR wallet...</source>
-        <translation>Synchroniseren zAZR portemonnee...</translation>
+        <source>Syncing zCORR wallet...</source>
+        <translation>Synchroniseren zCORR portemonnee...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7485,8 +7485,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zAZR</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zAZR</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCORR</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zCORR</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -7501,8 +7501,8 @@ AEZORA Core Portemonnee</translation>
         <translation>Portemonnee %s verblijft buiten de data directory %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart AEZORA Core to complete</source>
-        <translation>Wallet moest worden herschreven: start AEZORA Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart CRYPTCORE Core to complete</source>
+        <translation>Wallet moest worden herschreven: start CRYPTCORE Core opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>

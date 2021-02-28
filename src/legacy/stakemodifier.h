@@ -2,12 +2,12 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2020 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AEZORA_LEGACY_MODIFIER_H
-#define AEZORA_LEGACY_MODIFIER_H
+#ifndef CRYPTCORE_LEGACY_MODIFIER_H
+#define CRYPTCORE_LEGACY_MODIFIER_H
 
 #include "chain.h"
 #include "stakeinput.h"
@@ -16,4 +16,4 @@
 bool GetOldStakeModifier(CStakeInput* stake, uint64_t& nStakeModifier);
 bool ComputeNextStakeModifier(const CBlockIndex* pindexPrev, uint64_t& nStakeModifier, bool& fGeneratedStakeModifier);
 
-#endif // AEZORA_LEGACY_MODIFIER_H
+#endif // CRYPTCORE_LEGACY_MODIFIER_H

@@ -1,25 +1,25 @@
-# /etc/conf.d/aezorad: config file for /etc/init.d/aezorad
+# /etc/conf.d/cryptcored: config file for /etc/init.d/cryptcored
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/aezora/aezora.conf"
+#BITCOIND_CONFIGFILE="/etc/cryptcore/cryptcore.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/aezorad"
+#BITCOIND_PIDDIR="/var/run/cryptcored"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/aezorad.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/cryptcored.pid"
 
-# Where to write aezorad data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/aezorad"
+# Where to write cryptcored data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/cryptcored"
 
-# User and group to own aezorad process
-#BITCOIND_USER="aezora"
-#BITCOIND_GROUP="aezora"
+# User and group to own cryptcored process
+#BITCOIND_USER="cryptcore"
+#BITCOIND_GROUP="cryptcore"
 
-# Path to aezorad executable
-#BITCOIND_BIN="/usr/bin/aezorad"
+# Path to cryptcored executable
+#BITCOIND_BIN="/usr/bin/cryptcored"
 
-# Nice value to run aezorad under
+# Nice value to run cryptcored under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

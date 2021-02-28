@@ -17,7 +17,7 @@
 #include "serialize.h"
 #include "util.h"
 
-#include "test/test_aezora.h"
+#include "test/test_cryptcore.h"
 
 #include <stdint.h>
 

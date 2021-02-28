@@ -42,7 +42,7 @@ public:
     GUIException(const std::string &message) : message(message) {}
 };
 
-/** Utility functions used by the AEZORA Qt UI.
+/** Utility functions used by the CRYPTCORE Qt UI.
  */
 namespace GUIUtil
 {
@@ -51,14 +51,14 @@ QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStrWithSeconds(const QDateTime& date);
 QString dateTimeStr(qint64 nTime);
 
-// Render AEZORA addresses in monospace font
+// Render CRYPTCORE addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Parse string into a CAmount value
 CAmount parseValue(const QString& text, int displayUnit, bool* valid_out = 0);
 
 // Format an amount
-QString formatBalance(CAmount amount, int nDisplayUnit = 0, bool isZazr = false);
+QString formatBalance(CAmount amount, int nDisplayUnit = 0, bool isZcorr = false);
 
 // Set up widgets for address and amounts
 void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
@@ -67,7 +67,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 // Update the cursor of the widget after a text change
 void updateWidgetTextAndCursorPosition(QLineEdit* widget, const QString& str);
 
-// Parse "aezora:" URI into recipient object, return true on successful parsing
+// Parse "cryptcore:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -136,7 +136,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 bool openDebugLogfile();
 
-// Open aezora.conf
+// Open cryptcore.conf
 bool openConfigfile();
 
 // Open masternode.conf

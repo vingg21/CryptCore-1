@@ -4,7 +4,7 @@
 <context>
     <name>AddNewAddressDialog</name>
     <message>
-        <location filename="../aezora/forms/addnewaddressdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/addnewaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AddNewContactDialog</name>
     <message>
-        <location filename="../aezora/forms/addnewcontactdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/addnewcontactdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -58,7 +58,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/addnewcontactdialog.cpp" line="+20"/>
+        <location filename="../cryptcore/addnewcontactdialog.cpp" line="+20"/>
         <source>Edit Contact</source>
         <translation type="unfinished"></translation>
     </message>
@@ -163,12 +163,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your AEZORA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your CRYPTCORE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your AEZORA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CRYPTCORE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -210,7 +210,7 @@
 <context>
     <name>AddressLabelRow</name>
     <message>
-        <location filename="../aezora/forms/addresslabelrow.ui" line="+20"/>
+        <location filename="../cryptcore/forms/addresslabelrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -251,7 +251,7 @@
 <context>
     <name>AddressesWidget</name>
     <message>
-        <location filename="../aezora/forms/addresseswidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/addresseswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -272,7 +272,7 @@
     </message>
     <message>
         <location line="+74"/>
-        <location filename="../aezora/addresseswidget.cpp" line="+109"/>
+        <location filename="../cryptcore/addresseswidget.cpp" line="+109"/>
         <source>Contact name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -287,7 +287,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/addresseswidget.cpp" line="-28"/>
+        <location filename="../cryptcore/addresseswidget.cpp" line="-28"/>
         <source>Contacts</source>
         <translation type="unfinished"></translation>
     </message>
@@ -308,7 +308,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter a AEZORA address</source>
+        <source>Enter a CRYPTCORE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -465,7 +465,7 @@ for staking</source>
     </message>
     <message>
         <location line="+144"/>
-        <source>AEZORA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AZRs from being stolen by malware infecting your computer.</source>
+        <source>CRYPTCORE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORRs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -475,7 +475,7 @@ for staking</source>
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AZR&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORR&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -591,14 +591,14 @@ for staking</source>
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+480"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aezora.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptcore.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSRow</name>
     <message>
-        <location filename="../aezora/forms/csrow.ui" line="+14"/>
+        <location filename="../cryptcore/forms/csrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -609,7 +609,7 @@ for staking</source>
     </message>
     <message>
         <location line="+20"/>
-        <source>0,00 AZR</source>
+        <source>0,00 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -623,7 +623,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/csrow.cpp" line="+27"/>
+        <location filename="../cryptcore/csrow.cpp" line="+27"/>
         <source>Own delegation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -708,7 +708,7 @@ for staking</source>
         <location line="+27"/>
         <location line="+72"/>
         <location line="+357"/>
-        <source>0.00 AZR</source>
+        <source>0.00 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -941,7 +941,7 @@ for staking</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 uazr per input.</source>
+        <source>Can vary +/- %1 ucorr per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -962,9 +962,9 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlAzrWidget</name>
+    <name>CoinControlCorrWidget</name>
     <message>
-        <location filename="../aezora/forms/coincontrolazrwidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/coincontrolcorrwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -980,7 +980,7 @@ for staking</source>
     </message>
     <message>
         <location line="+30"/>
-        <source>AZR:</source>
+        <source>CORR:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1073,7 +1073,7 @@ for staking</source>
 <context>
     <name>ColdStakingWidget</name>
     <message>
-        <location filename="../aezora/forms/coldstakingwidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/coldstakingwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1109,7 +1109,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/coldstakingwidget.cpp" line="+88"/>
+        <location filename="../cryptcore/coldstakingwidget.cpp" line="+88"/>
         <source>Cold Staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1125,7 +1125,7 @@ for staking</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>You can delegate your AZRs and let a hot node (24/7 online node)
+        <source>You can delegate your CORRs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1136,7 +1136,7 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Delegate or Accept AZR delegation</source>
+        <source>Delegate or Accept CORR delegation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Do you wish to proceed?</source>
     </message>
     <message>
         <location line="+28"/>
-        <source>You don&apos;t have any AZR to select.</source>
+        <source>You don&apos;t have any CORR to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1335,7 +1335,7 @@ address</source>
 <context>
     <name>ContactDropdownRow</name>
     <message>
-        <location filename="../aezora/forms/contactdropdownrow.ui" line="+20"/>
+        <location filename="../cryptcore/forms/contactdropdownrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1353,7 +1353,7 @@ address</source>
 <context>
     <name>DashboardWidget</name>
     <message>
-        <location filename="../aezora/forms/dashboardwidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/dashboardwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1379,7 +1379,7 @@ address</source>
     </message>
     <message>
         <location line="+93"/>
-        <location filename="../aezora/dashboardwidget.cpp" line="+49"/>
+        <location filename="../cryptcore/dashboardwidget.cpp" line="+49"/>
         <source>Staking Rewards</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1398,12 +1398,12 @@ address</source>
     </message>
     <message>
         <location line="+39"/>
-        <source>AZR</source>
+        <source>CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+42"/>
-        <source>zAZR</source>
+        <source>zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1437,13 +1437,13 @@ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/dashboardwidget.cpp" line="+5"/>
+        <location filename="../cryptcore/dashboardwidget.cpp" line="+5"/>
         <source>You can view your account&apos;s history</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of AZR staked.</source>
+        <source>Amount of CORR staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1513,7 +1513,7 @@ address</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get AZR</source>
+        <source>How to get CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1559,7 +1559,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DefaultDialog</name>
     <message>
-        <location filename="../aezora/forms/defaultdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/defaultdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1587,7 +1587,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DenomGenerationDialog</name>
     <message>
-        <location filename="../aezora/forms/denomgenerationdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/denomgenerationdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1706,7 +1706,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid AEZORA address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid CRYPTCORE address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1728,7 +1728,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>ExpandableButton</name>
     <message>
-        <location filename="../aezora/forms/expandablebutton.ui" line="+26"/>
+        <location filename="../cryptcore/forms/expandablebutton.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1828,7 +1828,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+0"/>
-        <source>AEZORA Core</source>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1839,7 +1839,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+6"/>
-        <source>About AEZORA Core</source>
+        <source>About CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1902,17 +1902,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+90"/>
-        <source>Welcome to AEZORA Core.</source>
+        <source>Welcome to CRYPTCORE Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>As this is the first time the program is launched, you can choose where AEZORA Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where CRYPTCORE Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>AEZORA Core will download and store a copy of the AEZORA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>CRYPTCORE Core will download and store a copy of the CRYPTCORE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1937,7 +1937,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location filename="../intro.cpp" line="+101"/>
-        <source>AEZORA Core</source>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1964,7 +1964,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LoadingDialog</name>
     <message>
-        <location filename="../aezora/forms/loadingdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/loadingdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1975,7 +1975,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+44"/>
-        <location filename="../aezora/loadingdialog.cpp" line="+43"/>
+        <location filename="../cryptcore/loadingdialog.cpp" line="+43"/>
         <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1988,12 +1988,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LockUnlock</name>
     <message>
-        <location filename="../aezora/forms/lockunlock.ui" line="+14"/>
+        <location filename="../cryptcore/forms/lockunlock.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location filename="../aezora/lockunlock.cpp" line="+26"/>
+        <location filename="../cryptcore/lockunlock.cpp" line="+26"/>
         <source>Unlock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2011,7 +2011,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MNRow</name>
     <message>
-        <location filename="../aezora/forms/mnrow.ui" line="+14"/>
+        <location filename="../cryptcore/forms/mnrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2034,7 +2034,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodeWizardDialog</name>
     <message>
-        <location filename="../aezora/forms/masternodewizarddialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/masternodewizarddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2075,7 +2075,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a AEZORA Masternode you must dedicate 10.000 AZR (the unit of AEZORA) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CRYPTCORE Masternode you must dedicate 10.000 CORR (the unit of CRYPTCORE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2090,7 +2090,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 AZR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CORR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2124,7 +2124,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/masternodewizarddialog.cpp" line="+51"/>
+        <location filename="../cryptcore/masternodewizarddialog.cpp" line="+51"/>
         <source>e.g user_masternode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2237,7 +2237,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodesWidget</name>
     <message>
-        <location filename="../aezora/forms/masternodeswidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/masternodeswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2253,7 +2253,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/masternodeswidget.cpp" line="+90"/>
+        <location filename="../cryptcore/masternodeswidget.cpp" line="+90"/>
         <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2316,7 +2316,7 @@ Please wait few more minutes.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the aezora.conf file
+You will only have to paste the data in the cryptcore.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
@@ -2369,13 +2369,13 @@ Are you sure?</source>
 <context>
     <name>MnInfoDialog</name>
     <message>
-        <location filename="../aezora/forms/mninfodialog.ui" line="+20"/>
+        <location filename="../cryptcore/forms/mninfodialog.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+84"/>
-        <location filename="../aezora/mninfodialog.cpp" line="+20"/>
+        <location filename="../cryptcore/mninfodialog.cpp" line="+20"/>
         <source>Master Node Information</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2434,7 +2434,7 @@ Are you sure?</source>
 <context>
     <name>MyAddressRow</name>
     <message>
-        <location filename="../aezora/forms/myaddressrow.ui" line="+14"/>
+        <location filename="../cryptcore/forms/myaddressrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2457,7 +2457,7 @@ Are you sure?</source>
 <context>
     <name>NavMenuWidget</name>
     <message>
-        <location filename="../aezora/forms/navmenuwidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/navmenuwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2467,7 +2467,7 @@ Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/navmenuwidget.cpp" line="+22"/>
+        <location filename="../cryptcore/navmenuwidget.cpp" line="+22"/>
         <source>v%1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2521,14 +2521,14 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;aezora&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;cryptcore&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OptionButton</name>
     <message>
-        <location filename="../aezora/forms/optionbutton.ui" line="+14"/>
+        <location filename="../cryptcore/forms/optionbutton.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2583,7 +2583,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the AEZORA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the CRYPTCORE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2608,12 +2608,12 @@ Are you sure?</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start AEZORA after logging in to the system.</source>
+        <source>Automatically start CRYPTCORE after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start AEZORA on system login</source>
+        <source>&amp;Start CRYPTCORE on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2648,13 +2648,13 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting AEZORA.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTCORE.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Aezora/Aezora-translations</source>
+https://www.transifex.com/Cryptcore/Cryptcore-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2664,17 +2664,17 @@ https://www.transifex.com/Aezora/Aezora-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of AZR units to zAZR</source>
+        <source>Enable automatic minting of CORR units to zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zAZR Automint</source>
+        <source>Enable zCORR Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zAZR minting from specific addresses</source>
+        <source>Enable automatic zCORR minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2684,23 +2684,23 @@ https://www.transifex.com/Aezora/Aezora-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming AZR which get automatically converted to zAZR via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming CORR which get automatically converted to zCORR via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zAZR</source>
+        <source>Percentage of autominted zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough AZR for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough CORR for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zAZR Denomination</source>
+        <source>Preferred Automint zCORR Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2710,7 +2710,7 @@ https://www.transifex.com/Aezora/Aezora-translations</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the AEZORA network through a SOCKS5 proxy.</source>
+        <source>Connect to the CRYPTCORE network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2893,12 +2893,12 @@ https://www.transifex.com/Aezora/Aezora-translations</source>
     </message>
 </context>
 <context>
-    <name>AEZORAGUI</name>
+    <name>CRYPTCOREGUI</name>
     <message>
-        <location filename="../aezora/aezoragui.cpp" line="+53"/>
+        <location filename="../cryptcore/cryptcoregui.cpp" line="+53"/>
         <location line="+294"/>
         <location line="+68"/>
-        <source>AEZORA Core</source>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2933,7 +2933,7 @@ https://www.transifex.com/Aezora/Aezora-translations</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>AEZORA Core client</source>
+        <source>CRYPTCORE Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2985,15 +2985,15 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location filename="../aezora.cpp" line="+505"/>
-        <source>A fatal error occurred. AEZORA can no longer continue safely and will quit.</source>
+        <location filename="../cryptcore.cpp" line="+505"/>
+        <source>A fatal error occurred. CRYPTCORE can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PWidget</name>
     <message>
-        <location filename="../aezora/pwidget.cpp" line="+94"/>
+        <location filename="../cryptcore/pwidget.cpp" line="+94"/>
         <source>Wallet locked, you need to unlock it to perform this action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3034,12 +3034,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Cannot start aezora: click-to-pay handler</source>
+        <source>Cannot start cryptcore: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+110"/>
-        <source>URI cannot be parsed! This can be caused by an invalid AEZORA address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid CRYPTCORE address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3141,7 +3141,7 @@ Address: %4
 <context>
     <name>PrivacyWidget</name>
     <message>
-        <location filename="../aezora/forms/privacywidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/privacywidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -3187,7 +3187,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/privacywidget.cpp" line="+38"/>
+        <location filename="../cryptcore/privacywidget.cpp" line="+38"/>
         <source>Privacy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3203,13 +3203,13 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zAZR anonymizes your AZR by removing any
+        <source>Minting zCORR anonymizes your CORR by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zAZR or convert back to AZR</source>
+        <source>Mint new zCORR or convert back to CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3224,22 +3224,22 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+87"/>
-        <source>Mint zAZR</source>
+        <source>Mint zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of AZR to mint into zAZR</source>
+        <source>Enter amount of CORR to mint into zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Convert back to AZR</source>
+        <source>Convert back to CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zAZR to convert back into AZR</source>
+        <source>Enter amount of zCORR to convert back into CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3249,12 +3249,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+0"/>
-        <source>zAZR is currently undergoing maintenance</source>
+        <source>zCORR is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>You need to unlock the wallet to be able to %1 zAZR</source>
+        <source>You need to unlock the wallet to be able to %1 zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3274,17 +3274,17 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>zAZR minted successfully</source>
+        <source>zCORR minted successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>zAZR converted back to AZR</source>
+        <source>zCORR converted back to CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>You don&apos;t have any AZR to select.</source>
+        <source>You don&apos;t have any CORR to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3406,7 +3406,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+143"/>
-        <source>Enter a AEZORA address (e.g. %1)</source>
+        <source>Enter a CRYPTCORE address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3466,11 +3466,11 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <location filename="../aezora.cpp" line="+75"/>
+        <location filename="../cryptcore.cpp" line="+75"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>AEZORA Core</source>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3495,7 +3495,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+61"/>
-        <source>AEZORA Core didn&apos;t yet exit safely...</source>
+        <source>CRYPTCORE Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3620,7 +3620,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the AEZORA debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the CRYPTCORE debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3802,7 +3802,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zAZR Backup Path:</source>
+        <source>Custom zCORR Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3902,7 +3902,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the AEZORA RPC console.</source>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4049,7 +4049,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveDialog</name>
     <message>
-        <location filename="../aezora/forms/receivedialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/receivedialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4077,7 +4077,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveWidget</name>
     <message>
-        <location filename="../aezora/forms/receivewidget.ui" line="+20"/>
+        <location filename="../cryptcore/forms/receivewidget.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4091,36 +4091,36 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../aezora/receivewidget.cpp" line="+218"/>
+        <location filename="../cryptcore/receivewidget.cpp" line="+218"/>
         <source>No address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../aezora/receivewidget.cpp" line="-150"/>
+        <location filename="../cryptcore/receivewidget.cpp" line="-150"/>
         <source>Add Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../aezora/receivewidget.cpp" line="+4"/>
+        <location filename="../cryptcore/receivewidget.cpp" line="+4"/>
         <source>Generate Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../aezora/receivewidget.cpp" line="+4"/>
+        <location filename="../cryptcore/receivewidget.cpp" line="+4"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/receivewidget.cpp" line="-32"/>
+        <location filename="../cryptcore/receivewidget.cpp" line="-32"/>
         <source>Receive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Scan the QR code or copy the address to receive AZR.</source>
+        <source>Scan the QR code or copy the address to receive CORR.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4227,13 +4227,13 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>RequestDialog</name>
     <message>
-        <location filename="../aezora/forms/requestdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/requestdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+81"/>
-        <location filename="../aezora/requestdialog.cpp" line="+25"/>
+        <location filename="../cryptcore/requestdialog.cpp" line="+25"/>
         <source>New Request Payment</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4244,13 +4244,13 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+43"/>
-        <location filename="../aezora/requestdialog.cpp" line="+17"/>
+        <location filename="../cryptcore/requestdialog.cpp" line="+17"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="+71"/>
-        <source>AZR</source>
+        <source>CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4285,8 +4285,8 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/requestdialog.cpp" line="-14"/>
-        <source>Instead of only sharing a AEZORA address, you can create a Payment Request message which bundles up more information than is contained in just a AEZORA address.</source>
+        <location filename="../cryptcore/requestdialog.cpp" line="-14"/>
+        <source>Instead of only sharing a CRYPTCORE address, you can create a Payment Request message which bundles up more information than is contained in just a CRYPTCORE address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4338,7 +4338,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
-        <location filename="../aezora/forms/sendchangeaddressdialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/sendchangeaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4363,20 +4363,20 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/sendchangeaddressdialog.cpp" line="+21"/>
+        <location filename="../cryptcore/sendchangeaddressdialog.cpp" line="+21"/>
         <source>Custom Change Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; AEZORA address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; CRYPTCORE address</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
-        <location filename="../aezora/forms/sendcustomfeedialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/sendcustomfeedialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4421,7 +4421,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/sendcustomfeedialog.cpp" line="+25"/>
+        <location filename="../cryptcore/sendcustomfeedialog.cpp" line="+25"/>
         <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4454,7 +4454,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendMultiRow</name>
     <message>
-        <location filename="../aezora/forms/sendmultirow.ui" line="+26"/>
+        <location filename="../cryptcore/forms/sendmultirow.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4464,7 +4464,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/sendmultirow.cpp" line="+22"/>
+        <location filename="../cryptcore/sendmultirow.cpp" line="+22"/>
         <source>Add address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4477,13 +4477,13 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendWidget</name>
     <message>
-        <location filename="../aezora/send.cpp" line="+44"/>
+        <location filename="../cryptcore/send.cpp" line="+44"/>
         <source>Send</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (AZR)</source>
+        <source>You can transfer public coins (CORR)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4493,7 +4493,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter a AEZORA address or contact label</source>
+        <source>Enter a CRYPTCORE address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4528,12 +4528,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+40"/>
-        <source>Send AZR</source>
+        <source>Send CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Send zAZR</source>
+        <source>Send zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4602,7 +4602,7 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="-38"/>
-        <source>zAZR is currently undergoing maintenance.</source>
+        <source>zCORR is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4624,12 +4624,12 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>zAZR transaction sent!</source>
+        <source>zCORR transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zAZR require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zCORR require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4676,12 +4676,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+23"/>
-        <source>You don&apos;t have any AZR to select.</source>
+        <source>You don&apos;t have any CORR to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zAZR in your balance to select.</source>
+        <source>You don&apos;t have any zCORR in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4733,7 +4733,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SettingsBackupWallet</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsbackupwallet.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsbackupwallet.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4747,7 +4747,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsbackupwallet.cpp" line="+26"/>
+        <location filename="../cryptcore/settings/settingsbackupwallet.cpp" line="+26"/>
         <source>Backup Wallet </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4818,7 +4818,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsbittoolwidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsbittoolwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4846,7 +4846,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+63"/>
-        <location filename="../aezora/settings/settingsbittoolwidget.cpp" line="+74"/>
+        <location filename="../cryptcore/settings/settingsbittoolwidget.cpp" line="+74"/>
         <source>Import Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4857,7 +4857,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsbittoolwidget.cpp" line="-39"/>
+        <location filename="../cryptcore/settings/settingsbittoolwidget.cpp" line="-39"/>
         <source>BIP38 Tool</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4910,7 +4910,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+13"/>
-        <source>Enter a AEZORA address</source>
+        <source>Enter a CRYPTCORE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5027,14 +5027,14 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+10"/>
-        <source>Successfully added azrate key to the wallet</source>
+        <source>Successfully added corrate key to the wallet</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsconsolewidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsconsolewidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5044,7 +5044,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsconsolewidget.cpp" line="+254"/>
+        <location filename="../cryptcore/settings/settingsconsolewidget.cpp" line="+254"/>
         <source>Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5071,7 +5071,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+142"/>
-        <source>Welcome to the AEZORA RPC console.</source>
+        <source>Welcome to the CRYPTCORE RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5093,7 +5093,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5109,7 +5109,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+58"/>
-        <location filename="../aezora/settings/settingsdisplayoptionswidget.cpp" line="+97"/>
+        <location filename="../cryptcore/settings/settingsdisplayoptionswidget.cpp" line="+97"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5119,7 +5119,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsdisplayoptionswidget.cpp" line="-68"/>
+        <location filename="../cryptcore/settings/settingsdisplayoptionswidget.cpp" line="-68"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5172,7 +5172,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsFaqWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsfaqwidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsfaqwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5190,38 +5190,38 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-280"/>
-        <source>1) What is AEZORA?</source>
+        <source>1) What is CRYPTCORE?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my AZR unspendable?</source>
+        <source>2) Why are my CORR unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>3) AEZORA privacy? What is Zerocoin (zAZR)?</source>
+        <source>3) CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>4) Why are my zAZR unspendable?</source>
+        <source>4) Why are my zCORR unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <source>5) Why did my wallet convert the balance
-    into zAZR automatically?</source>
+    into zCORR automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>6) How do I receive AZR/zAZR?</source>
+        <source>6) How do I receive CORR/zCORR?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>7) How do I stake AZR/zAZR?</source>
+        <source>7) How do I stake CORR/zCORR?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5246,21 +5246,21 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>What is AEZORA?</source>
+        <source>What is CRYPTCORE?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           AEZORA is a form of digital online money using blockchain technology
+                           CRYPTCORE is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  AEZORA incorporates market leading security &amp;
+                           zero fees.  CRYPTCORE incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zAZR) and Zerocoin staking.
+                           to implement ZeroCoin(zCORR) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           AEZORA utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of AEZORA to participate in earning block rewards
+                           CRYPTCORE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of CRYPTCORE to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5274,17 +5274,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my AZR unspendable?</source>
+        <source>Why are my CORR unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received AEZORA requires 6 confirmations on the network
+                           Newly received CRYPTCORE requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your AEZORA wallet also needs to be completely synchronized
+                           Your CRYPTCORE wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5297,18 +5297,18 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>AEZORA privacy? What is Zerocoin (zAZR)?</source>
+        <source>CRYPTCORE privacy? What is Zerocoin (zCORR)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zAZR is an optional privacy-centric method of coin mixing on the
-                           AEZORA blockchain. Basically all your transactions cannot be tracked
+                           zCORR is an optional privacy-centric method of coin mixing on the
+                           CRYPTCORE blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://aezora.com/zazr/&apos;&gt;
-                           &quot;AEZORA Zerocoin (zAZR) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://cryptcore.com/zcorr/&apos;&gt;
+                           &quot;CRYPTCORE Zerocoin (zCORR) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5320,14 +5320,14 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zAZR unspendable?</source>
+        <source>Why are my zCORR unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zAZR will require 20 confirmations as well as 1
+                           After minting, zCORR will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5341,25 +5341,25 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zAZR automatically?</source>
+        <source>Why did my wallet convert the balance into zCORR automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the AEZORA wallet will convert 10% of your entire AZR
-                           balance to zAZR to assist the network. If you do not wish to
-                           stake zAZR or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your AEZORA wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zAZR Automint”.
-                           If you are not making use of the AEZORA-QT or GUI you can simply open
-                           your aezora.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the CRYPTCORE wallet will convert 10% of your entire CORR
+                           balance to zCORR to assist the network. If you do not wish to
+                           stake zCORR or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your CRYPTCORE wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zCORR Automint”.
+                           If you are not making use of the CRYPTCORE-QT or GUI you can simply open
+                           your cryptcore.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zAZR in the
-                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://aezora.com/zazr/&apos;&gt; &quot;AEZORA Zerocoin (zAZR) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zAZR, please read the &quot;How do I stake&quot;
+                           You can read more about zCORR in the
+                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://cryptcore.com/zcorr/&apos;&gt; &quot;CRYPTCORE Zerocoin (zCORR) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zCORR, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5372,17 +5372,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive AZR/zAZR?</source>
+        <source>How do I receive CORR/zCORR?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zAZR can be spent and sent to any AEZORA address. The receiver will
-                           receive standard AEZORA but the origin of the AEZORA is anonymized by the zAZR Protocol.
+                           zCORR can be spent and sent to any CRYPTCORE address. The receiver will
+                           receive standard CRYPTCORE but the origin of the CRYPTCORE is anonymized by the zCORR Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zAZR you will need to mint your balance in the “Privacy” tab.
+                           If you want more zCORR you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5394,33 +5394,33 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake AZR/zAZR?</source>
+        <source>How do I stake CORR/zCORR?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake AEZORA:
+                           To Stake CRYPTCORE:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of AEZORA with a minimum of 101 confirmations.
+                           You must have a balance of CRYPTCORE with a minimum of 101 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (aezora-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (cryptcore-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zAZR:
+                           To Stake zCORR:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zAZR balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zCORR balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -5444,10 +5444,10 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://discord.aezora.com&apos;&gt;
+                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://discord.cryptcore.com&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://AEZORA.freshdesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #6b3dca&apos; href=&apos;https://CRYPTCORE.freshdesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5467,8 +5467,8 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node AEZORA core wallet with a
-                           requirement of 10,000 AZR secured collateral to provide extra services
+                           A masternode is a computer running a full node CRYPTCORE core wallet with a
+                           requirement of 10,000 CORR secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -5490,17 +5490,17 @@ Verify that you have installed a predetermined text editor.</source>
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in AEZORA Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in CRYPTCORE Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the AEZORA network&lt;/li&gt;
+                           &lt;li&gt;Help secure the CRYPTCORE network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 AZR per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CORR per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -5521,11 +5521,11 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 AZR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 CORR collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsfaqwidget.cpp" line="+19"/>
+        <location filename="../cryptcore/settings/settingsfaqwidget.cpp" line="+19"/>
         <source>Frequently Asked Questions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5543,7 +5543,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsInformationWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsinformationwidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsinformationwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5578,12 +5578,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-536"/>
-        <location filename="../aezora/settings/settingsinformationwidget.cpp" line="+96"/>
+        <location filename="../cryptcore/settings/settingsinformationwidget.cpp" line="+96"/>
         <source>Network Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsinformationwidget.cpp" line="-67"/>
+        <location filename="../cryptcore/settings/settingsinformationwidget.cpp" line="-67"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
@@ -5684,7 +5684,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open aezora.conf with default application</source>
+        <source>Unable to open cryptcore.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5701,7 +5701,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsMainOptionsWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5731,7 +5731,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+40"/>
-        <location filename="../aezora/settings/settingsmainoptionswidget.cpp" line="+81"/>
+        <location filename="../cryptcore/settings/settingsmainoptionswidget.cpp" line="+81"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5742,12 +5742,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+38"/>
-        <location filename="../aezora/settings/settingsmainoptionswidget.cpp" line="-1"/>
+        <location filename="../cryptcore/settings/settingsmainoptionswidget.cpp" line="-1"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsmainoptionswidget.cpp" line="-31"/>
+        <location filename="../cryptcore/settings/settingsmainoptionswidget.cpp" line="-31"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5763,7 +5763,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Start AEZORA on system login</source>
+        <source>Start CRYPTCORE on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5798,7 +5798,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsmultisenddialog.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsmultisenddialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5825,7 +5825,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsmultisenddialog.cpp" line="+24"/>
+        <location filename="../cryptcore/settings/settingsmultisenddialog.cpp" line="+24"/>
         <source>New recipient for multisend</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5848,7 +5848,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingsmultisendwidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingsmultisendwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5870,8 +5870,8 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingsmultisendwidget.cpp" line="+156"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AEZORA addresses after it matures.</source>
+        <location filename="../cryptcore/settings/settingsmultisendwidget.cpp" line="+156"/>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CRYPTCORE addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5980,7 +5980,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
-        <location filename="../aezora/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6000,13 +6000,13 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingssignmessagewidgets.cpp" line="+35"/>
+        <location filename="../cryptcore/settings/settingssignmessagewidgets.cpp" line="+35"/>
         <source>Sign/Verify Message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enter a AEZORA address or contact label</source>
+        <source>Enter a CRYPTCORE address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6146,7 +6146,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6175,7 +6175,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+139"/>
-        <location filename="../aezora/settings/settingswalletoptionswidget.cpp" line="+69"/>
+        <location filename="../cryptcore/settings/settingswalletoptionswidget.cpp" line="+69"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6185,7 +6185,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingswalletoptionswidget.cpp" line="-43"/>
+        <location filename="../cryptcore/settings/settingswalletoptionswidget.cpp" line="-43"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -6258,7 +6258,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6276,7 +6276,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingswalletrepairwidget.cpp" line="+22"/>
+        <location filename="../cryptcore/settings/settingswalletrepairwidget.cpp" line="+22"/>
         <source>Wallet Repair</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6384,7 +6384,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWidget</name>
     <message>
-        <location filename="../aezora/settings/forms/settingswidget.ui" line="+14"/>
+        <location filename="../cryptcore/settings/forms/settingswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6471,11 +6471,11 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+31"/>
-        <source>About AEZORA</source>
+        <source>About CRYPTCORE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/settings/settingswidget.cpp" line="+47"/>
+        <location filename="../cryptcore/settings/settingswidget.cpp" line="+47"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6548,7 +6548,7 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+70"/>
-        <source>AEZORA Core is shutting down...</source>
+        <source>CRYPTCORE Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6560,7 +6560,7 @@ Are you sure?
 <context>
     <name>SnackBar</name>
     <message>
-        <location filename="../aezora/forms/snackbar.ui" line="+26"/>
+        <location filename="../cryptcore/forms/snackbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6573,7 +6573,7 @@ Are you sure?
 <context>
     <name>Splash</name>
     <message>
-        <location filename="../aezora/forms/splash.ui" line="+26"/>
+        <location filename="../cryptcore/forms/splash.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6583,8 +6583,8 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/splash.cpp" line="+29"/>
-        <source>AEZORA Core</source>
+        <location filename="../cryptcore/splash.cpp" line="+29"/>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6592,7 +6592,7 @@ Are you sure?
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>AEZORA Core</source>
+        <source>CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6612,7 +6612,7 @@ Are you sure?
     </message>
     <message>
         <location line="+1"/>
-        <source>The AEZORA Core developers</source>
+        <source>The CRYPTCORE Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6624,7 +6624,7 @@ Are you sure?
 <context>
     <name>TooltipMenu</name>
     <message>
-        <location filename="../aezora/forms/tooltipmenu.ui" line="+26"/>
+        <location filename="../cryptcore/forms/tooltipmenu.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6652,20 +6652,20 @@ Are you sure?
 <context>
     <name>TopBar</name>
     <message>
-        <location filename="../aezora/forms/topbar.ui" line="+26"/>
+        <location filename="../cryptcore/forms/topbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+96"/>
         <location line="+279"/>
-        <source>480.0685 AZR</source>
+        <source>480.0685 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-210"/>
         <location line="+321"/>
-        <source>1,000 zAZR</source>
+        <source>1,000 zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6682,7 +6682,7 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>6.943 AZR</source>
+        <source>6.943 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6693,21 +6693,21 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>10 AZR</source>
+        <source>10 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+77"/>
-        <source>60 zAZR</source>
+        <source>60 zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>10 zAZR</source>
+        <source>10 zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/topbar.cpp" line="+240"/>
+        <location filename="../cryptcore/topbar.cpp" line="+240"/>
         <source>Wallet Unlocked for staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7140,22 +7140,22 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>AZR Stake</source>
+        <source>CORR Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zAZR Stake</source>
+        <source>zCORR Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>AZR Cold Stake</source>
+        <source>CORR Cold Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>AZR Stake in behalf of</source>
+        <source>CORR Stake in behalf of</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7185,27 +7185,27 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted AZR to zAZR</source>
+        <source>Converted CORR to zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zAZR</source>
+        <source>Spent zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received AZR from zAZR</source>
+        <source>Received CORR from zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zAZR from zAZR Spend</source>
+        <source>Minted Change as zCORR from zCORR Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zAZR to AZR</source>
+        <source>Converted zCORR to CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7287,13 +7287,13 @@ Are you sure?
 <context>
     <name>TxDetailDialog</name>
     <message>
-        <location filename="../aezora/forms/sendconfirmdialog.ui" line="+26"/>
+        <location filename="../cryptcore/forms/sendconfirmdialog.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+90"/>
-        <location filename="../aezora/sendconfirmdialog.cpp" line="+74"/>
+        <location filename="../cryptcore/sendconfirmdialog.cpp" line="+74"/>
         <source>Transaction Details</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7324,7 +7324,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>2 AZR</source>
+        <source>2 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7354,7 +7354,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>0.0001 AZR</source>
+        <source>0.0001 CORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7423,7 +7423,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/sendconfirmdialog.cpp" line="-26"/>
+        <location filename="../cryptcore/sendconfirmdialog.cpp" line="-26"/>
         <source>Confirm Your Transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7446,7 +7446,7 @@ Are you sure?
 <context>
     <name>TxRow</name>
     <message>
-        <location filename="../aezora/forms/txrow.ui" line="+20"/>
+        <location filename="../cryptcore/forms/txrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -7462,7 +7462,7 @@ Are you sure?
     </message>
     <message>
         <location line="+15"/>
-        <source>+0.000585 AZR</source>
+        <source>+0.000585 CORR</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7478,14 +7478,14 @@ Are you sure?
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 AZR.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CORR.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>WalletPasswordDialog</name>
     <message>
-        <location filename="../aezora/forms/walletpassworddialog.ui" line="+14"/>
+        <location filename="../cryptcore/forms/walletpassworddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7515,7 +7515,7 @@ Are you sure?
 <context>
     <name>WelcomeContentWidget</name>
     <message>
-        <location filename="../aezora/forms/welcomecontentwidget.ui" line="+14"/>
+        <location filename="../cryptcore/forms/welcomecontentwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7567,27 +7567,27 @@ Are you sure?
     <message>
         <location line="+89"/>
         <source>Welcome to
-AEZORA Core Wallet</source>
+CRYPTCORE Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>AEZORA is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>CRYPTCORE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - AEZORA believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CRYPTCORE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+83"/>
-        <source>The masternode network is AEZORA&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is CRYPTCORE&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-103"/>
-        <source>How AEZORA respects your privacy?</source>
+        <source>How CRYPTCORE respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7596,16 +7596,16 @@ AEZORA Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../aezora/welcomecontentwidget.cpp" line="+173"/>
+        <location filename="../cryptcore/welcomecontentwidget.cpp" line="+173"/>
         <source>default</source>
         <translation type="unfinished">default</translation>
     </message>
 </context>
 <context>
-    <name>ZAzrControlDialog</name>
+    <name>ZCorrControlDialog</name>
     <message>
-        <location filename="../forms/zazrcontroldialog.ui" line="+20"/>
-        <source>Select zAZR to Spend</source>
+        <location filename="../forms/zcorrcontroldialog.ui" line="+20"/>
+        <source>Select zCORR to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7620,7 +7620,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>zAzr</source>
+        <source>zCorr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7649,15 +7649,15 @@ AEZORA Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../zazrcontroldialog.cpp" line="+39"/>
-        <source>Select zAZR Denominations to Spend</source>
+        <location filename="../zcorrcontroldialog.cpp" line="+39"/>
+        <source>Select zCORR Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>aezora-core</name>
+    <name>cryptcore-core</name>
     <message>
-        <location filename="../aezorastrings.cpp" line="+15"/>
+        <location filename="../cryptcorestrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -7688,7 +7688,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. AEZORA Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. CRYPTCORE Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7728,7 +7728,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zAZR minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zCORR minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7738,12 +7738,12 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for AZR inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for CORR inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zAZR inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zCORR inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7788,12 +7788,12 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in AZR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in CORR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7938,7 +7938,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. AEZORA Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. CRYPTCORE Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7948,12 +7948,12 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AZR.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORR.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 AZR.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORR.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7973,12 +7973,12 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Peers are being disconnected due time differences. Please check that your computer&apos;s date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer&apos;s date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong AEZORA Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CRYPTCORE Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8153,7 +8153,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The AEZORA Core Developers</source>
+        <source>Copyright (C) 2015-%i The CRYPTCORE Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8218,7 +8218,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zAZR spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zCORR spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8263,7 +8263,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of AEZORA Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of CRYPTCORE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8328,7 +8328,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in AZR/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in CORR/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8378,7 +8378,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. AEZORA Core is shutting down.</source>
+        <source>Initialization sanity check failed. CRYPTCORE Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8453,22 +8453,22 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating AZR supply...</source>
+        <source>Recalculating CORR supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating minted ZAZR...</source>
+        <source>Recalculating minted ZCORR...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating spent ZAZR...</source>
+        <source>Recalculating spent ZCORR...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the AZR and zAZR money supply statistics</source>
+        <source>Reindex the CORR and zCORR money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8520,7 +8520,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all AEZORA specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all CRYPTCORE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8565,7 +8565,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zAZR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zCORR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9110,7 +9110,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zAZR wallet...</source>
+        <source>Syncing zCORR wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9255,7 +9255,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zAZR</source>
+        <source>Value is below the smallest available denomination (= 1) of zCORR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9275,7 +9275,7 @@ AEZORA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart AEZORA Core to complete</source>
+        <source>Wallet needed to be rewritten: restart CRYPTCORE Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9347,7 +9347,7 @@ AEZORA Core Wallet</source>
 <context>
     <name>send</name>
     <message>
-        <location filename="../aezora/forms/send.ui" line="+14"/>
+        <location filename="../cryptcore/forms/send.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>

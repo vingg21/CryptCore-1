@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2015 The Bitcoin developers
 // Copyright (c) 2017-2020 The PIVX developers
 // Copyright (c) 2020 The PIVX developers
-// Copyright (c) 2020 The AEZORA developers
+// Copyright (c) 2020 The CRYPTCORE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifdef HAVE_CONFIG_H
-#include "config/aezora-config.h"
+#include "config/cryptcore-config.h"
 #endif
 
 #include "netbase.h"

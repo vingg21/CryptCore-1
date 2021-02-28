@@ -1,15 +1,15 @@
 
 #!/bin/sh
 
-# setup aezora account, homedir etc
+# setup cryptcore account, homedir etc
 
 set -e
 
-BCUSER="aezora"
-BCHOME="/var/lib/aezora"
+BCUSER="cryptcore"
+BCHOME="/var/lib/cryptcore"
 
 if [ "$1" = "configure" ]; then
-	# Add aezora user/group - this will gracefully abort if the user already exists.
+	# Add cryptcore user/group - this will gracefully abort if the user already exists.
 	# A homedir is never created.
 	set +e
 	adduser --system --home "${BCHOME}" --no-create-home --group "${BCUSER}" 2>/dev/null
